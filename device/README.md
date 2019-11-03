@@ -5,7 +5,10 @@ In this module we will create a virtual machine, simulating a device that connec
 ![Snapshot](../images/simulated-0.PNG "Azure VM")
 
 ## Parameterize virtual machine basics
-Name the VM
+- Use the previously created resource group
+- Name the VM
+- Select Region "West Europe"
+
 ![Snapshot](../images/simulated-1.PNG "Azure VM")
 
 #### Parameterize Azure IoT Hub instance parameters
