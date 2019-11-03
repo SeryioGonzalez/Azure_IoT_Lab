@@ -7,7 +7,7 @@ In this lab, we are going to simulate a client sending telemetry to an Azure IoT
 ## Modules
 
 ### Module 1: Creating an Azure IoT Hub
-[Azure IoTHub](iothub/README.md)
+[Azure IoT Hub](iothub/README.md)
 
 ### Module 2: Creating a simulated device VM
 [Device VM](device/README.md)
