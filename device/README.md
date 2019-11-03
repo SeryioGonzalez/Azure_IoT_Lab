@@ -26,6 +26,13 @@ Once the VM configuration is OK, the following green mark will show up, so the V
 After a few minutes, the VM should be running, as shown in the following snapshot
 ![Snapshot](../images/simulated-5.PNG "Azure VM")
 
-## Connect to the VM
+## Get the SSH connection string
 In the previous snapshot, click "Go to resource". Select "Connect" in the following menu. A lateral blade with the connection details will show up, as shown below
 ![Snapshot](../images/simulated-6.PNG "Azure VM")
+
+## Connect to the VM via SSH
+When connecting to the VM, accept the VM public key by inputing "yes", as shown below
+![Snapshot](../images/simulated-7.PNG "Azure VM")
+
+Once connected, a command promt like the following will show up:
+![Snapshot](../images/simulated-8.PNG "Azure VM")
