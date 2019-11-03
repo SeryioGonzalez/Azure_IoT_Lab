@@ -13,4 +13,15 @@ In this module we will create a virtual machine, simulating a device that connec
 
 ![Snapshot](../images/simulated-1.PNG "Azure VM")
 
-#### Parameterize Azure IoT Hub instance parameters
+## Remove network security rules
+In order to facilitate Azure IoT hub communications, we are going to disable Network Security Groups. For this, in the Networking tab, select "Nic network security group" to "None", as shown in the following image
+
+![Snapshot](../images/simulated-3.PNG "Azure VM")
+
+## Validate the VM creation
+Once the VM configuration is OK, the following green mark will show up, so the VM creation can be triggered. Click "Create" if you see "Validation passed". It not, verify any missing parameters"
+![Snapshot](../images/simulated-4.PNG "Azure VM")
+
+## VM is already created
+After a few minutes, the VM should be running, as shown in the following snapshot
+![Snapshot](../images/simulated-5.PNG "Azure VM")
