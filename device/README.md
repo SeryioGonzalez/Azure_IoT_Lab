@@ -8,6 +8,7 @@ In this module we will create a virtual machine, simulating a device that connec
 - Use the previously created resource group
 - Name the VM
 - Select Region "West Europe"
+- Put your user and password. Optionally, if you are familiar with public/private keys, input your public key
 
 ![Snapshot](../images/simulated-1.PNG "Azure VM")
 
