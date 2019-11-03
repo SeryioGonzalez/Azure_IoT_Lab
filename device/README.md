@@ -9,6 +9,7 @@ In this module we will create a virtual machine, simulating a device that connec
 - Name the VM
 - Select Region "West Europe"
 - Put your user and password. Optionally, if you are familiar with public/private keys, input your public key
+- Select the VM size B1s, the one included in the free tier. Press "Change Size" and select "B1s"
 
 ![Snapshot](../images/simulated-1.PNG "Azure VM")
 
