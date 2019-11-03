@@ -39,9 +39,9 @@ Once connected, a command promt like the following will show up:
 
 ## Install required packages and repos
 Execute the following commands. Try to make sense at what those commands do
-''
+```
 sudo apt-get update -y
 sudo apt install python-pip -y
 pip install azure-iot-device
 git clone https://github.com/SeryioGonzalez/azure-iot.git
-''
+```
