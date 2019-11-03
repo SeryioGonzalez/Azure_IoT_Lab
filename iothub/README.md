@@ -21,3 +21,6 @@ Select your subscription. Create a resource group, for this project, name "icai-
 
 #### Press "Go to Resource" in the previous image and a window like the following will show up
 ![Snapshot](../images/iot-hub-5.PNG "Azure IoT Hub Service")
+
+#### At this state, the Azure IoT Hub module is created and ready to work. This module is now finished
+![Go back to the main section](../README.md )
