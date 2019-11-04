@@ -42,3 +42,5 @@ The connection string should be something like
 HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJit1234567890223312
 ```
 ![Snapshot](../images/iot-hub-7.PNG "Azure IoT Hub Service")
+
+After this point, your Azure IoT Hub instance is up and running and the device identity is created. Go to the next module for continuing the lab
