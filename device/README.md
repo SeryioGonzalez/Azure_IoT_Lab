@@ -53,3 +53,7 @@ Remember to put the connection string between quotes, otherwise the linux bash w
 
 ![Snapshot](../images/simulated-10.png "Azure VM")
 
+## Verify the Azure IoT hub is receiving your messages
+In order to see if Azure IoT Hub is receiving your messages, check the message counter in the Azure IoT hub module, as shown in the following snapshot highlighted in red.
+You might need to scroll down the menu on the right hand side in purple
+![Snapshot](../images/iot-hub-10.png "IoTHub")
