@@ -1,5 +1,8 @@
 # Creating a device VM
-In this module we will create a virtual machine, simulating a device that connects to Azure IoT Hub
+In this module we will create a virtual machine, simulating a device that connects to Azure IoT Hub.
+
+The outcome if this module is creating the simulated device VM element in the intended architecture below. Added to the IoT Hub instance in the previous lab, we get the following partial architecture
+![Snapshot](../images/Lab-2.png "Azure VM")
 
 ## In the search window, look for "Virtual Machines" and press "New"
 ![Snapshot](../images/simulated-0.PNG "Azure VM")
