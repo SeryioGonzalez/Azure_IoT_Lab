@@ -23,7 +23,6 @@ Select your subscription. Create a resource group, for this project, name "icai-
 ![Snapshot](../images/iot-hub-5.PNG "Azure IoT Hub Service")
 
 #### At this state, the Azure IoT Hub module is created and ready to work. Next is to provision a device
-[Go back to the main section](../README.md )
 
 ## Create a device identity in Azure IoT hub
 Click in "IoT Devices" in the icon highlighted in read in the previous diagram. A window like the one below will show up. Click in "New", as highlighted in read in the image below
@@ -34,7 +33,7 @@ In the "Device ID" field, enter a name for your device. Select the default optio
 ![Snapshot](../images/iot-hub-6.PNG "Azure IoT Hub Service")
 
 Once created, click on the device just provisioned in order to get the device details, as highlighted in red below
-![Snapshot](../images/iot-hub-9.PNG "Azure IoT Hub Service")
+![Snapshot](../images/iot-hub-9.png "Azure IoT Hub Service")
 
 Select the primary connection string and store this information for following modules. You can obtain this information by clicking in the icon highlighted in red in the following figure.
 The connection string should be something like
@@ -43,4 +42,5 @@ HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKe
 ```
 ![Snapshot](../images/iot-hub-7.PNG "Azure IoT Hub Service")
 
-After this point, your Azure IoT Hub instance is up and running and the device identity is created. Go to the next module for continuing the lab
+After this point, your Azure IoT Hub instance is up and running and the device identity is created. Go to the next module for continuing the lab.
+[Go back to the main section](../README.md )
