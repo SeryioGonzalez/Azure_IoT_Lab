@@ -46,6 +46,10 @@ pip install azure-iot-device
 git clone https://github.com/SeryioGonzalez/azure-iot.git
 ```
 ## Send data to Azure IoT Hub using the device connection string of Module 1
-After downloading the repo, the python script for sending data to IoT Hub is located in the iot-client folder
+After downloading the repo, the python script for sending data to IoT Hub is located in the iot-client folder.
+Remember to put the connection string between quotes, otherwise the linux bash will interprete it
 
-`sergio@simulated-device:~/azure-iot$ python iot-client/iot-hub-client.py `**`HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic=`**
+`sergio@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic="`**
+
+![Snapshot](../images/simulated-10.PNG "Azure VM")
+
