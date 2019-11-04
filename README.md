@@ -20,5 +20,3 @@ In order to facilitate proper completion tracking and allowing better support fr
 ### Module 4: Routing messages to the storage account
 [Message Routing](routing/README.md)
 
-### Wrap-up questions: 
-[Message Routing](questions/README.md)
