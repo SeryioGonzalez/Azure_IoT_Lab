@@ -49,5 +49,5 @@ git clone https://github.com/SeryioGonzalez/azure-iot.git
 After downloading the repo, the python script for sending data to IoT Hub is located in the iot-client folder
 
 ```
-sergio@simulated-device:~/azure-iot$ python iot-client/iot-hub-client.py **HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic=**
+sergio@simulated-device:~/azure-iot$ python iot-client/iot-hub-client.py <pre><b>HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic=</b></pre>
 ```
