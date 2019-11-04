@@ -51,5 +51,5 @@ Remember to put the connection string between quotes, otherwise the linux bash w
 
 `sergio@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic="`**
 
-![Snapshot](../images/simulated-10.PNG "Azure VM")
+![Snapshot](../images/simulated-10.png "Azure VM")
 
