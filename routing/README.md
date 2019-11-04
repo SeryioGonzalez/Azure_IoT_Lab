@@ -27,3 +27,16 @@ Once the container has been properly selected,  the container URL will be shown 
 Once the task is completed, the **Custom endpoint** will be shown as highlighted in red in the image below:
 
 ![Snapshot](../images/routing-5.png "Storage")
+
+## Creating a Custom Endpoint of type Storage under Azure IoT Hub routes
+
+In the previous step, we declared an Azure Storage container as a potential destination for sending device messages. In this step, we are going to configure all messages to be sent to that endpoint.
+In the previous blade, select the **Routes** submenu, highlighted in red and click **+Add** for creating a route, as shown below:
+
+![Snapshot](../images/routing-6.png "Storage")
+
+The image below will display. Input a name, for example, **Route**, in the **Endpoint** dropdown, select the previously created endpoint, named **storage**. 
+
+![Snapshot](../images/routing-7.png "Storage")
+
+Note in this case all messages will go to this endpoint, since the **Routing query** is set to **True**. A very powerful query language can be input in order to route messages based on various numerous fields. Please visit the Azure IoT Hub Query Syntax [documentation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-routing-query-syntax) for further details
