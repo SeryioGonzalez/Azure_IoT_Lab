@@ -1,7 +1,7 @@
 # Creating an IoT Hub
 In this module we will create an Azure IoT Hub and configure a device
 The outcome if this module is creating the central Azure IoT Hub element in the intended architecture below
-![Snapshot](../images/Lab1-1.png "Azure IoT Hub Service")
+![Snapshot](../images/Lab-1.png "Azure IoT Hub Service")
 
 
 ## Look for the Azure IoT lab icon in the search area of the Azure portal
