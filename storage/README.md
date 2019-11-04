@@ -18,6 +18,7 @@ If the Validated message in green is displayed, press **Create**
 
 We are going to use blobs for storing sensor data. Blobs are stored in Containers. For this, we need to create a container. 
 Select **Containers** as highlighted in red in the image below and click **+ Container** as shown in purple. Name the container **sensordata** as shown in blue. Set access level to Container (see in orange).
+
 *For simplicity for this lab, considering we are not storing personal data, we can put access policy to anonymous.* *Never use anonymous access to a container hosting* **personal data** 
 
 ![Snapshot](../images/storage-5.PNG "Azure Storage")
