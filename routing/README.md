@@ -35,8 +35,28 @@ In the previous blade, select the **Routes** submenu, highlighted in red and cli
 
 ![Snapshot](../images/routing-6.png "Storage")
 
-The image below will display. Input a name, for example, **Route**, in the **Endpoint** dropdown, select the previously created endpoint, named **storage**. 
+The image below will display. Input a name, for example, **Route**, in the **Endpoint** dropdown, select the previously created endpoint, named **storage**. Select the default option **DeviceMessages**
 
 ![Snapshot](../images/routing-7.png "Storage")
 
-Note in this case all messages will go to this endpoint, since the **Routing query** is set to **True**. A very powerful query language can be input in order to route messages based on various numerous fields. Please visit the Azure IoT Hub Query Syntax [documentation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-routing-query-syntax) for further details
+Note in this case all messages will go to this endpoint, since the **Routing query** is set to **True**. A very powerful query language can be input in order to route messages based on various numerous fields. Please visit the Azure IoT Hub Query Syntax [documentation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-routing-query-syntax) for further details.
+
+Once the route is active, the following information will be shown in the screen.
+
+![Snapshot](../images/routing-8.png "Storage")
+
+## Sending messages to Azure IoT hub from the simulated device.
+
+Review module 2 in which we sent traffic to Azure IoT Hub from the simulated device.
+
+`vmuser@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic="`**
+
+Messages will not show up in the Storage instantaneously, as a default **Batch frequency** of 100 seconds, was configured while creating the Storage endpoint
+![Snapshot](../images/simulated-10.png "Azure VM")
+
+
+## Sending messages to Azure IoT hub from the simulated device.
+
+After waiting for the period in the batch frequency field, device data will be stored in the storage account. Navigate to the storage account and see the messages stored in text, as shown in the next window path.
+
+![Snapshot](../images/routing-9.png "Storage")
