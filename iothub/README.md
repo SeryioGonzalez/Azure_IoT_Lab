@@ -26,5 +26,11 @@ Select your subscription. Create a resource group, for this project, name "icai-
 [Go back to the main section](../README.md )
 
 ## Create a device identity in Azure IoT hub
-Click in "IoT Devices" in the icon highlighted in read in the previous diagram. A window like the one below will show up
+Click in "IoT Devices" in the icon highlighted in read in the previous diagram. A window like the one below will show up. 
+In the "Device ID" field, enter a name for your device. Select the default options highlighted, such as "Symmetric key" and "Auto-generate keys" 
+
 ![Snapshot](../images/iot-hub-6.PNG "Azure IoT Hub Service")
+
+Once created, click on the device just provisioned in order to get the device details. Select the primary connection string and store this information for following modules. You can obtain this information by clicking in the icon highlighted in red in the following figure.
+
+![Snapshot](../images/iot-hub-7.PNG "Azure IoT Hub Service")
