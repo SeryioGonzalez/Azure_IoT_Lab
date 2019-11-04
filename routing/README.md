@@ -20,6 +20,10 @@ In the menu displayed, click **Storage account** then add a container **+ Contai
 
 ![Snapshot](../images/routing-3.png "Storage")
 
-Once the container has been properly selected, the container URL will be shown in the following window:
+Once the container has been properly selected,  the container URL will be shown in the following window, as highlighted in blue. Click **Create** to proceed.
 
 ![Snapshot](../images/routing-4.png "Storage")
+
+Once the task is completed, the **Custom endpoint** will be shown as highlighted in red in the image below:
+
+![Snapshot](../images/routing-5.png "Storage")
