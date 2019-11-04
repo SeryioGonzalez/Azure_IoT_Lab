@@ -1,6 +1,7 @@
 # Azure IoT Hands on Lab
-Lab using Azure Services to build Azure IoT solution connecting simulated devices to Azure IoT Hub.
-In this lab, we are going to simulate a client sending telemetry to an Azure IoT Hub and store that data in a storage account
+In this lab, we  will use Azure Services for building an IoT solution connecting simulated devices to an Azure IoT Hub instance and store that data in a storage account.
+This lab is composed of several modules that need to be perfomed in sequence.
+In order to facilitate proper completion tracking and allowing better support from the instructors, please take a group name for several key resources. Your group name shall be **icaiiotgroup*X***, where ***X*** is your group number (i.e. *icaiiotgroup1, icaiiotgroup2,..,icaiiotgroupN*)
 
 ![Lab diagram](images/Lab.png "Header Image")
 
