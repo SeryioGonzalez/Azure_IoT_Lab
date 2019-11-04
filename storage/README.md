@@ -2,9 +2,9 @@
 In previous modules, we have set-up a simulated client sending traffic to an [Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/)  instance. At this point, Azure IoT Hub is not doing anything with that data, which obviously is not very useful.
 Azure IoT Hub, apart from supporting device security and management, is a message broker capable of sending those IoT device messages to other services for consuming them.
 In this lab, we will store those messages to an [Azure Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview). 
-The outcome of this lab is completing the end to end architecture proposed
+The outcome of this module, added to what has been done in the previous 2 modules is summarized in the following image
 
-![Snapshot](../images/Lab-4.png "Azure Storage")
+![Snapshot](../images/Lab-3.png "Azure Storage")
 
 
 Blob storage is a highly scalable cloud storage service, allowing massive data ingest at very low price 
