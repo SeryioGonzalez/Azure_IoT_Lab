@@ -22,3 +22,6 @@ Select **Containers** as highlighted in red in the image below and click **+ Con
 *For simplicity for this lab, considering we are not storing personal data, we can put access policy to anonymous.* *Never use anonymous access to a container hosting* **personal data** 
 
 ![Snapshot](../images/storage-5.PNG "Azure Storage")
+
+After clicking OK, this module is done. Go to the next module for continuing the lab and store sensor data in the blob
+[Go back to the main section](../README.md )
