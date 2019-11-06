@@ -29,8 +29,22 @@ Once the VM configuration is OK, the following green mark will show up, so the V
 After a few minutes, the VM should be running, as shown in the following snapshot
 ![Snapshot](../images/simulated-5.PNG "Azure VM")
 
+## Give the VM a name in the internet
+At this point, your VM has a public IP, something like 12.2.33.34. As you might think, resources in the internet are much easier to remember if you use a name. Something like www.marca.com is better than a sequence of numbers. For this, the DNS system was invented many years ago.
+On Azure VMs, we need to asign the VM public IP a name. For this, go to the resource group hosting your VM resources and select the Public IP.
+
+![Snapshot](../images/simulated-11.PNG "Azure VM")
+
+In the public IP configuration menu, assign your group ID, for example **icaiiotlabgroup1**, as shown in the image below
+
+![Snapshot](../images/simulated-12.PNG "Azure VM")
+
+At this point, your VM IP has a global name **icaiiotlabgroup1.westeurope.cloudapp.azure.com**.
+It is out of the scope of this lab, but changing that Azure specific name for something more friendly for your project or company is very easy. You just need a DNS CNAME record. A CNAME is a cannonical name, indicating something is called something different. Something like:
+**mycompanyname.com ----CNAME----> icaiiotlabgroup1.westeurope.cloudapp.azure.com**
+
 ## Get the SSH connection string
-In the previous snapshot, click "Go to resource". Select "Connect" in the following menu. A lateral blade with the connection details will show up, as shown below
+VM window, select "Connect" in the following menu. A lateral blade with the connection details will show up, as shown below
 ![Snapshot](../images/simulated-6.PNG "Azure VM")
 
 ## Connect to the VM via SSH
