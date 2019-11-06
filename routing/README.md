@@ -3,7 +3,7 @@ Azure IoT hub is intended to route messages, based on different conditions to di
 ![Snapshot](../images/message-enrichments-flow.png "Azure VM")
 
 In this lab, we will store data in the previously created storage account, which is intended for storing massive ammount of data from millions of devices.
-The outcome if this module is competing the end to end architecture presented.
+The outcome of this module is competing the end to end architecture presented.
 ![Snapshot](../images/Lab.png "Storage")
 
 ## Creating a Custom Endpoint of type Storage under Azure IoT Hub routes
