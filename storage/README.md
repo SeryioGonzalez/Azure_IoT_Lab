@@ -13,7 +13,7 @@ Blob storage is a highly scalable cloud storage service, allowing massive data i
 
 Look for **Storage Account** in the Azure Portal. Click "Add" in order to create your Storage Account. Use the resource group previously used and name the storage account **icaiiotgroupX**, where X is your group ID. Select **LRS** as Replication option. 
 
-![Snapshot](../images/storage-3.PNG "Azure Storage")
+![Snapshot](../images/storage-3.PNG?style=centerme)
 
 Once you click **Review + create**, a window similar to the one that follows will show up.
 If the Validated message in green is displayed, press **Create**
