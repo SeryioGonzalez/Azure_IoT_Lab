@@ -48,7 +48,7 @@ VM window, select "Connect" in the following menu. A lateral blade with the conn
 ![Snapshot](../images/simulated-6.PNG "Azure VM")
 
 ## Connect to the VM via SSH
-For connecting to the VM, you can use an SSH desktop client like Putty or use the [built-in bash console in the Azure portal](https://docs.microsoft.com/es-es/azure/cloud-shell/quickstart).
+For connecting to the VM, you can use an SSH desktop client like Putty or use the [built-in bash console in the Azure portal](https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart).
 When connecting to the VM, accept the VM public key by inputing "yes", as shown below
 ![Snapshot](../images/simulated-7.PNG "Azure VM")
 
