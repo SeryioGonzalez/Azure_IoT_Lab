@@ -1,24 +1,16 @@
-# Azure IoT Hands on Lab
-In this lab, we  will use Azure Services for building an IoT solution connecting simulated devices to an Azure IoT Hub instance and store that data in a storage account.
-This lab is composed of several modules that need to be perfomed in sequence.
+# Extending sensor metrics
 
-In order to facilitate proper completion tracking and allowing better support from the instructors, please take a group name for several key resources. Your group name shall be `icaiiotlabgroupX`, where ***X*** is your group number (i.e. *icaiiotgroup1, icaiiotgroup2,..,icaiiotgroupN*)
+In this module, we will extend the script sending data to the cloud for adding new measures. You will get familiar with an example script structure so you can extend it for your own project.
 
-![Lab diagram](images/Lab.png "Header Image")
+Please browse the script **iot-hub-client.py** in this repo. Explore the main method structure. See it run a sample collection method that starts the Azure IoT Hub connection and starts an infinite loop in which it collects sensor data, sends it to the cloud and repeats the look forever after a sleep period.
+In order to updating the code of the sensor, in a more professional model you should look at DevOps Continuous Deployment models. For this lab, you can connect to the VM using NotePad++ FTP plugin and adding an SFTP connection
 
-## Modules
+![Snapshot](../images/simulated-13.PNG "Azure VM")
 
-### Module 1: Creating an Azure IoT Hub
-[Azure IoT Hub](iothub/README.md)
+As an example, we added a new meassure called **blood_sugar** supposing we have a sensor we can read from.
 
-### Module 2: Creating a simulated device VM
-[Device VM](device/README.md)
+![Snapshot](../images/simulated-14.PNG "Azure VM")
 
-### Module 3: Creating a storage account
-[Storage Account](storage/README.md)
+After executing the script again, we can see the new metric being sent to the cloud.
 
-### Module 4: Routing device messages to the storage account
-[Message Routing](routing/README.md)
-
-### Module 5: Enhancing device sensor script
-[Message Routing](iot-client/README.md)
+[Snapshot](../images/simulated-15.PNG "Azure VM")
