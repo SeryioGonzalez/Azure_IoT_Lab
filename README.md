@@ -21,4 +21,4 @@ In order to facilitate proper completion tracking and allowing better support fr
 [Message Routing](routing/README.md)
 
 ### Module 5: Modify the device script for sending more data
-[Message Routing](enhance/README.md)
+[Enhance the sensor script](enhance/README.md)
