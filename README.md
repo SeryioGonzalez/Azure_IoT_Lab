@@ -20,3 +20,5 @@ In order to facilitate proper completion tracking and allowing better support fr
 ### Module 4: Routing device messages to the storage account
 [Message Routing](routing/README.md)
 
+### Module 5: Modify the device script for sending more data
+[Message Routing](enhance/README.md)
