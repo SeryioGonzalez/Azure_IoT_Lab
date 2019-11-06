@@ -13,4 +13,4 @@ As an example, we added a new meassure called **blood_sugar** supposing we have 
 
 After executing the script again, we can see the new metric being sent to the cloud.
 
-[Snapshot](../images/simulated-15.PNG "Azure VM")
+![Snapshot](../images/simulated-15.PNG "Azure VM")
