@@ -17,6 +17,6 @@ In order to facilitate proper completion tracking and allowing better support fr
 ### Module 3: Creating a storage account
 [Storage Account](storage/README.md)
 
-### Module 4: Routing messages to the storage account
+### Module 4: Routing device messages to the storage account
 [Message Routing](routing/README.md)
 
