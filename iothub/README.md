@@ -5,7 +5,7 @@ The outcome if this module is creating the central Azure IoT Hub element in the 
 ![Snapshot](../images/Lab-1.png "Azure IoT Hub Service")
 
 
-## Look for the Azure IoT lab icon in the search area of the Azure portal
+## Look for the Azure IoT Hub icon in the search area of the Azure portal
 ![Snapshot](../images/iot-hub-1.PNG "Azure IoT Hub Service")
 
 ## Create an Azure IoT Hub instance
@@ -29,7 +29,7 @@ Select your subscription. Create a resource group, for this project, name "icai-
 #### At this state, the Azure IoT Hub module is created and ready to work. Next is to provision a device
 
 ## Create a device identity in Azure IoT hub
-Click in "IoT Devices" in the icon highlighted in read in the previous diagram. A window like the one below will show up. Click in "New", as highlighted in read in the image below
+Click in "IoT Devices" in the icon highlighted in red in the previous diagram. A window like the one below will show up. Click in "New", as highlighted in red in the image below
 ![Snapshot](../images/iot-hub-8.PNG "Azure IoT Hub Service")
 
 In the "Device ID" field, enter a name for your device. Select the default options highlighted, such as "Symmetric key" and "Auto-generate keys" 
