@@ -29,5 +29,5 @@ Select **Containers** as highlighted in red in the image below and click **+ Con
 
 ![Snapshot](../images/storage-5.PNG "Azure Storage")
 
-After clicking OK, this module is done. Go to the next module for continuing the lab and store sensor data in the blob
+After clicking OK, this module is done. Go to the next module for continuing the lab and store sensor data in blobs in this storage account.
 [Go back to the main section](../README.md )
