@@ -44,7 +44,7 @@ It is out of the scope of this lab, but changing that Azure specific name for so
 **mycompanyname.com ----CNAME----> icaiiotlabgroup1.westeurope.cloudapp.azure.com**
 
 ## Get the SSH connection string
-In the previous snapshot, click "Go to resource". Select "Connect" in the following menu. A lateral blade with the connection details will show up, as shown below
+VM window, select "Connect" in the following menu. A lateral blade with the connection details will show up, as shown below
 ![Snapshot](../images/simulated-6.PNG "Azure VM")
 
 ## Connect to the VM via SSH
