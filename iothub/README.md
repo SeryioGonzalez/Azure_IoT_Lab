@@ -44,7 +44,7 @@ Once created, click on the device just provisioned in order to get the device de
 Select the primary connection string and store this information for following modules. You can obtain this information by clicking in the icon highlighted in red in the following figure.
 The connection string should be something like
 ```
-HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJit1234567890223312
+HostName=icaiiotlabgroup1.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJit1234567890223312
 ```
 ![Snapshot](../images/iot-hub-7.PNG "Azure IoT Hub Service")
 
