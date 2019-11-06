@@ -33,7 +33,7 @@ After a few minutes, the VM should be running, as shown in the following snapsho
 At this point, your VM has a public IP, something like 12.2.33.34. As you might think, resources in the internet are much easier to remember if you use a name. Something like www.marca.com is better than a sequence of numbers. 
 On Azure VMs, we need to asign the VM public IP a name. For this, go to the resource group hosting your VM resources and select the Public IP
 
-![Snapshot](../images/simulated-10.PNG "Azure VM")
+![Snapshot](../images/simulated-11.PNG "Azure VM")
 
 ## Get the SSH connection string
 In the previous snapshot, click "Go to resource". Select "Connect" in the following menu. A lateral blade with the connection details will show up, as shown below
