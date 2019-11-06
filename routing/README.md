@@ -49,7 +49,7 @@ Once the route is active, the following information will be shown in the screen.
 
 Review module 2 in which we sent traffic to Azure IoT Hub from the simulated device.
 
-`vmuser@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icailabgroup2.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic="`**
+`vmuser@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup1.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic="`**
 
 Messages will not show up in the Storage instantaneously, as a default **Batch frequency** of 100 seconds, was configured while creating the Storage endpoint
 ![Snapshot](../images/simulated-10.png "Azure VM")
