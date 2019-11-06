@@ -4,7 +4,7 @@ Azure IoT Hub, apart from supporting device security and management, is a messag
 In this module, we will create an [Azure Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview). In the next module, we will configure Azure IoT Hub for storing device messages in the storage created in this module.
 The outcome of this module, added to what has been done in the previous 2 modules is summarized in the following image
 
-![Snapshot](../images/Lab-3.png "Azure Storage")
+![Snapshot](../images/Lab-3.png?style=centerme)
 
 
 Blob storage is a highly scalable cloud storage service, allowing massive data ingest at very low price 
