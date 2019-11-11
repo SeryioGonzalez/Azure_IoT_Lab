@@ -2,26 +2,27 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "projectName": {
+    "environmentName": {
       "type": "string"
     },
     "adminUsername": {
-      "type": "string",
-      "defaultValue": "sergio"
+      "type": "string"
     },
-    "adminPublicKey": {
-      "type": "string",
-      "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKlMlDqCEYmtD3NzHTzQXcu9Oj3U+CKYCU4D+kwEN5BuKs5J9lPFA9B2MsK9MYsyXoG4Gkt3ENHyzY+dgCN3eLdyiyOAtpHKddqO+5CG3mZoTlONTSofZm2pbnCoWh8UdKlBUvD467gFbw+HcBnXXY89zhdBIkhjQELcuZc0je8XsYrw++9DEJW9GBlREE8E/RustYlF5/MsNHvIxZqKNhBocX4Cj/nUdV+aGxTMa4pEnFi8gDA8xuYK9mDA/GNFd47TMa6kd+YLlojlfzp1GGDiwDK1px1TpjjzXan/dMMFbCsL5dgpuFul34U0yOdg7iEgoAUUwTGvHQsMyIl+BJ sergio@MININT-SCP2P2V"
-    }
+    "adminUserPassword": {
+      "type": "securestring"
+	},
+	"hostnameDNS": {
+      "type": "string"
+	}
   },
   "variables": {
-    "vNetName": "[concat(parameters('projectName'), '-vnet')]",
+    "vNetName": "[concat(parameters('environmentName'), '-vnet')]",
     "vNetAddressPrefixes": "10.0.0.0/16",
     "vNetSubnetName": "default",
     "vNetSubnetAddressPrefix": "10.0.0.0/24",
-    "vmName": "[concat(parameters('projectName'), '-vm')]",
-    "publicIPAddressName": "[concat(parameters('projectName'), '-ip')]",
-    "networkInterfaceName": "[concat(parameters('projectName'), '-nic')]"
+    "vmName": "[concat(parameters('environmentName'), '-vm')]",
+    "publicIPAddressName": "[concat(parameters('environmentName'), '-ip')]",
+    "networkInterfaceName": "[concat(parameters('environmentName'), '-nic')]"
   },
   "resources": [
     {
@@ -30,7 +31,10 @@
       "name": "[variables('publicIPAddressName')]",
       "location": "[resourceGroup().location]",
       "properties": {
-        "publicIPAllocationMethod": "Dynamic"
+        "publicIPAllocationMethod": "Dynamic",
+		"dnsSettings": {
+            "domainNameLabel": "[parameters('hostnameDNS')]"
+		}
       },
       "sku": {
         "name": "Basic"
@@ -98,17 +102,7 @@
         "osProfile": {
           "computerName": "[variables('vmName')]",
           "adminUsername": "[parameters('adminUsername')]",
-          "linuxConfiguration": {
-            "disablePasswordAuthentication": true,
-            "ssh": {
-              "publicKeys": [
-                {
-                  "path": "[concat('/home/', parameters('adminUsername'), '/.ssh/authorized_keys')]",
-                  "keyData": "[parameters('adminPublicKey')]"
-                }
-              ]
-            }
-          }
+          "adminPassword": "[parameters('adminUserPassword')]"
         },
         "storageProfile": {
           "imageReference": {
@@ -129,6 +123,24 @@
           ]
         }
       }
+    },
+    {
+		"type": "Microsoft.Compute/virtualMachines/extensions",
+		"name": "[concat(variables('vmName'),'/installcustomscript')]",
+		"apiVersion": "2018-10-01",
+		"location": "[resourceGroup().location]",
+		"dependsOn": [
+			"[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+		],
+		"properties": {
+			"publisher": "Microsoft.Azure.Extensions",
+			"type": "CustomScript",
+			"typeHandlerVersion": "2.0",
+			"autoUpgradeMinorVersion": true,
+			"settings": {
+				"commandToExecute": "[concat('sudo apt-get update -y && sudo apt install -y python-pip && pip install azure-iot-device && git clone https://github.com/SeryioGonzalez/azure-iot.git /home/', parameters('adminUsername'), '/azure-iot/')]"
+			}
+		}
     }
   ]
 }
