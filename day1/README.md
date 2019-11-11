@@ -1,24 +1,8 @@
-# Azure IoT Hands on Lab
-In this lab, we  will use Azure Services for building an IoT solution connecting simulated devices to an Azure IoT Hub instance and store that data in a storage account.
-This lab is composed of several modules that need to be perfomed in sequence.
+# Creation of original resources
+In order to start with the second part of the lab, we need to create the environment. We will use an automation script and the Azure Portal CLI. For this open the CLI as highlighted in the following image.
 
-In order to facilitate proper completion tracking and allowing better support from the instructors, please take a group name for several key resources. Your group name shall be `icaiiotlabgroupX`, where ***X*** is your group number (i.e. *icaiiotgroup1, icaiiotgroup2,..,icaiiotgroupN*)
+![Lab diagram](images/summary-1.PNG "Summary")
 
-![Lab diagram](images/Lab.png "Header Image")
+Lauch the following command in order to copy the required script
 
-## Modules
-
-### Module 1: Creating an Azure IoT Hub
-[Azure IoT Hub](iothub/README.md)
-
-### Module 2: Creating a simulated device VM
-[Device VM](device/README.md)
-
-### Module 3: Creating a storage account
-[Storage Account](storage/README.md)
-
-### Module 4: Routing device messages to the storage account
-[Message Routing](routing/README.md)
-
-### Module 5: Modify the device script for sending more data
-[Enhance the sensor script](iot-client/README.md)
+``git clone https://github.com/SeryioGonzalez/azure-iot.git``
