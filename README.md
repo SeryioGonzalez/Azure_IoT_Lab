@@ -29,7 +29,7 @@ In order to facilitate proper completion tracking and allowing better support fr
 ### Module 6: Visualize sensor data
 [Visualize sensor data](visualize/README.md)
 
-### Module 7: Visualize sensor data
+### Module 7: Send email notifications
 [Send a notification after device messages](notification/README.md)
 
 ### Module 8: Manual device messaging
