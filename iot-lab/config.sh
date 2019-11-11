@@ -41,3 +41,5 @@ function log {
 	elapsed=$(expr $secondsNow - $startTime)
 	echo "LOGGING - $elapsed s. - "$1
 }
+
+az extension add --name azure-cli-iot-ext > /dev/null
