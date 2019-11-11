@@ -10,6 +10,9 @@ git clone https://github.com/SeryioGonzalez/azure-iot.git
 cd azure-iot/iot-lab
 ./create_lab.sh
 ```
-As shown below, the script will ask you for the parameters highlighted in red.
+As shown below, the script will ask you for the parameters highlighted in red. PLEASE NOTE THAT IS A SAMPLE INPUT. **USE YOUR OWN VALUES**
 
 ![Lab](../images/summary-2.PNG "Summary")
+
+Once the script has successfully finished the deployment, you can send traffic to IoT hub as explained in Module 4
+![Lab](../images/summary-3.PNG "Summary")
