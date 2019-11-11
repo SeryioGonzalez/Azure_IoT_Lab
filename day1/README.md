@@ -3,8 +3,13 @@ In order to start with the second part of the lab, we need to create the environ
 
 ![Lab](../images/summary-1.PNG "Summary")
 
-Lauch the following command in order to copy the required script
+Lauch the following command in order to copy the required script:
 
-``git clone https://github.com/SeryioGonzalez/azure-iot.git
+```
+git clone https://github.com/SeryioGonzalez/azure-iot.git
+cd azure-iot/iot-lab
+./create_lab.sh
+```
+As shown below, the script will ask you for the parameters highlighted in red.
 
-cd azure-iot/iot-lab``
+![Lab](../images/summary-2.PNG "Summary")
