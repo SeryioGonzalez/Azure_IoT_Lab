@@ -22,3 +22,6 @@ In order to facilitate proper completion tracking and allowing better support fr
 
 ### Module 5: Modify the device script for sending more data
 [Enhance the sensor script](iot-client/README.md)
+
+### QUICK DEPLOY PREVIOUS MODULES
+[Deploy previous modules](day1/README.md)
