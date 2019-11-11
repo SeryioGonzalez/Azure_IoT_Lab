@@ -1,19 +1,43 @@
-#Environment
-subscription="87984371-c3e0-4cfb-b9ce-b167b780b2ed"
-
-environmentName="iot-icai-lab"
 region="westeurope"
+environmentName="icai-lab-iot"
 
 #Resource Groups
-clientResourceGroup=$environmentName"-client-rg"
-IoThubResourceGroup=$environmentName"-iot-hub-rg"
+resourceGroup=$environmentName"-rg"
+
+#Read Group Number
+read -p " Please enter your group number: " groupNumber
+if [ ${#groupNumber} -eq 1 ]
+then 
+	groupNumber="0"$groupNumber
+fi
+[[ $groupNumber =~ ^[0-9]{2}$ ]] || echo "ERROR: Your group number must go from 1 to 99"
+
+#Read user name
+read -p " Please enter your VM user name: " vmUser
+[[ $vmUser"jjj" = "jjj" ]] && echo "ERROR: Specify your VM user name"
+
+#Read user password
+echo "  Password must have 12 characters, a capital letter, small letters, numbers and special characters"
+read -p " Please enter your VM user password: " vmUserPassword
+python password-checker.py $vmUserPassword
+
+startTime=$(date +%s )
+
+clientEnvironment=$environmentName"-client"
+
+#groupId
+groupId="icaiiotlabgroup"$groupNumber
 
 #IoT Hub
-IoTHubName=$environmentName"-iot-hub"
-messageStorageAccountName=$(echo $subscription | cut -c1-8)"messages"
 messageStorageContainerName="messagedata"
 messageIoTHubRoutingEndpoint="messageStorageEndpoint"
 messageIoTHubRouteName="messageStorageRoute"
 
 #IoT device
 deviceId="sensor"
+
+function log {
+	secondsNow=$(date +%s )
+	elapsed=$(expr $secondsNow - $startTime)
+	echo "LOGGING - $elapsed s. - "$1
+}
