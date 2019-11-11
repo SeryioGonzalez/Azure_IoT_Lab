@@ -25,3 +25,15 @@ In order to facilitate proper completion tracking and allowing better support fr
 
 ### QUICK DEPLOY PREVIOUS MODULES
 [Deploy previous modules](day1/README.md)
+
+### Module 6: Visualize sensor data
+[Visualize sensor data](visualize/README.md)
+
+### Module 7: Visualize sensor data
+[Send a notification after device messages](notification/README.md)
+
+### Module 8: Manual device messaging
+[Send a message to the device](messages/README.md)
+
+### Module 9: Integrate a serverless APP
+[Integrate serverless APPs](serverless/README.md)
