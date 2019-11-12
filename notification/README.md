@@ -93,7 +93,7 @@ Copy and paste the following sample JSON.
 
 ![Add an Action](../images/notification_07_Add_new_Action.png)
 
-**Choose Mail**
+**Choose Gmail**
 
 ![Choose Mail](../images/notification_08_Choose_Mail.png)
 
