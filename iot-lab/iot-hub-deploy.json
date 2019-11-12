@@ -20,7 +20,7 @@
             "name": "[parameters('iot-hub-name')]",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "F1",
+                "name": "S1",
                 "tier": "Free",
                 "capacity": 1
             },
