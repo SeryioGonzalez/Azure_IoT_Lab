@@ -12,13 +12,16 @@ In this lab you will learn
 
 ## Create Time Series Insights
 
-Select **Time Series Insights** in the resource explorer search box of the Azure portal
+Select **Time Series Insights** in the resource explorer search box of the Azure portal.
+Select your group nickname **icaiiotlabgroupX** as resource name. Place the resource in the lab resource group, so later deletion is easier and select the region to **West Europe**.
 
 ![Create Time Series Insights](../images/visualize-20.PNG)
 
+In the next blade, give a sample name **iot-hub** to the IoT Hub integration resource.
+Select **Source Type** to **IoT Hub** and **Select existing** in the **Select a hub** option. Select your previously created Azure IoT Hub instance.
+Additionally, select **IoT Hub access policy name** to **iothubowner**.
 
-
-
+![Create Time Series Insights](../images/visualize-21.PNG)
 
 
 
