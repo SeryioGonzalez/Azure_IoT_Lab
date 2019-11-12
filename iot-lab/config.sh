@@ -1,7 +1,4 @@
 
-subscriptionId="ca3d18ab-d373-4afb-a5d6-7c44f098d16a"
-az account set --subscription $subscriptionId
-
 region="westeurope"
 environmentName="icai-lab-iot"
 

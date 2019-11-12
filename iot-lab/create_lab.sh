@@ -31,6 +31,8 @@ az group deployment create --no-wait --resource-group $resourceGroup --name "cli
 log "Waiting for IoT Hub creation completion"
 az group deployment wait --resource-group $resourceGroup --name "iot-hub" --created
 
+sleep 5
+
 log "Creating IoT device"	
 az iot hub device-identity create --device-id $deviceId --hub-name $groupId > /dev/null
 
