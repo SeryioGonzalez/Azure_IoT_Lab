@@ -21,7 +21,6 @@
             "location": "[resourceGroup().location]",
             "sku": {
                 "name": "S1",
-                "tier": "Free",
                 "capacity": 1
             },
             "properties": {
