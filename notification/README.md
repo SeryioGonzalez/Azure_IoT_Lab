@@ -109,9 +109,9 @@ You can compose an email in the following window, using dynamic parameters, obta
 
 ![Create Resource](../images/email-6.PNG)
 
-A result equivalent to the following image should be obtained. Note in this example, the email icon is another one.
+A result equivalent to the following image should be obtained. 
 
-![Provide Sample Payload](../images/notification_11_Send_Email.png)
+![Provide Sample Payload](../images/email-7.PNG)
 
 ## Copy Request URL
 
