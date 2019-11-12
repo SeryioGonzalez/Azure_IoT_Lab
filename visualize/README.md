@@ -24,59 +24,11 @@ Additionally, select **IoT Hub access policy name** to **iothubowner** and **IoT
 ![Create Time Series Insights](../images/visualize-21.PNG)
 
 
-
-
-Click on **Create a Resource** and click on **Internet of Things**
-
-![Create Time Series Insights](../images/visualize_20.png)
-
-Click on **Time Series Insights**
-
-![Create Time Series Insights](../images/visualize_tsi.png)
-
-Select the resource group you previously created and click **Create** button
-
-![Create Time Series Insights Submit](../images/visualize_02_Create_Time_Series_Inisghts_Submit.png)
-
-### Create Event Source
-
-Create Event Source to connect to IoTHub. Please make sure you use a unique Consumer Group. Time Series Insights has a requirement to have its own unique consumer group
-
-![Create Event Source](../images/visualize_03_Create_Event_Source.png)
-
-Select the appropriate consumer group and click Create button
-
-![Create Event Source Submit](../images/visualize_04_Create_Event_Source_Submit.png)
-
-### Setup Time Series Insights
-
-Go To Time Series Insights, Click on Go To Environment which will take you to Time Series Insights Explorer
-
-If you get Data Access Policy Error execute the following steps
-
-![Data Access Policy Error](../images/visualize_16_data_access_poliy_error.png)
-
-Go To Environment Topology and 
-
-![Select Data Access Policy](../images/visualize_15_data_access_policy.png)
-
-Click on Add Button
-
-![Add User and Role](../images/visualize_17_add_user_role.png)
-
-Select Contributor Role
-
-![Select Contributor Role](../images/visualize_18_select_controbutor_role.png)
-
-Select User
-
-![Select User](../images/visualize_19_select_user.png)
-
 ### Time Series Insights Explorer
 
 Go To Time Series Insights Explorer
 
-![Visualize Data](../images/visualize_05_GoTo_TSI_Explorer.png)
+![Create Time Series Insights](../images/visualize-24.PNG)
 
 Split By ID. You will see data flowing from two devices. MXChip and Pi Simulator. 
 
