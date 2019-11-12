@@ -36,7 +36,7 @@ Navigate to the Azure IoT Hub instance created in previous modules. As you did i
 Once the Route has been created, it will be shown as in the following image.
 ![Create Time Series Insights](../images/visualize-23.PNG)
 
-### Time Series Insights Explorer
+## Time Series Insights Explorer
 
 Once this route has been created, you can go to the Azure Time Series Insights Explorer (AzTSIE). In the AzTSIE click in **Go to Environment** in the following image in order to see the explorer portal.
 
@@ -47,25 +47,12 @@ The AzTSIE allows correlating and visualazing data. For this, supposing you have
 ![Create Time Series Insights](../images/visualize-27.PNG)
 
 In purple in the left hand side, we can select which metrics we want to monitor. In the simulated device, we configure 2 metrics, **heart_rate** and **temperature**. We can add N additiona metrics by clicking the **Add**, right above the purple highlight square.
-We can explore in detail the value of a given metric, by clicking **Explore Events**, as highlighted in brown below.
+We can explore in detail the value of a given metric, by clicking **Explore Events**, as highlighted in brown above.
 
 
+## Additional capabilities Time Series Insights Explorer
 
-
-
-
-
-
-
-
-
-
-
-
-
------------------
-
-
+Examples are not related to this very experiment.
 
 Create a perspective by clicking on the image shown below
 
@@ -75,7 +62,7 @@ Click **+** to add a new query
 
 ![Visualize Data](../images/visualize_10_visual10.png)
 
-Select Temperature and split by Device ID and click on perspective image.
+Select an additional visual.
 
 ![Visualize Data](../images/visualize_11_visual11.png)
 
@@ -98,3 +85,6 @@ Click on Heatmap
 View data in a table
 
 ![Visualize Data](../images/visualize_table.png)
+
+Go to the next module for continuing the lab.
+[Go back to the main section](../README.md )
