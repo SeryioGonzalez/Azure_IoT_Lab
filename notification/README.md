@@ -83,23 +83,23 @@ Provide a Sample Payload
 
 ## Setup Notification by Sending Email 
 
-Click on New Step
+**Click on New Step**
 
 ![New Step](../images/notification_06_New_Step.png)
 
-Add an action
+**Add an action**
 
 ![Add an Action](../images/notification_07_Add_new_Action.png)
 
-Choose Mail
+**Choose Mail**
 
 ![Choose Mail](../images/notification_08_Choose_Mail.png)
 
-Finish Mail Actions
+**Finish Mail Actions**
 
 ![Finish Mail Actions](../images/notification_09_send_email.png)
 
-Sign in to email
+**Sign in to email**
 
 ![Sign in to email](../images/notification_10_signin_to_email.png)
 
