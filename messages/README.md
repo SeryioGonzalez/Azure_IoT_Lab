@@ -13,7 +13,7 @@ A new script has been added to the repo to be loaded in the simulated device.
 As shown, below, we have run the following script in the simulated device:
 
 ```
-*your_user*@icai-lab-iot-client-vm:~$ python azure-iot/iot-client/iot-hub-client-message.py "**your_device_connection_string**"
+python azure-iot/iot-client/iot-hub-client-message.py "YOUR_DEVICE_CONNECTION_STRING_NOT_THIS_TEXT_PLACEHOLDER"
 ```
 We have composed the message shown below, where we have set the message body to a plain string **stop_engine_2**, as shown in purple. Additionally, we have added a custom property **action** equals **modify_engine**.
 Click in **Send Message** as shown in green. The message should be pointed out in the client connection window as highlighted in orange.
