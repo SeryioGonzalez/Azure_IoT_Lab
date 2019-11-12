@@ -38,7 +38,7 @@ az iot hub device-identity create --device-id $deviceId --hub-name $groupId > /d
 log "Device Connection String"
 az iot hub device-identity show-connection-string --device-id $deviceId --hub-name $groupId -o tsv
 
-CLIENT_PUBLIC_IP=$(az network public-ip list -g $resourceGroup --query "[0].ipAddress" -o tsv)
+CLIENT_HOSTNAME=$(az network public-ip list -g $resourceGroup --query "[0].dnsSettings.fqdn" -o tsv)
 CLIENT_USERNAME=$(az vm show -g $resourceGroup -n $clientEnvironment"-vm" --query "osProfile.adminUsername" -o tsv)
 log "Connect to client in: "
-echo "ssh -o 'StrictHostKeyChecking no' $CLIENT_USERNAME@$CLIENT_PUBLIC_IP"
+echo "ssh -o 'StrictHostKeyChecking no' $CLIENT_USERNAME@$CLIENT_HOSTNAME"
