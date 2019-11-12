@@ -14,7 +14,7 @@ In this lab you will learn
 
 Select **Time Series Insights** in the resource explorer search box of the Azure portal
 
-![Create Time Series Insights](../images/visualize_20.png)
+![Create Time Series Insights](../images/visualize-20.PNG)
 
 
 
