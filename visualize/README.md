@@ -46,7 +46,8 @@ The AzTSIE allows correlating and visualazing data. For this, supposing you have
 
 ![Create Time Series Insights](../images/visualize-27.PNG)
 
-
+In purple in the left hand side, we can select which metrics we want to monitor. In the simulated device, we configure 2 metrics, **heart_rate** and **temperature**. We can add N additiona metrics by clicking the **Add**, right above the purple highlight square.
+We can explore in detail the value of a given metric, by clicking **Explore Events**, as highlighted in brown below.
 
 
 
@@ -64,17 +65,7 @@ The AzTSIE allows correlating and visualazing data. For this, supposing you have
 
 -----------------
 
-Split By ID. You will see data flowing from two devices. MXChip and Pi Simulator. 
 
-![Visualize Data](../images/visualize_06_Visual1.png)
-
-Select humidity and Split By ID. You will see data flowing from two devices. MXChip and Pi Simulator.
-
-![Visualize Data](../images/visualize_07_Visual2.png)
-
-Right Click to Explore events. You can download events in CSV and JSON format by clicking on **CSV or JSON** buttons
-
-![Visualize Data](../images/visualize_08_Visual3.png)
 
 Create a perspective by clicking on the image shown below
 
