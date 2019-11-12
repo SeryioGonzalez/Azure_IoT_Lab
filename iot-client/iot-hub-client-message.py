@@ -16,7 +16,7 @@ AUX_MAXIMUM_BODY_TEMPERATURE = 40.0
 #SENSOR DATA WILL HOST SENSOR METRICS
 sensor_data = {}
 
-#MESSAGE FOR RECEIVING DATA FROM IoT HUB
+#MESSAGE FOR RECEIVING DATA FROM IoT HUB. THIS METHOD WILL BE CALLED BY THE RECEPTION THREAD
 def message_listener(client):
     while True:
         message = client.receive_message()
@@ -54,6 +54,7 @@ def iothub_client_telemetry_sample_run():
         print ( "IoT Hub Message receiver" )
         print ( "Press Ctrl-C to exit" )
         
+	#ENABLE THE RECEPTION THREAD, DEFINING THE TARGET METHOD
         message_listener_thread = threading.Thread(target=message_listener, args=(client,))
         message_listener_thread.daemon = True
         message_listener_thread.start()
