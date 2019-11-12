@@ -24,11 +24,12 @@ Using **Logic App Designer**, Create **Blanck Logic App**
 
 ![Create App](../images/notification_03_Logic_App_designer.png)
 
-**Select HTTP Request**
+**Select HTTP Request** under the Request category
 
 ![Select HTTP Request](../images/notification_04_Http_Request.png)
 
-Azure Logic Apps is able to build the notification schema if provided with an exemplary JSON structure. For this, select **USe sample payload to generate schema** and paste the content in the JSON snippet below.
+Azure Logic Apps is able to build the notification schema if provided with an exemplary JSON structure. 
+For this, select **Use sample payload to generate schema** and paste the content in the JSON snippet below.
 
 ![Provide Sample Payload](../images/notification_05_Sample_Payload.png)
 
