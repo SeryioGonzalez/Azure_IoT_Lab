@@ -103,7 +103,7 @@ Sign in to Gmail
 ## Create Email template ##
 In the **Add new parameter** area, select Subject and Body, as shown below.
 
-![Create email template](../images/notification_11_Send_Email.png)
+![Create Resource](../images/email-5.PNG)
 
 ## Copy Request URL
 
