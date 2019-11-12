@@ -28,6 +28,9 @@ Select HTTP Request
 
 ![Select HTTP Request](../images/notification_04_Http_Request.png)
 
+Azure Logic Apps is able to build the notification schema if provided with an exemplary JSON structur. For this, create 
+![Provide Sample Payload](../images/notification_05_Sample_Payload.png)
+
 Provide a Sample Payload
 
 ```code
@@ -77,7 +80,7 @@ Provide a Sample Payload
 }]
 ```
 
-![Provide Sample Payload](../images/notification_05_Sample_Payload.png)
+
 
 ## Setup Notification by Sending Email 
 
