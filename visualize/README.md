@@ -29,13 +29,16 @@ Additionally, select **IoT Hub access policy name** to **iothubowner** and **IoT
 
 ## Enable a Route in Azure IoT Hub to Events Built-in Endpoint
 
-As you did in [module 4](https://github.com/SeryioGonzalez/azure-iot/blob/master/routing/README.md) of this lab with Azure Storage, we need to enable an extra Route to the built-in **events** endpoint, as shown in the following image.
+Navigate to the Azure IoT Hub instance created in previous modules. As you did in [module 4](https://github.com/SeryioGonzalez/azure-iot/blob/master/routing/README.md) of this lab with Azure Storage, we need to enable an extra Route to the built-in **events** endpoint, as shown in the following image.
 
 ![Create Time Series Insights](../images/visualize-22.PNG)
 
+Once the Route has been created, it will be shown as in the following image.
+![Create Time Series Insights](../images/visualize-23.PNG)
+
 ### Time Series Insights Explorer
 
-Go To Time Series Insights Explorer
+Once this route has been created, you can go to the Azure Time Series Insights Explorer (AzTSIE). In the AzTSIE click in **Go to Environment** in the following image in order to see the explorer portal.
 
 ![Create Time Series Insights](../images/visualize-24.PNG)
 
