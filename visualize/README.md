@@ -1,6 +1,6 @@
 # Visualize Time Series Data with Azure Time Series Insights
 
-![Time Series Insights](images/visualize_timeseriesinsights.jpg)
+![Time Series Insights](../images/visualize_timeseriesinsights.jpg)
 
 ## Create Time Series Insights
 
@@ -22,25 +22,25 @@ In this lab you will learn
 
 Click on **Create a Resource** and click on **Internet of Things**
 
-![Create Time Series Insights](images/visualize_01_Create_Time_Series_Insights.png)
+![Create Time Series Insights](../images/visualize_01_Create_Time_Series_Insights.png)
 
 Click on **Time Series Insights**
 
-![Create Time Series Insights](images/visualize_tsi.png)
+![Create Time Series Insights](../images/visualize_tsi.png)
 
 Select the resource group you previously created and click **Create** button
 
-![Create Time Series Insights Submit](images/visualize_02_Create_Time_Series_Inisghts_Submit.png)
+![Create Time Series Insights Submit](../images/visualize_02_Create_Time_Series_Inisghts_Submit.png)
 
 ### Create Event Source
 
 Create Event Source to connect to IoTHub. Please make sure you use a unique Consumer Group. Time Series Insights has a requirement to have its own unique consumer group
 
-![Create Event Source](images/visualize_03_Create_Event_Source.png)
+![Create Event Source](../images/visualize_03_Create_Event_Source.png)
 
 Select the appropriate consumer group and click Create button
 
-![Create Event Source Submit](images/visualize_04_Create_Event_Source_Submit.png)
+![Create Event Source Submit](../images/visualize_04_Create_Event_Source_Submit.png)
 
 ### Setup Time Series Insights
 
@@ -48,70 +48,70 @@ Go To Time Series Insights, Click on Go To Environment which will take you to Ti
 
 If you get Data Access Policy Error execute the following steps
 
-![Data Access Policy Error](images/visualize_16_data_access_poliy_error.png)
+![Data Access Policy Error](../images/visualize_16_data_access_poliy_error.png)
 
 Go To Environment Topology and 
 
-![Select Data Access Policy](images/visualize_15_data_access_policy.png)
+![Select Data Access Policy](../images/visualize_15_data_access_policy.png)
 
 Click on Add Button
 
-![Add User and Role](images/visualize_17_add_user_role.png)
+![Add User and Role](../images/visualize_17_add_user_role.png)
 
 Select Contributor Role
 
-![Select Contributor Role](images/visualize_18_select_controbutor_role.png)
+![Select Contributor Role](../images/visualize_18_select_controbutor_role.png)
 
 Select User
 
-![Select User](images/visualize_19_select_user.png)
+![Select User](../images/visualize_19_select_user.png)
 
 ### Time Series Insights Explorer
 
 Go To Time Series Insights Explorer
 
-![Visualize Data](images/visualize_05_GoTo_TSI_Explorer.png)
+![Visualize Data](../images/visualize_05_GoTo_TSI_Explorer.png)
 
 Split By ID. You will see data flowing from two devices. MXChip and Pi Simulator. 
 
-![Visualize Data](images/visualize_06_Visual1.png)
+![Visualize Data](../images/visualize_06_Visual1.png)
 
 Select humidity and Split By ID. You will see data flowing from two devices. MXChip and Pi Simulator.
 
-![Visualize Data](images/visualize_07_Visual2.png)
+![Visualize Data](../images/visualize_07_Visual2.png)
 
 Right Click to Explore events. You can download events in CSV and JSON format by clicking on **CSV or JSON** buttons
 
-![Visualize Data](images/visualize_08_Visual3.png)
+![Visualize Data](../images/visualize_08_Visual3.png)
 
 Create a perspective by clicking on the image shown below
 
-![Visualize Data](images/visualize_perspective.png)
+![Visualize Data](../images/visualize_perspective.png)
 
 Click **+** to add a new query
 
-![Visualize Data](images/visualize_10_visual10.png)
+![Visualize Data](../images/visualize_10_visual10.png)
 
 Select Temperature and split by Device ID and click on perspective image.
 
-![Visualize Data](images/visualize_11_visual11.png)
+![Visualize Data](../images/visualize_11_visual11.png)
 
 Create a chart by selecting a timeframe with drag feature
 
-![Visualize Data](images/visualize_12_Visual12.png)
+![Visualize Data](../images/visualize_12_Visual12.png)
 
 Create a Chart by adding a predicate
 
-![Visualize Data](images/visualize_predicate.png)
+![Visualize Data](../images/visualize_predicate.png)
 
 Perspective with 4 different charts and also changed Title
 
-![Visualize Data](images/visualize_14_Visual_dashboard.png)
+![Visualize Data](../images/visualize_14_Visual_dashboard.png)
 
 Click on Heatmap
 
-![Visualize Data](images/visualize_heatmap.png)
+![Visualize Data](../images/visualize_heatmap.png)
 
 View data in a table
 
-![Visualize Data](images/visualize_table.png)
+![Visualize Data](../images/visualize_table.png)
