@@ -94,6 +94,7 @@ Copy and paste the following sample JSON.
 ![Add an Action](../images/notification_07_Add_new_Action.png)
 
 **Choose Gmail**
+Select the action **Send email**.
 
 ![Choose Mail](../images/notification_08_Choose_Mail.png)
 
