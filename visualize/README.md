@@ -23,10 +23,11 @@ Additionally, select **IoT Hub access policy name** to **iothubowner** and **IoT
 
 ![Create Time Series Insights](../images/visualize-21.PNG)
 
-You might not see data in Time Series Insights Explorer, since by it connects by default the built-in endpoint in Azur IoT Hub. Once we added a route in the previous lab for sending the sensor data to an storage, the built-in endpoint gets disable
+You might not see data in Time Series Insights Explorer, since by it connects by default the built-in endpoint in Azur IoT Hub. Once we added a route in the previous lab for sending the sensor data to an storage, the built-in endpoint gets disabled, as you can read in the following link.
 
 [Routing behaviour with built-in endpoint in Azure IoT Hub](https://docs.microsoft.com/es-es/azure/iot-hub/iot-hub-devguide-messages-d2c#built-in-endpoint)
 
+## Enable a Route in Azure IoT Hub to Events Built-in Endpoint
 
 ### Time Series Insights Explorer
 
