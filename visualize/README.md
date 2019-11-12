@@ -42,6 +42,28 @@ Once this route has been created, you can go to the Azure Time Series Insights E
 
 ![Create Time Series Insights](../images/visualize-24.PNG)
 
+The AzTSIE allows correlating and visualazing data. For this, supposing you have sent traffic from the simulated device to Azure IoT Hub, implement a diagram like the one shown below.
+
+![Create Time Series Insights](../images/visualize-27.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------
+
 Split By ID. You will see data flowing from two devices. MXChip and Pi Simulator. 
 
 ![Visualize Data](../images/visualize_06_Visual1.png)
