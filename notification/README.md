@@ -20,10 +20,6 @@ Select **Logic Apps** from the Azure resource explorer and click **Add**
 
 ![Create Resource](../images/email-1.PNG)
 
-Use existing resource group created in previous steps and press Create
-
-![Create Logic App](../images/notification_02_Create_LogicApp_Submit.png)
-
 Using Logic App Designer, Create New App
 
 ![Create App](../images/notification_03_Logic_App_designer.png)
