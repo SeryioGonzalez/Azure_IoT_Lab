@@ -113,44 +113,30 @@ A result equivalent to the following image should be obtained.
 
 ![Provide Sample Payload](../images/email-7.PNG)
 
+Click **Save**
+
 ## Copy Request URL
 
+Once saved, click in the upper green box and copy the HTTP URL
 ![Copy Request URL](../images/notification_12_eventurl.png)
 
-## Integrate With IoTHub
+## Integrate With IoT Hub
 
-Integrate Logic App with IoTHub via Event Grid
+Integrate Logic App with IoT Hub via the **Events** option in IoT Hub Menu, and click **Event Subscription**.
 
-![Imported Script](../images/notification_13_IoTHub_EventHub.png "Integrated with IoTHub")
+![Add Device](../images/eventhub-21.PNG)
 
-Click on Event Subscription
-
-![Integrated with IoTHub](../images/notification_14_empty_event_subscription.png "")
-
-Copy the URL from previous steps into Subscriber Endpoint and click create
-
-![Integrated with IoTHub](../images/notification_15_device_events.png)
+In this example, select **Filter to Event Types** to **Device Created** and add the HTTP URL obtained from Logic App creation in the step above.
+![Add Device](../images/eventhub-10.PNG)
 
 ## Add Device and Test Notification
 
-Go To IoTHub -> IoT Devices (Device Management) -> Add
+Go To IoTHub -> IoT Devices -> Add
 
-![Add Device](../images/notification_16_add_device.png)
-
-Click Save button to create a new device
-
-![Add Device](../images/notification_17_add_device.png)
-
+Add a device in IoT Hub as in previous modules.
 You Should get an email notification
 
-![Email Notification](../images/notification_18_email_generated.png)
+![Add Device](../images/eventhub-11.PNG)
 
-## Delete Device and Test Notification
-
-Go To IoTHub -> IoT Devices (Device Management) -> Select Device you created in previous step -> Delete
-
-![Delete Device](../images/notification_19_delete_device.png)
-
-You Should get an email notification
-
-![Email Notification](../images/notification_20_email_generated.png)
+If you have received an email as above, go to the next module.account.
+[Go back to the main section](../README.md )
