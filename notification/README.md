@@ -93,20 +93,17 @@ Copy and paste the following sample JSON.
 
 ![Add an Action](../images/notification_07_Add_new_Action.png)
 
-**Choose Gmail**
+Choose **Gmail**
 Select the action **Send email**.
 
 ![Choose Mail](../images/notification_08_Choose_Mail.png)
 
-**Finish Mail Actions**
-
-![Finish Mail Actions](../images/notification_09_send_email.png)
-
-**Sign in to email**
+Sign in to Gmail
 
 ![Sign in to email](../images/notification_10_signin_to_email.png)
 
-Create Email template
+## Create Email template ##
+In the "Add new parameter** area, select 
 
 ![Create email template](../images/notification_11_Send_Email.png)
 
