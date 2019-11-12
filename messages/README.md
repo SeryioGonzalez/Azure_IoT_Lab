@@ -19,3 +19,8 @@ We have composed the message shown below, where we have set the message body to 
 Click in **Send Message** as shown in green. The message should be pointed out in the client connection window as highlighted in orange.
 
 ![IoT Message](../images/message-4.PNG)
+
+### Review the script receiving messages
+
+Take a look at the python [script](https://github.com/SeryioGonzalez/azure-iot/blob/master/iot-client/iot-hub-client-message.py) and analyze how bidirectional message communication works.
+Note IoT hub will send whatever you indicate it to send. It is up to the device software knowing how to react to those messages. You need to define your own **Hub to Device messaging API** in this way.
