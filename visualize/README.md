@@ -19,7 +19,7 @@ Select your group nickname **icaiiotlabgroupX** as resource name. Place the reso
 
 In the next blade, give a sample name **iot-hub** to the IoT Hub integration resource.
 Select **Source Type** to **IoT Hub** and **Select existing** in the **Select a hub** option. Select your previously created Azure IoT Hub instance.
-Additionally, select **IoT Hub access policy name** to **iothubowner**.
+Additionally, select **IoT Hub access policy name** to **iothubowner** and **IoT Hub consumer group** to **$Default**.
 
 ![Create Time Series Insights](../images/visualize-21.PNG)
 
