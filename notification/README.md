@@ -1,6 +1,6 @@
 # React to Critical Device Lifecycle Events and Trigger Actions
 
-![Header Image](images/eventgrid.jpg)
+![Header Image](../images/notification_eventgrid.jpg)
 
 Azure IoT Hub integrates with Azure Event Grid so that you can send event notifications to other services and trigger downstream processes. Configure your business applications to listen for IoT Hub events so that you can react to critical events in a reliable, scalable, and secure manner. For example, build an application to perform multiple actions like updating a database, creating a ticket, and delivering an email notification every time a new IoT device is registered to your IoT hub.
 
@@ -18,27 +18,27 @@ Create a Logic App to be able to send email notifications
 
 Click on **Create a resource**
 
-![Create Resource](images/create_resource.png)
+![Create Resource](../images/notification_create_resource.png)
 
 Click on **Enterprise Integration**
 
-![Enterprise Integration](images/enterprise_integration.png)
+![Enterprise Integration](../images/notification_enterprise_integration.png)
 
 Click on **Logic Apps**
 
-![Create Logic App](images/logic_app.png)
+![Create Logic App](../images/notification_logic_app.png)
 
 Use existing resource group created in previous steps and press Create
 
-![Create Logic App](images/02_Create_LogicApp_Submit.png)
+![Create Logic App](../images/notification_02_Create_LogicApp_Submit.png)
 
 Using Logic App Designer, Create New App
 
-![Create App](images/03_Logic_App_designer.png)
+![Create App](../images/notification_03_Logic_App_designer.png)
 
 Select HTTP Request
 
-![Select HTTP Request](images/04_Http_Request.png)
+![Select HTTP Request](../images/notification_04_Http_Request.png)
 
 Provide a Sample Payload
 
@@ -89,72 +89,72 @@ Provide a Sample Payload
 }]
 ```
 
-![Provide Sample Payload](images/05_Sample_Payload.png)
+![Provide Sample Payload](../images/notification_05_Sample_Payload.png)
 
 ## Setup Notification by Sending Email 
 
 Click on New Step
 
-![New Step](images/06_New_Step.png)
+![New Step](../images/notification_06_New_Step.png)
 
 Add an action
 
-![Add an Action](images/07_Add_new_Action.png)
+![Add an Action](../images/notification_07_Add_new_Action.png)
 
 Choose Mail
 
-![Choose Mail](images/08_Choose_Mail.png)
+![Choose Mail](../images/notification_08_Choose_Mail.png)
 
 Finish Mail Actions
 
-![Finish Mail Actions](images/09_send_email.png)
+![Finish Mail Actions](../images/notification_09_send_email.png)
 
 Sign in to email
 
-![Sign in to email](images/10_signin_to_email.png)
+![Sign in to email](../images/notification_10_signin_to_email.png)
 
 Create Email template
 
-![Create email template](images/11_Send_Email.png)
+![Create email template](../images/notification_11_Send_Email.png)
 
 ## Copy Request URL
 
-![Copy Request URL](images/12_eventurl.png)
+![Copy Request URL](../images/notification_12_eventurl.png)
 
 ## Integrate With IoTHub
 
 Integrate Logic App with IoTHub via Event Grid
 
-![Imported Script](images/13_IoTHub_EventHub.png "Integrated with IoTHub")
+![Imported Script](../images/notification_13_IoTHub_EventHub.png "Integrated with IoTHub")
 
 Click on Event Subscription
 
-![Integrated with IoTHub](images/14_empty_event_subscription.png "")
+![Integrated with IoTHub](../images/notification_14_empty_event_subscription.png "")
 
 Copy the URL from previous steps into Subscriber Endpoint and click create
 
-![Integrated with IoTHub](images/15_device_events.png)
+![Integrated with IoTHub](../images/notification_15_device_events.png)
 
 ## Add Device and Test Notification
 
 Go To IoTHub -> IoT Devices (Device Management) -> Add
 
-![Add Device](images/16_add_device.png)
+![Add Device](../images/notification_16_add_device.png)
 
 Click Save button to create a new device
 
-![Add Device](images/17_add_device.png)
+![Add Device](../images/notification_17_add_device.png)
 
 You Should get an email notification
 
-![Email Notification](images/18_email_generated.png)
+![Email Notification](../images/notification_18_email_generated.png)
 
 ## Delete Device and Test Notification
 
 Go To IoTHub -> IoT Devices (Device Management) -> Select Device you created in previous step -> Delete
 
-![Delete Device](images/19_delete_device.png)
+![Delete Device](../images/notification_19_delete_device.png)
 
 You Should get an email notification
 
-![Email Notification](images/20_email_generated.png)
+![Email Notification](../images/notification_20_email_generated.png)
