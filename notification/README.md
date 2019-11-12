@@ -18,7 +18,7 @@ Create a Logic App to be able to send email notifications
 
 Click on **Create a resource**
 
-![Create Resource](../images/notification_create_resource.png)
+![Create Resource](../images/email-1.PNG)
 
 Click on **Enterprise Integration**
 
