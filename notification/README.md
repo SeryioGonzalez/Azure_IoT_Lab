@@ -105,6 +105,10 @@ In the **Add new parameter** area, select Subject and Body, as shown below.
 
 ![Create Resource](../images/email-5.PNG)
 
+You can compose an email in the following window, using dynamic parameters, obtained from the received IoT event.
+
+![Create Resource](../images/email-6.PNG)
+
 ## Copy Request URL
 
 ![Copy Request URL](../images/notification_12_eventurl.png)
