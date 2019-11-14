@@ -34,6 +34,7 @@ In order to facilitate proper completion tracking and allowing better support fr
 
 ### Module 8: Send email notifications
 [Send a notification after device messages](notification/README.md)
-
+<!---
 ### Module 9: Integrate APPs with IoT Hub
 [Integrate APPs with IoT Hub](client-messages/README.md)
+--->
