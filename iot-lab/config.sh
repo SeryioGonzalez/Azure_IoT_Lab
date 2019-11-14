@@ -1,6 +1,6 @@
 
 region="westeurope"
-environmentName="icai-lab-iot"
+environmentName="icai-lab-iiot"
 
 #Resource Groups
 resourceGroup=$environmentName"-rg"
