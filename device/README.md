@@ -95,7 +95,7 @@ In order to see if Azure IoT Hub is receiving your messages, check the message c
 You might need to scroll down the menu on the right hand side in purple. 
 You can see, IoT Hub has received 3 messages.
 
-![Snapshot](../images/iot-hub-10.png "IoTHub")
+![Snapshot](../images/iot-hub-10.PNG "IoTHub")
 
 At this point, this module is done. Go to the next module for continuing the lab and do something useful with this data
 [Go back to the main section](../README.md )
