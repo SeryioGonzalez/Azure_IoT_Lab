@@ -1,3 +1,4 @@
+#!/bin/bash 
 
 region="westeurope"
 environmentName="icai-iot-lab"
@@ -7,20 +8,22 @@ resourceGroup=$environmentName
 
 #Read Group Number
 read -p " Please enter your group number, (Example == 02h):  " groupNumber
-if [ ${#groupNumber} -eq 1 ]
-then 
-	groupNumber="0"$groupNumber
-fi
-[[ $groupNumber =~ ^[0-9]{2}[ch]$ ]] || echo "ERROR: Your group number must go from 1 to 99. Put c or h if you are at class or at home" && exit
 
-#Read user name
-read -p " Please enter your VM user name: " vmUser
-[[ $vmUser"jjj" = "jjj" ]] && echo "ERROR: Specify your VM user name"
+groupNumber=$(python3 group-checker.py $groupNumber)
+
+if [ $? -ne 0 ]
+then 
+	echo 'ERROR: Your group number must use double digits and c if you are at class and h if you are at home, example 01c'
+	exit
+fi
+
+#Read user 
+read -p " Please enter your VM user: " vmUser
 
 #Read user password
 echo "  Password must have 12 characters, a capital letter, small letters, numbers and special characters"
 read -p " Please enter your VM user password: " vmUserPassword
-python password-checker.py $vmUserPassword
+python3 password-checker.py $vmUserPassword
 
 startTime=$(date +%s )
 
@@ -43,4 +46,4 @@ function log {
 	echo "LOGGING - $elapsed s. - "$1
 }
 
-az extension add --name azure-cli-iot-ext > /dev/null
+az extension add --name azure-iot > /dev/null
