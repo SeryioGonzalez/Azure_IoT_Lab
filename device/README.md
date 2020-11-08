@@ -47,7 +47,7 @@ For this, go to the **Resource Group** hosting your VM resources and select the 
 
 ![Snapshot](../images/simulated-11.PNG "Azure VM")
 
-In the public IP configuration menu, assign your group ID, for example **icaiiotlabgroup1**, as shown in the image below
+In the **Public IP Address**, under the **Configuration** blade, assign your group ID, for example **icaiiotlabgroup01a**, as shown in the image below
 
 ![Snapshot](../images/simulated-12.PNG "Azure VM")
 
