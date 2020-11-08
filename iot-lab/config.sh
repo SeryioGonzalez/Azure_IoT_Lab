@@ -6,7 +6,7 @@ environmentName="icai-iot-lab"
 resourceGroup=$environmentName
 
 #Read Group Number
-read -p " Please enter your group number Ex: 02h " groupNumber
+read -p " Please enter your group number, Example == 02h :" groupNumber
 if [ ${#groupNumber} -eq 1 ]
 then 
 	groupNumber="0"$groupNumber
