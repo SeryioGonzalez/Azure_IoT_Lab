@@ -51,8 +51,9 @@ In the **Public IP Address**, under the **Configuration** blade, assign your gro
 
 ![Snapshot](../images/simulated-12.PNG "Azure VM")
 
-At this point, your VM IP has a global name **icaiiotlabgroup1.westeurope.cloudapp.azure.com**.
-It is out of the scope of this lab, but changing that Azure specific name for something more friendly for your project or company is very easy. You just need a DNS CNAME record. A CNAME is a cannonical name, indicating something is called something different. Something like:
+At this point, your VM IP has a global name **icaiiotlabgroup01a.westeurope.cloudapp.azure.com**.
+It is out of the scope of this lab, but changing that Azure specific name for something more friendly for your project or company is very easy. <br/>
+You just need a DNS CNAME record. A CNAME is a cannonical name, indicating something is called something different. Something like:
 **mycompanyname.com ----CNAME----> icaiiotlabgroup1.westeurope.cloudapp.azure.com**
 
 ## Get the SSH connection string
