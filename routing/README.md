@@ -67,3 +67,7 @@ Messages will not show up in the Storage instantaneously, as a default **Batch f
 After waiting for the period in the batch frequency field, device data will be stored in the storage account. Navigate to the storage account and see the messages stored in text, as shown in the next window path.
 
 ![Snapshot](../images/routing-9.png "Storage")
+
+
+At this point, this module is done. Go to the next module for continuing the lab and do something useful with this data
+[Go back to the main section](../README.md )
