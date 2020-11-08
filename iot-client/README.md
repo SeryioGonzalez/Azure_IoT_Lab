@@ -21,3 +21,5 @@ As explained in the previous module, navigate to the storage container and see t
 
 ![Snapshot](../images/routing-9.png "Storage")
 
+At this point, this module is done. Go to the next module for continuing the lab and do something useful with this data
+[Go back to the main section](../README.md )
