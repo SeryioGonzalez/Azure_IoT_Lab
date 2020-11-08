@@ -22,8 +22,11 @@ The outcome of this module is creating the simulated device VM element in the in
   9. Leave other default options and click **Next: Disks >**
  10. Leave default options and click **Next: Networking >**
  
-## Remove network security rules
-In order to facilitate Azure IoT hub communications, we are going to disable Network Security Groups. For this, in the Networking tab, select "Nic network security group" to "None", as shown in the following image
+## Configure networking
+11. In the **Networking** tab, make sure:
+    * **NIC network security group** is set to **Basic**
+    * **Public inbound ports** is set to **Allow selected ports**
+    * **Select inbound ports** is set to **SSH (22)**
 
 ![Snapshot](../images/simulated-3.PNG "Azure VM")
 
