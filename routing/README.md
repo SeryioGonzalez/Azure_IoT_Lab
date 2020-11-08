@@ -30,7 +30,7 @@ First we need to declare the previously created storage endpoint.
 
 Once the task is completed, the **Custom endpoint** will be shown as highlighted in red in the image below:
 
-![Snapshot](../images/routing-5.png "Storage")
+![Snapshot](../images/routing-5.PNG "Storage")
 
 ## Creating a Custom Endpoint of type Storage under Azure IoT Hub routes
 
