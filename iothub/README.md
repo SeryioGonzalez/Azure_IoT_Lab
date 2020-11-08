@@ -11,9 +11,9 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 ## Create an Azure IoT Hub instance
 
 #### Parameterize Azure IoT Hub instance resource
-1. Select your subscription <br/> 
-2. Create a resource group, for this project, name **icai-iot-lab** <br/>
-3. Select region **West Europe** <br/>
+1. Select your **Subscription** <br/> 
+2. Create a **Resource Group**, for this project, name **icai-iot-lab** <br/>
+3. Under **Region**, select **West Europe** <br/>
 4. Name the Azure IoT Hub instance  "icaiiotlabgroup*XY*" <br/>
    * X is your group number <br/>
    * Y is a or b, where:
