@@ -43,7 +43,7 @@ After a few minutes, the VM should be running, as shown in the following snapsho
 
 ## Give the VM a name in the internet
 At this point, your VM has a public IP, something like 12.2.33.34. We will assign it a **DNS name** <br/>
-For this, go to the **Resource Group** hosting your VM resources and select the **Public IP**.
+For this, go to the **Resource Group** hosting your VM resources and select the **Public IP Address**.
 
 ![Snapshot](../images/simulated-11.PNG "Azure VM")
 
