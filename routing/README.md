@@ -14,7 +14,9 @@ First we need to declare the previously created storage endpoint.
 
 ![Snapshot](../images/routing-1.png "Storage")
 
-Name the endpoint **storage** (internal name) as shown in red. Select **Encoding** in JSON for better human readability. Then click **Pick a Container** (Storage Container) created in the previous module, as shown below in blue.
+3. Name the endpoint **storage** (internal name) as shown in red. 
+4. 
+4. Select **Encoding** in JSON for better human readability. Then click **Pick a Container** (Storage Container) created in the previous module, as shown below in blue.
 
 ![Snapshot](../images/routing-2.png "Storage")
 
