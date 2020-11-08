@@ -19,7 +19,7 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
    * Y is a or b, where:
       * c == working at class <br/>
       * h == working from home  <br/>
-   * Example, group 01 working from home: **icaiiotlabgroup*01c*** <br/>
+   * Example, group 01 working from home: **icaiiotlabgroup*01h*** <br/>
 ![Snapshot](../images/iot-hub-0.PNG "Azure IoT Hub Service")
 
 5. Click in **Next: Networking >** and leave default options <br/> 
