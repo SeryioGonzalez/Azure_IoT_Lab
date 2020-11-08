@@ -1,17 +1,17 @@
 
 region="westeurope"
-environmentName="icai-lab-iiot"
+environmentName="icai-iot-lab"
 
 #Resource Groups
-resourceGroup=$environmentName"-rg"
+resourceGroup=$environmentName
 
 #Read Group Number
-read -p " Please enter your group number: " groupNumber
+read -p " Please enter your group number Ex(02h): " groupNumber
 if [ ${#groupNumber} -eq 1 ]
 then 
 	groupNumber="0"$groupNumber
 fi
-[[ $groupNumber =~ ^[0-9]{2}$ ]] || echo "ERROR: Your group number must go from 1 to 99"
+[[ $groupNumber =~ ^[0-9]{2}[ch]$ ]] || echo "ERROR: Your group number must go from 1 to 99. Put c or h if you are at class or at home" && exit
 
 #Read user name
 read -p " Please enter your VM user name: " vmUser
