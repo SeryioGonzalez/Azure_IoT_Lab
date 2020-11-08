@@ -26,8 +26,8 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 7. In the following diagram, remember to select "Free tier"
 ![Snapshot](../images/iot-hub-2.PNG "Azure IoT Hub Service")
 
-8. Select **Review + create**. 
-9. After successful validation, click "Create" and wait for a few minutes for the creation process to complete
+8. Select **Review + create** at the botton left highlighted in blue
+9. After successful validation, click **Create** and wait for a few minutes for the creation process to complete
 ![Snapshot](../images/iot-hub-3.PNG "Azure IoT Hub Service")
 
 #### Once the creation process has completed, the following window will show up
