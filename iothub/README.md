@@ -59,7 +59,7 @@ Select the default options highlighted, such as **Symmetric key** and **Auto-gen
 5. Select the **Primary Connection String** and store this information for following modules. You can obtain this information by clicking in the icon highlighted in red in the following figure.
 The connection string should be something like
 ```
-HostName=icaiiotlabgroup01b.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=yZaVeryLongKeyWithManyNumbers
+HostName=icaiiotlabgroup01h.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=yZaVeryLongKeyWithManyNumbers
 ```
 ![Snapshot](../images/iot-hub-7.PNG "Azure IoT Hub Service")
 
