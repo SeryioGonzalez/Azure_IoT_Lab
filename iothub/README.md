@@ -37,9 +37,9 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 
 ![Snapshot](../images/iot-hub-5.PNG "Azure IoT Hub Service")
 
-#### At this state, the Azure IoT Hub module is created and ready to work. Next is to provision a device
+ At this state, the Azure IoT Hub module is created and ready to work. Next is to provision a device
 
-## Create a device identity in Azure IoT hub
+# Create a device identity in Azure IoT hub
 Click in "IoT Devices" in the icon highlighted in red in the previous diagram. A window like the one below will show up. Click in "New", as highlighted in red in the image below.
 
 ![Snapshot](../images/iot-hub-8.PNG "Azure IoT Hub Service")
