@@ -41,7 +41,8 @@ In this step, we are going to configure all messages to be sent to that endpoint
 
 ![Snapshot](../images/routing-6.png "Storage")
 
-The image below will display. Input a name, for example, **Route**, in the **Endpoint** dropdown, select the previously created endpoint, named **storage**. Select the default option **DeviceMessages**
+The image below will display. 
+9. Input a name, for example, **route**, in the **Endpoint** dropdown, select the previously created endpoint, named **storage** and make sure the field **Enable route** is set to **Enable**
 
 ![Snapshot](../images/routing-7.png "Storage")
 
