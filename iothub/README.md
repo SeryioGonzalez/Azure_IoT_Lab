@@ -11,16 +11,17 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 ## Create an Azure IoT Hub instance
 
 #### Parameterize Azure IoT Hub instance parameters
-1. Select your subscription.<br/> 
-2. Create a resource group, for this project, name **icai-iot-lab**. <br/>
-3. Select region **West Europe**. <br/>
-4. Name the Azure IoT Hub instance  "icaiiotlabgroup*XY*"<br/>
-   * X is your group number<br/>
-   * Y is a or b, where a == working at class, b == working from home. <br/>
-   * Example, group 01 working from home: **icaiiotlabgroup*01b***.<br/>
+1. Select your subscription <br/> 
+2. Create a resource group, for this project, name **icai-iot-lab** <br/>
+3. Select region **West Europe** <br/>
+4. Name the Azure IoT Hub instance  "icaiiotlabgroup*XY*" <br/>
+   * X is your group number <br/>
+   * Y is a or b, where a == working at class, b == working from home <br/>
+   * Example, group 01 working from home: **icaiiotlabgroup*01b*** <br/>
 ![Snapshot](../images/iot-hub-0.PNG "Azure IoT Hub Service")
 
-5. Click in **Next: Netwroking >** and again in **Next: Size and scale >** in order to set the proper service tier.<br/>
+5. Click in **Next: Networking >** and leave default options <br/> 
+6. Click in **Next: Size and scale >** in order to set the proper service tier.<br/>
 
 #### In the following diagram, remember to select "Free tier", which allows for 8000 free messages per day
 ![Snapshot](../images/iot-hub-2.PNG "Azure IoT Hub Service")
