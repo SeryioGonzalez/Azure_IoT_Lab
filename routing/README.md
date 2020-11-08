@@ -15,12 +15,12 @@ First we need to declare the previously created storage endpoint.
 ![Snapshot](../images/routing-1.png "Storage")
 
 3. Name the endpoint **storage** (internal name) as shown in red. 
-4. 
-4. Select **Encoding** in JSON for better human readability. Then click **Pick a Container** (Storage Container) created in the previous module, as shown below in blue.
+4. Select **Encoding** in JSON for better human readability. 
+5. Click **Pick a Container** (Storage Container) created in the previous module, as shown below in blue.
 
 ![Snapshot](../images/routing-2.png "Storage")
 
-In the menu displayed, click **Storage account** then add a container **+ Container** and **Select** the previously created container, as shown below:
+5. In the menu displayed, click **Storage account** then add a container **+ Container** and **Select** the previously created container, as shown below:
 
 ![Snapshot](../images/routing-3.png "Storage")
 
