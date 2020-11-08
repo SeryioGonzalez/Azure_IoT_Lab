@@ -26,7 +26,7 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 #### In the following diagram, remember to select "Free tier", which allows for 8000 free messages per day
 ![Snapshot](../images/iot-hub-2.PNG "Azure IoT Hub Service")
 
-#### Select "review + create". Upon successful validation, click "Create" and wait for a few minutes for the creation process to complete
+#### Select **Review + create**. Upon successful validation, click "Create" and wait for a few minutes for the creation process to complete
 ![Snapshot](../images/iot-hub-3.PNG "Azure IoT Hub Service")
 
 #### Once the creation process has completed, the following window will show up
