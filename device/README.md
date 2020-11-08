@@ -16,7 +16,8 @@ The outcome of this module is creating the simulated device VM element in the in
   6. Select the VM **Size** B1s, the one included in the free tier.
   7. Select **Authentication type** the value **Password**. Optionally, if you are familiar with public/private keys and already have one, select **SSH public key**
   8. Put your **Username** and **Password**. If you had selected **SSH public key**, input your public key by selecting in **SSH public key source** the value **SSH public key**
-  9. Leave other default options
+  9. Leave other default options and click **Next: Disks >**
+ 10. Leave default options and click **Next: Networking >**
 
 ![Snapshot](../images/simulated-1.PNG "Azure VM")
 
