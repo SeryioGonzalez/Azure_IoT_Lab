@@ -54,8 +54,13 @@ In the **Public IP Address**, under the **Configuration** blade, assign your gro
 At this point, your VM IP has a global name **icaiiotlabgroup01a.westeurope.cloudapp.azure.com**.<br/>
 
 ## Get the SSH connection string
-VM window, select **Connect** in the following menu. A lateral blade with the connection details will show up, as shown below
+In the VM **Overview** blade, select **Connect** in the following menu. 
 ![Snapshot](../images/simulated-6.PNG "Azure VM")
+
+A menu like the one below will show up:
+![Snapshot](../images/simulated-16.PNG "Azure VM")
+Select the ssh command and remove the **-i <private key path>** placeholder if you selected password authentication.
+Use the resulting command in the **Cloud Shell** in the top right corner of the brower page.
 
 ## Connect to the VM via SSH
 For connecting to the VM, you can use an SSH desktop client like Putty or use the [built-in bash console in the Azure portal](https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart).
