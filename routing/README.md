@@ -24,7 +24,7 @@ First we need to declare the previously created storage endpoint.
 
 ![Snapshot](../images/routing-3.png "Storage")
 
-Once the container has been properly selected,  the container URL will be shown in the following window, as highlighted in blue. Click **Create** to proceed.
+6. Once the container has been properly selected,  the container URL will be shown in the following window, as highlighted in blue. Click **Create** to proceed.
 
 ![Snapshot](../images/routing-4.png "Storage")
 
