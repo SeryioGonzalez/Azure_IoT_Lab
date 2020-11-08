@@ -55,7 +55,7 @@ At this point, your VM IP has a global name **icaiiotlabgroup01h.westeurope.clou
 
 ## Get the SSH connection string
 In the VM **Overview** blade, select **Connect** in the following menu. 
-![Snapshot](../images/simulated-6.PNG "Azure VM")
+![Snapshot](../images/simulated-6.png "Azure VM")
 
 A menu like the one below will show up:
 ![Snapshot](../images/simulated-16.PNG "Azure VM")
