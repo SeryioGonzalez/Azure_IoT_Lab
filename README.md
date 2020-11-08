@@ -3,7 +3,10 @@ In this lab, we  will use Azure Services for building an IoT solution connecting
 This lab is composed of several modules that need to be perfomed in sequence.
 
 In order to facilitate proper completion tracking and allowing better support from the instructors, please take a group name for several key resources. <br/>
-Your group name shall be `icaiiotlabgroupXY`, where ***X*** is your group number and ***Y*** is **c** or **h**, whether you are at class or at home (i.e. *icaiiotgroup01c, icaiiotgroup02h,..,icaiiotgroup18c*)
+Your group name shall be `icaiiotlabgroupXY`, where:
+* **X** is your group number in double digit 
+* **Y** is **c** or **h**, whether you are at class or at home 
+* Example: *icaiiotgroup01c, icaiiotgroup02h,..,icaiiotgroup18c*
 
 ![Lab diagram](images/Lab.png "Header Image")
 
