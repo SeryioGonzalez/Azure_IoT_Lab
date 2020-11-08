@@ -29,8 +29,8 @@ def get_sensor_heart_rate():
 	
 def aux_validate_connection_string():
     if not AUX_CONNECTION_STRING.startswith( 'HostName=' ):
-        print "ERROR  - YOUR IoT HUB CONNECTION STRING IS NOT VALID"
-        print "FORMAT - HostName=your_iot_hub_name.azure-devices.net;DeviceId=your_device_name;SharedAccessKey=your_shared_access_key"
+        print ("ERROR  - YOUR IoT HUB CONNECTION STRING IS NOT VALID")
+        print ("FORMAT - HostName=your_iot_hub_name.azure-devices.net;DeviceId=your_device_name;SharedAccessKey=your_shared_access_key")
         sys.exit()
 
 def aux_iothub_client_init():
