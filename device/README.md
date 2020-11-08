@@ -47,11 +47,11 @@ For this, go to the **Resource Group** hosting your VM resources and select the 
 
 ![Snapshot](../images/simulated-11.PNG "Azure VM")
 
-In the **Public IP Address**, under the **Configuration** blade, assign your group ID, for example **icaiiotlabgroup01a**, as shown in the image below
+In the **Public IP Address**, under the **Configuration** blade, assign your group ID, for example **icaiiotlabgroup01h**, as shown in the image below
 
 ![Snapshot](../images/simulated-12.PNG "Azure VM")
 
-At this point, your VM IP has a global name **icaiiotlabgroup01a.westeurope.cloudapp.azure.com**.<br/>
+At this point, your VM IP has a global name **icaiiotlabgroup01h.westeurope.cloudapp.azure.com**.<br/>
 
 ## Get the SSH connection string
 In the VM **Overview** blade, select **Connect** in the following menu. 
@@ -61,7 +61,7 @@ A menu like the one below will show up:
 ![Snapshot](../images/simulated-16.PNG "Azure VM")
 Select the ssh command and remove the ** -i &nbsp;<private key path&nbsp;> ** placeholder if you selected password authentication. <br/>
 The SSH command will be something like: <br/>
-```ssh  sergio@icaiiotlabgroup01a.westeurope.cloudapp.azure.com``` <br/>
+```ssh  sergio@icaiiotlabgroup01h.westeurope.cloudapp.azure.com``` <br/>
 
 ## Connect to the VM via SSH
 For connecting to the VM, you can use an SSH desktop client like Putty or use the [built-in bash console in the Azure portal](https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart).
@@ -84,7 +84,7 @@ After downloading the repo, the python script for sending data to IoT Hub is loc
 **Do not copy past the following command, it is an example. Change your connection string of your device you got in the previous module**.
 Remember to put the connection string between quotes, otherwise the linux bash will interprete it
 
-`sergio@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup01a.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7YouShouldNotCopyThisButPutYourValue"`**
+`sergio@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup01h.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7YouShouldNotCopyThisButPutYourValue"`**
 
 ![Snapshot](../images/simulated-10.png "Azure VM")
 
