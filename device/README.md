@@ -62,7 +62,6 @@ A menu like the one below will show up:
 Select the ssh command and remove the ** -i &nbsp;<private key path&nbsp;> ** placeholder if you selected password authentication. <br/>
 The SSH command will be something like: <br/>
 ```ssh  sergio@icaiiotlabgroup01a.westeurope.cloudapp.azure.com``` <br/>
-Use the resulting command in the **Cloud Shell** in the top right corner of the brower page.
 
 ## Connect to the VM via SSH
 For connecting to the VM, you can use an SSH desktop client like Putty or use the [built-in bash console in the Azure portal](https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart).
@@ -84,7 +83,7 @@ git clone https://github.com/SeryioGonzalez/azure-iot.git
 After downloading the repo, the python script for sending data to IoT Hub is located in the iot-client folder.
 Remember to put the connection string between quotes, otherwise the linux bash will interprete it
 
-`sergio@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup1.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic="`**
+`sergio@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup01a.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7YouShouldNotCopyThisButPutYourValue"`**
 
 ![Snapshot](../images/simulated-10.png "Azure VM")
 
