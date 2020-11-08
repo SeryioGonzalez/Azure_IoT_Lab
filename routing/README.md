@@ -20,11 +20,11 @@ First we need to declare the previously created storage endpoint.
 
 ![Snapshot](../images/routing-2.PNG "Storage")
 
-5. In the menu displayed, click **Storage account** then add a container **+ Container** and **Select** the previously created container, as shown below:
+6. In the menu displayed, click **Storage account** then add a container **+ Container** and **Select** the previously created container, as shown below:
 
 ![Snapshot](../images/routing-3.PNG "Storage")
 
-6. Once the container has been properly selected,  the container URL will be shown in the following window, as highlighted in blue. Click **Create** to proceed.
+7. Once the container has been properly selected,  the container URL will be shown in the following window, as highlighted in blue. Click **Create** to proceed.
 
 ![Snapshot](../images/routing-4.png "Storage")
 
@@ -34,8 +34,10 @@ Once the task is completed, the **Custom endpoint** will be shown as highlighted
 
 ## Creating a Custom Endpoint of type Storage under Azure IoT Hub routes
 
-In the previous step, we declared an Azure Storage container as a potential destination for sending device messages. In this step, we are going to configure all messages to be sent to that endpoint.
-In the previous blade, select the **Routes** submenu, highlighted in red and click **+Add** for creating a route, as shown below:
+In the previous step, we declared an Azure Storage container as a potential destination for sending device messages, but did nothing with it yet. <br/> 
+In this step, we are going to configure all messages to be sent to that endpoint.<br/> 
+
+8. In the previous blade, select the **Routes** submenu, highlighted in red and click **+Add** for creating a route, as shown below:
 
 ![Snapshot](../images/routing-6.png "Storage")
 
