@@ -22,7 +22,7 @@ First we need to declare the previously created storage endpoint.
 
 5. In the menu displayed, click **Storage account** then add a container **+ Container** and **Select** the previously created container, as shown below:
 
-![Snapshot](../images/routing-3.png "Storage")
+![Snapshot](../images/routing-3.PNG "Storage")
 
 6. Once the container has been properly selected,  the container URL will be shown in the following window, as highlighted in blue. Click **Create** to proceed.
 
