@@ -8,7 +8,9 @@ The outcome of this module is competing the end to end architecture presented.
 
 ## Creating a Custom Endpoint of type Storage under Azure IoT Hub routes
 
-First we need to declare the previously created storage endpoint. Select **Message routing** (red), **Custom endpoints** (blue). Click **Add** (green) and select **Storage**, as shown in the diagram below.
+First we need to declare the previously created storage endpoint. 
+1. Go to the IoT Hub instance created in module 1
+2. Select **Message routing** (red), **Custom endpoints** (blue). Click **Add** (green) and select **Storage**, as shown in the diagram below.
 
 ![Snapshot](../images/routing-1.png "Storage")
 
