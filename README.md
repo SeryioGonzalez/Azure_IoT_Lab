@@ -18,6 +18,9 @@ Your group name shall be `icaiiotlabgroupXY`, where:
 ### Module 2: Creating a simulated device VM
 [Device VM](device/README.md)
 
+### QUICK DEPLOY PREVIOUS MODULES
+[Deploy previous modules](day0/README.md)
+
 ### Module 3: Creating a storage account
 [Storage Account](storage/README.md)
 
