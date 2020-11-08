@@ -18,9 +18,9 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
    * X is your group number<br/>
    * Y is a or b, where a == working at class, b == working from home. <br/>
    * Example, group 01 working from home: **icaiiotlabgroup*01b***.<br/>
-   
-5. Click in **Next: Size and scale>** in order to set the proper service tier.<br/>
 ![Snapshot](../images/iot-hub-0.PNG "Azure IoT Hub Service")
+
+5. Click in **Next: Netwroking >** and again in **Next: Size and scale >** in order to set the proper service tier.<br/>
 
 #### In the following diagram, remember to select "Free tier", which allows for 8000 free messages per day
 ![Snapshot](../images/iot-hub-2.PNG "Azure IoT Hub Service")
