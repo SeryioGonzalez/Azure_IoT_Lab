@@ -17,8 +17,8 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 4. Name the Azure IoT Hub instance  "icaiiotlabgroup*XY*" <br/>
    * X is your group number <br/>
    * Y is a or b, where:
-    * a == working at class <br/>
-    * b == working from home  <br/>
+      * a == working at class <br/>
+      * b == working from home  <br/>
    * Example, group 01 working from home: **icaiiotlabgroup*01b*** <br/>
 ![Snapshot](../images/iot-hub-0.PNG "Azure IoT Hub Service")
 
