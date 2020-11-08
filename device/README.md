@@ -33,7 +33,8 @@ The outcome of this module is creating the simulated device VM element in the in
 ![Snapshot](../images/simulated-3.PNG "Azure VM")
 
 ## Validate the VM configuration before creation
-Once the VM configuration is OK, the following green mark will show up, so the VM creation can be triggered. Click "Create" if you see "Validation passed". It not, verify any missing parameters"
+Once the VM configuration is OK, the following green mark will show up, so the VM creation can be triggered. 
+Click **Create** if you see **Validation passed**. It not, verify any missing parameters
 ![Snapshot](../images/simulated-4.PNG "Azure VM")
 
 ## VM is already created
