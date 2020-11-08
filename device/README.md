@@ -59,8 +59,9 @@ In the VM **Overview** blade, select **Connect** in the following menu.
 
 A menu like the one below will show up:
 ![Snapshot](../images/simulated-16.PNG "Azure VM")
-Select the ssh command and remove the ** -i <private key path> ** placeholder if you selected password authentication. Such as the command will be something like:
-```ssh  sergio@icaiiotlabgroup01a.westeurope.cloudapp.azure.com```
+Select the ssh command and remove the ** -i &nbsp;<private key path&nbsp;> ** placeholder if you selected password authentication. <br/>
+The SSH command will be something like:
+```ssh  sergio@icaiiotlabgroup01a.westeurope.cloudapp.azure.com``` <br/>
 Use the resulting command in the **Cloud Shell** in the top right corner of the brower page.
 
 ## Connect to the VM via SSH
