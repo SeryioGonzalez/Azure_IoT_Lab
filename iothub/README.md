@@ -33,7 +33,7 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 10. Once the creation process has completed, the following window will show up
 ![Snapshot](../images/iot-hub-4.PNG "Azure IoT Hub Service")
 
-11. Press **Go to Resource"** in the previous image and a window like the following will show up
+11. Press **Go to Resource** in the previous image and a window like the following will show up
 
 ![Snapshot](../images/iot-hub-5.PNG "Azure IoT Hub Service")
 
