@@ -46,7 +46,7 @@ Click in **IoT Devices** in the icon highlighted in red in the previous diagram.
 
 ![Snapshot](../images/iot-hub-8.PNG "Azure IoT Hub Service")
 
-In the **evice ID** field, enter a name for your device. Select the default options highlighted, such as "Symmetric key" and "Auto-generate keys" 
+In the **Device ID** field, enter a name for your device. Select the default options highlighted, such as "Symmetric key" and "Auto-generate keys" 
 
 ![Snapshot](../images/iot-hub-6.PNG "Azure IoT Hub Service")
 
