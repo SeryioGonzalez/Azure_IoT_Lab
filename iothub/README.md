@@ -30,10 +30,10 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 9. After successful validation, click **Create** and wait for a few minutes for the creation process to complete
 ![Snapshot](../images/iot-hub-3.PNG "Azure IoT Hub Service")
 
-#### Once the creation process has completed, the following window will show up
+10. Once the creation process has completed, the following window will show up
 ![Snapshot](../images/iot-hub-4.PNG "Azure IoT Hub Service")
 
-#### Press "Go to Resource" in the previous image and a window like the following will show up
+11. Press **Go to Resource"** in the previous image and a window like the following will show up
 
 ![Snapshot](../images/iot-hub-5.PNG "Azure IoT Hub Service")
 
