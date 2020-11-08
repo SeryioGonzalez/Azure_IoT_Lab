@@ -44,7 +44,7 @@ In this step, we are going to configure all messages to be sent to that endpoint
 The image below will display. 
 9. Input a name, for example, **route**, in the **Endpoint** dropdown, select the previously created endpoint, named **storage** and make sure the field **Enable route** is set to **Enable**
 
-![Snapshot](../images/routing-7.png "Storage")
+![Snapshot](../images/routing-7.PNG "Storage")
 
 Note in this case all messages will go to this endpoint, since the **Routing query** is set to **True**. A very powerful query language can be input in order to route messages based on various numerous fields. Please visit the Azure IoT Hub Query Syntax [documentation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-routing-query-syntax) for further details.
 
