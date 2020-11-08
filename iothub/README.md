@@ -1,4 +1,4 @@
-# Creating an IoT Hub
+# Creating an IoT Hub and a simulated device
 In this module we will create an Azure IoT Hub and configure a device.
 
 The outcome of this module is creating the central Azure IoT Hub element in the intended architecture below
