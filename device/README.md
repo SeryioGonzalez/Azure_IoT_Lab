@@ -42,8 +42,8 @@ After a few minutes, the VM should be running, as shown in the following snapsho
 ![Snapshot](../images/simulated-5.PNG "Azure VM")
 
 ## Give the VM a name in the internet
-At this point, your VM has a public IP, something like 12.2.33.34. As you might think, resources in the internet are much easier to remember if you use a name. Something like www.marca.com is better than a sequence of numbers. For this, the DNS system was invented many years ago.
-On Azure VMs, we need to asign the VM public IP a name. For this, go to the resource group hosting your VM resources and select the Public IP.
+At this point, your VM has a public IP, something like 12.2.33.34. We will assign it a **DNS name**
+For this, go to the **Resource Group** hosting your VM resources and select the **Public IP**.
 
 ![Snapshot](../images/simulated-11.PNG "Azure VM")
 
