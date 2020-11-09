@@ -20,12 +20,18 @@ In this lab you will learn
 6. In the field **Property name** input **connectionDeviceId**
 7. Create a **Storage Account** using your group nickname and **tsi** at the end
 8. Disable **Data Lake Storage Gen2** and **Warm store**
+9. Configure **Event Source**
 
 ![Create Time Series Insights](../images/visualize-20.PNG)
 
-In the next blade, give a sample name **iot-hub** to the IoT Hub integration resource.
-Select **Source Type** to **IoT Hub** and **Select existing** in the **Select a hub** option. Select your previously created Azure IoT Hub instance.
-Additionally, select **IoT Hub access policy name** to **iothubowner** and **IoT Hub consumer group** to **$Default**.
+In the next blade, we are going to integrate the existing Azure IoT Hub: 
+1. In **Create and event Source?** select **Yes**
+2. Select **Source Type** to **IoT Hub** 
+3. Give a sample name **iot-hub** 
+4. Select your **Subscription** and your existing **IoT Hub name** 
+5. Select **IoT Hub access policy name** to **iothubowner** 
+6. Select **IoT Hub consumer group** to **$Default**.
+7. Click **Create**
 
 ![Create Time Series Insights](../images/visualize-21.PNG)
 
