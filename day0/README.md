@@ -14,7 +14,7 @@ As shown below, the script will ask you for the parameters highlighted in red. P
 
 ![Lab](../images/summary-5.PNG "Summary")
 
-Once the script has successfully finished the deployment, you can send traffic to IoT hub as explained in Module 4
+Once the script has successfully finished the deployment, you can send traffic to IoT hub as explained in Module 2
 ![Lab](../images/summary-6.PNG "Summary")
 
 At this point, this module is done. Go to the next module for continuing the lab.
