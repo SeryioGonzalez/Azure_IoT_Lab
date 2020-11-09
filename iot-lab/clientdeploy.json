@@ -138,7 +138,7 @@
 			"typeHandlerVersion": "2.0",
 			"autoUpgradeMinorVersion": true,
 			"settings": {
-				"commandToExecute": "[concat('sudo apt-get update -y && sudo apt-get install -y python3-pip && pip3 install azure-iot-device ; git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git /home/', parameters('adminUsername'), '/Azure_IoT_Lab/')]"
+				"commandToExecute": "[concat('sudo apt-get update -y && sudo apt-get install -y python3-pip && pip3 install azure-iot-device ; git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git /home/', parameters('adminUsername'), '/Azure_IoT_Lab/', ' ; chown -R ', parameters('adminUsername'), ':', parameters('adminUsername'), ' /home/', parameters('adminUsername'), '/Azure_IoT_Lab/'  )]"
 			}
 		}
     }
