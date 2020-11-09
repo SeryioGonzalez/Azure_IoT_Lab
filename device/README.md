@@ -28,9 +28,9 @@ The outcome of this module is creating the simulated device VM element in the in
     * **Public inbound ports** is set to **Allow selected ports**
     * **Select inbound ports** is set to **SSH (22)**
 
-12. Click in **Review + create** in the bottom left corner 
-
 ![Snapshot](../images/simulated-3.PNG "Azure VM")
+
+12. Click in **Review + create** in the bottom left corner 
 
 ## Validate the VM configuration before creation
 Once the VM configuration is OK, the following green mark will show up, so the VM creation can be triggered. 
