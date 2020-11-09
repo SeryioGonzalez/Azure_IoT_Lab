@@ -6,7 +6,7 @@ In order to start with the second part of the lab, we need to create the environ
 Lauch the following command in order to copy the required script:
 
 ```
-git clone git@github.com:SeryioGonzalez/Azure_IoT_Lab.git
+git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git
 cd Azure_IoT_Lab/iot-lab
 ./create_modules_1_2.sh
 ```
