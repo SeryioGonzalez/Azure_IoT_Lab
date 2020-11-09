@@ -3,7 +3,7 @@
 In this module, we will extend the script sending data to the cloud for adding new measures. <br/>
 You will get familiar with an example script structure so you can extend it for your own project. Note why this is called a simulated device. A real device will collect the values from sensors, but here we just make up that data. The rest of the script will be valid for a real device.
 
-Please browse the script **iot-hub-client.py** in this repo un the Azure_IoT_Lab/. <br/>
+Please browse the script **iot-hub-client.py** in this repo un the Azure_IoT_Lab/iot-client/ folder. <br/>
 
 Explore the main method structure. See it run a sample collection method that starts the Azure IoT Hub connection and starts an infinite loop in which it collects sensor data, sends it to the cloud and repeats the look forever after a sleep period.
 In order to updating the code of the sensor, in a more professional model you should look at DevOps Continuous Deployment models. For this lab, you can connect to the VM using NotePad++ FTP plugin and adding an SFTP connection
