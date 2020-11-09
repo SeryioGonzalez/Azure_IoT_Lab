@@ -33,7 +33,7 @@ In the next blade, we are going to integrate the existing Azure IoT Hub:
 6. Create a **New** instance of **IoT Hub consumer group** called **tsi**.
 7. Click **Create**
 
-![Create Time Series Insights](../images/visualize-21.PNG)
+![Create Time Series Insights](../images/visualize-21.png)
 
 **You might not yet see data** in Time Series Insights Explorer, since it connects by default to the built-in endpoint in Azure IoT Hub. Once we added a route in the previous lab for sending the sensor data to an storage, the built-in endpoint gets disabled, as you can read in the following link.
 
