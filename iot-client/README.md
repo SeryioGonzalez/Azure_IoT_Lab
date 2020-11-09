@@ -10,7 +10,7 @@ In order to updating the code of the sensor, in a more professional model you sh
 
 ![Snapshot](../images/simulated-13.PNG "Azure VM")
 
-As an example, we added a new meassure called **blood_sugar** supposing we have a sensor we can read from.
+As an example, we added a new meassure called **blood_sugar** supposing we have a sensor we can read from. See the variable points to a new method you might also have to implement.
 
 ![Snapshot](../images/simulated-14.PNG "Azure VM")
 
