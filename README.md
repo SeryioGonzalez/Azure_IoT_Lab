@@ -33,11 +33,11 @@ Your group name shall be `icaiiotlabgroupXY`, where:
 ### QUICK DEPLOY PREVIOUS MODULES
 [Deploy previous modules](day1/README.md)
 
-### Module 6: Visualize sensor data
-[Visualize sensor data](visualize/README.md)
-
-### Module 7: Manual device messaging
+### Module 6: Manual device messaging
 [Send a message to the device](messages/README.md)
+
+### Module 7: Visualize sensor data
+[Visualize sensor data](visualize/README.md)
 
 ### Module 8: Send email notifications
 [Send a notification after device messages](notification/README.md)
