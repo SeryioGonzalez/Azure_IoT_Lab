@@ -17,6 +17,9 @@ In this lab you will learn
 3. For **Environment name** select your group nickname **icaiiotlabgroupYX** as resource name. 
 4. Select the **Location** to **West Europe**.
 5. For **Tier** select **Gen2 (L1)**
+6. In the field **Property name** input **connectionDeviceId**
+7. Create a **Storage Account** using your group nickname and **tsi** at the end
+8. Disable **Data Lake Storage Gen2** and **Warm store**
 
 ![Create Time Series Insights](../images/visualize-20.PNG)
 
