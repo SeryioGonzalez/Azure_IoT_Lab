@@ -30,7 +30,7 @@ In the next blade, we are going to integrate the existing Azure IoT Hub:
 3. Give a sample name **iot-hub** 
 4. Select your **Subscription** and your existing **IoT Hub name** 
 5. Select **IoT Hub access policy name** to **iothubowner** 
-6. Select **IoT Hub consumer group** to **$Default**.
+6. Create a **New** instance of **IoT Hub consumer group** called **tsi**.
 7. Click **Create**
 
 ![Create Time Series Insights](../images/visualize-21.PNG)
