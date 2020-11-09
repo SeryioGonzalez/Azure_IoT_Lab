@@ -67,6 +67,10 @@ The SSH command will be something like: <br/>
 For connecting to the VM, you can use an SSH desktop client like Putty or use the [built-in bash console in the Azure portal](https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart), as shown in the following picture:
 ![Snapshot](../images/summary-1.PNG "Azure VM")
 
+Mind that if this is the first time you open the web console, you might get the following message. If this is the case, press **Create Storage** and continue.
+![Snapshot](../images/summary-4.PNG "Azure VM")
+
+
 When connecting to the VM, accept the VM public key by inputing **yes**, as shown below
 ![Snapshot](../images/simulated-7.PNG "Azure VM")
 
