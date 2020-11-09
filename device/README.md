@@ -70,6 +70,9 @@ For connecting to the VM, you can use an SSH desktop client like Putty or use th
 Mind that if this is the first time you open the web console, you might get the following message. If this is the case, press **Create Storage** and continue.
 ![Snapshot](../images/summary-4.PNG "Azure VM")
 
+If you want to use a local SSH client, the following options are recommended based on your operating system:
+* For Mac or Linux users, use the built-in console
+* For Windows user, download Putty or activate the WSL.
 
 When connecting to the VM, accept the VM public key by inputing **yes**, as shown below
 ![Snapshot](../images/simulated-7.PNG "Azure VM")
