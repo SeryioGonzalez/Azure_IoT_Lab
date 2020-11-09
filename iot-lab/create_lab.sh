@@ -4,7 +4,7 @@ source config.sh
 
 echo ""
 
-az extension add --name azure-cli-iot-ext
+az extension add --name azure-iot
 
 log "Creating RG $resourceGroup in $region"
 az group create --name $resourceGroup --location $region > /dev/null
