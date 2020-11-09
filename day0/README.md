@@ -12,7 +12,7 @@ cd Azure_IoT_Lab/iot-lab
 ```
 As shown below, the script will ask you for the parameters highlighted in red. PLEASE NOTE THAT IS A SAMPLE INPUT. **USE YOUR OWN VALUES**
 
-![Lab](../images/summary-2.PNG "Summary")
+![Lab](../images/summary-5.PNG "Summary")
 
 Once the script has successfully finished the deployment, you can send traffic to IoT hub as explained in Module 4
 ![Lab](../images/summary-3.PNG "Summary")
