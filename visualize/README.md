@@ -12,8 +12,11 @@ In this lab you will learn
 
 ## Create Time Series Insights
 
-Select **Time Series Insights** in the resource explorer search box of the Azure portal.
-Select your group nickname **icaiiotlabgroupX** as resource name. Place the resource in the lab resource group, so later deletion is easier and select the region to **West Europe**.
+1. Select **Time Series Insights** in the resource explorer search box of the Azure portal.
+2. Selecty the **Subscription** and **Resource Group** used in the lab
+3. For **Environment name** select your group nickname **icaiiotlabgroupYX** as resource name. 
+4. Select the **Location** to **West Europe**.
+5. For **Tier** select **Gen2 (L1)**
 
 ![Create Time Series Insights](../images/visualize-20.PNG)
 
