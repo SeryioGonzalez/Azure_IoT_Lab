@@ -17,7 +17,7 @@ In this lab you will learn
 3. For **Environment name** select your group nickname **icaiiotlabgroupYX** as resource name. 
 4. Select the **Location** to **West Europe**.
 5. For **Tier** select **Gen2 (L1)**
-6. In the field **Property name** input **connectionDeviceId**
+6. In the field **Property name** input **iothub-connection-device-id**
 7. Create a **Storage Account** using your group nickname and **tsi** at the end
 8. Disable **Data Lake Storage Gen2** and **Warm store**
 9. Configure **Event Source**
@@ -35,7 +35,7 @@ In the next blade, we are going to integrate the existing Azure IoT Hub:
 
 ![Create Time Series Insights](../images/visualize-21.png)
 
-**You might not yet see data** in Time Series Insights Explorer, since it connects by default to the built-in endpoint in Azure IoT Hub. Once we added a route in the previous lab for sending the sensor data to an storage, the built-in endpoint gets disabled, as you can read in the following link.
+**You cannot see data yet** in Time Series Insights Explorer, since it connects by default to the built-in endpoint in Azure IoT Hub, which is sending nothing there. When we added a route in a previous lab for sending the sensor data to an storage account, the built-in endpoint gets disabled, as you can read in the following link.
 
 [Routing behaviour with built-in endpoint in Azure IoT Hub](https://docs.microsoft.com/es-es/azure/iot-hub/iot-hub-devguide-messages-d2c#built-in-endpoint)
 
