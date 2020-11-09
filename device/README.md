@@ -84,16 +84,16 @@ Once connected, a command promt like the following will show up:
 Execute the following commands. Try to make sense at what those commands do
 ```
 sudo apt-get update -y
-sudo apt install python-pip -y
-pip install azure-iot-device
-git clone https://github.com/SeryioGonzalez/azure-iot.git
+sudo apt install python3-pip -y
+pip3 install azure-iot-device
+git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git
 ```
 ## Send data to Azure IoT Hub using the device connection string of Module 1
-After downloading the repo, the python script for sending data to IoT Hub is located in the iot-client folder. <br/>
+After downloading the repo, the python3 script for sending data to IoT Hub is located in the iot-client folder. <br/>
 **Do not copy past the following command, it is an example. Change your connection string of your device you got in the previous module**. <br/>
 Remember to put the connection string between quotes, otherwise the linux bash will interprete it
 
-`sergio@simulated-device:~$ python azure-iot/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup01h.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7YouShouldNotCopyThisButPutYourValue"`**
+`sergio@simulated-device:~$ python3 Azure_IoT_Lab/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup01h.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7YouShouldNotCopyThisButPutYourValue"`**
 
 ![Snapshot](../images/simulated-10.png "Azure VM")
 
