@@ -1,34 +1,34 @@
 #!/bin/bash
 
-numGroups=2
+firstGroup=14
+numGroups=16
+
 groupNamePrefix="icaiiotlabgroup"
 region="westeurope"
 resultFile="/home/sergio/index.html"
+
+group_exclusions=('14h' '15h')
+
+group_letters=('c' 'h')
 
 cat <<EOF > $resultFile
 <!DOCTYPE html>
 <html>
 <head>
-<title>Lab validator</title>
-<meta charset="UTF-8">
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-</style>
-<script>
-	var td_array = document.getElementsByTagName('TD');
-	alert(td_array.length);
+	<title>Lab validator</title>
+	<meta http-equiv="refresh" content="10">
+	<meta charset="UTF-8">
+	<style>
+		table, th, td {
+		border: 1px solid black;
+		text-align: center;
+		}
+	</style>
 
-	for (var i = 0; i < td_array.length; i++){
-	  if (td_array[i].textContent == 'OK'){
-		td_array[i].style.color = 'red';
-	  };
-	};
-</script>
 </head>
 <body>
-<table><tr><th>GroupID</th><th>Azure IoT Hub</th><th>Device VM</th><th>Storage Account</th></tr>
+
+<table id="test"><tr><th>GroupID</th><th>Azure IoT Hub</th><th>Device VM</th><th>Storage Account IoT</th><th>Storage Account TSI</th></tr>
 EOF
 
 
@@ -57,10 +57,19 @@ function checkIoTHub {
 	
 }
 
-#Check Storage Account
-function checkStorageAccount {
+#Check Storage Account for IoT
+function checkStorageAccountIoT {
 	groupId=$1
 	thisGroup=$groupNamePrefix$groupId
+	domain=$thisGroup".blob.core.windows.net"
+	checkDomain $domain
+	
+}
+
+#Check Storage Account for TSI
+function checkStorageAccountTSI {
+	groupId=$1
+	thisGroup=$groupNamePrefix$groupId"tsi"
 	domain=$thisGroup".blob.core.windows.net"
 	checkDomain $domain
 	
@@ -75,15 +84,49 @@ function checkDeviceVM {
 	
 }
 
+containsElement () {
+  local e match="$1"
+  shift
+  for e; do [[ "$e" == "$match" ]] && return 0; done
+  return 1
+}
 
-for groupId in $(seq 1 $numGroups)
+for groupNumber in $(seq $firstGroup $numGroups)
 do
-	iotHub=$(checkIoTHub         $groupId)
-	storAc=$(checkStorageAccount $groupId)
-	deviVM=$(checkDeviceVM       $groupId)
+	#Check letters
+	for group_letter in ${group_letters[@]}
+	do
+		
+		groupId=$groupNumber$group_letter 
+		containsElement  $groupId "${group_exclusions[@]}"
 	
-	echo "<tr><td>$groupId</td><td>$iotHub</td><td>$storAc</td><td>$deviVM</td></tr>" >> $resultFile
+		if [ $? -eq 0 ]
+		then
+			continue
+		fi
 
+		iotHub=$(checkIoTHub               $groupId)
+		storAcIoT=$(checkStorageAccountIoT $groupId)
+		deviVM=$(checkDeviceVM             $groupId)
+		storAcTSI=$(checkStorageAccountTSI $groupId)
+		
+		echo "<tr><td>$groupId</td><td>$iotHub</td><td>$storAcIoT</td><td>$deviVM</td><td>$storAcTSI</td></tr>" >> $resultFile
+	done
 done
 
-echo "</table></body></html>" >> $resultFile
+echo "</table>" >> $resultFile
+echo 	"
+<script>
+	var cells = document.getElementsByTagName('td');
+	for (var i = 0; i < cells.length; i++) {
+		if (cells[i].innerHTML == 'KO') {
+			cells[i].style.backgroundColor = 'red';
+		}
+		if (cells[i].innerHTML == 'OK') {
+			cells[i].style.backgroundColor = 'green';
+		}
+	}
+</script>" >> $resultFile
+
+
+echo "</body></html>" >> $resultFile
