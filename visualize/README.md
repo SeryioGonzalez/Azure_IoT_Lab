@@ -25,13 +25,13 @@ In this lab you will learn
 ![Create Time Series Insights](../images/visualize-20.PNG)
 
 In the next blade, we are going to integrate the existing Azure IoT Hub: 
-1. In **Create and event Source?** select **Yes**
-2. Select **Source Type** to **IoT Hub** 
-3. Give a sample name **iot-hub** 
-4. Select your **Subscription** and your existing **IoT Hub name** 
-5. Select **IoT Hub access policy name** to **iothubowner** 
-6. Create a **New** instance of **IoT Hub consumer group** called **tsi**.
-7. Click **Create**
+10. In **Create and event Source?** select **Yes**
+11. Select **Source Type** to **IoT Hub** 
+12. Give a sample name **iot-hub** 
+13. Select your **Subscription** and your existing **IoT Hub name** 
+14. Select **IoT Hub access policy name** to **iothubowner** 
+15. Create a **New** instance of **IoT Hub consumer group** called **tsi**.
+16. Click **Create**
 
 ![Create Time Series Insights](../images/visualize-21.png)
 
