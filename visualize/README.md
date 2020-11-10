@@ -25,6 +25,7 @@ In this lab you will learn
 ![Create Time Series Insights](../images/visualize-20.PNG)
 
 In the next blade, we are going to integrate the existing Azure IoT Hub: 
+
 10. In **Create and event Source?** select **Yes**
 11. Select **Source Type** to **IoT Hub** 
 12. Give a sample name **iot-hub** 
