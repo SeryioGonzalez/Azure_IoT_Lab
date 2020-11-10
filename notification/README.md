@@ -33,7 +33,7 @@ Create a Logic App to be able to send email notifications
 
 Azure Logic Apps is able to build the notification schema if provided with an exemplary JSON structure. 
 
-For this, select **Use sample payload to generate schema** and paste the content in the JSON snippet below.
+7. For this, select **Use sample payload to generate schema** and paste the content in the JSON snippet below.
 
 ![Provide Sample Payload](../images/notification_05_Sample_Payload.png)
 
@@ -88,23 +88,24 @@ Copy and paste the following sample JSON.
 
 ## Setup Notification by Sending Email 
 
-**Click on New Step**
+8. **Click on New Step**
 
 ![New Step](../images/notification_06_New_Step.png)
 
-**Add an action**
+9. **Add an action**
 
 ![Add an Action](../images/notification_07_Add_new_Action.png)
 
-Choose **Gmail**
-Select the action **Send email**.
+10. Choose **Gmail**
+11. Select the action **Send email**.
 
 ![Choose Mail](../images/notification_08_Choose_Mail.png)
 
-Sign in to Gmail
+12. Sign in to Gmail
 
 ## Create Email template ##
-In the **Add new parameter** area, select Subject and Body, as shown below.
+13. In the **To** field, put an email address that you use**
+14. In the **Add new parameter** area, select Subject and Body, as shown below.
 
 ![Create Resource](../images/email-5.PNG)
 
