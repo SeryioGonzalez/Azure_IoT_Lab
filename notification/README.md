@@ -121,16 +121,21 @@ A result equivalent to the following image should be obtained.
 
 ## Copy Request URL
 
-16. Once saved, click in the upper green box and copy the HTTP URL
+16. Once saved, click in the upper green box and copy the HTTPS URL
 ![Copy Request URL](../images/notification_12_eventurl.png)
 
 ## Integrate With IoT Hub
 
-Integrate Logic App with IoT Hub via the **Events** option in IoT Hub Menu, and click **Event Subscription**.
+17. Integrate Logic App with IoT Hub via the **Events** option in IoT Hub Menu, and click **Event Subscription**.
 
 ![Add Device](../images/eventhub-21.PNG)
 
-In this example, select **Filter to Event Types** to **Device Created** and add the HTTP URL obtained from Logic App creation in the step above.
+18. In this example, select:
+* **Name** the event subscription **iot-hub**
+* Select **Event Schema** to **Event Grid Schema**
+* Configure **System Topic Name** to **iot-hub**
+* Select **Endpoint Type** to **Web Hook** and Click **Select an endpoint**, where you will pase the HTTPS URL obtained in point 16
+* Click **Create**
 ![Add Device](../images/eventhub-10.PNG)
 
 ## Add Device and Test Notification
