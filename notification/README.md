@@ -136,14 +136,14 @@ A result equivalent to the following image should be obtained.
 * Configure **System Topic Name** to **iot-hub**
 * Select **Endpoint Type** to **Web Hook** and Click **Select an endpoint**, where you will pase the HTTPS URL obtained in point 16
 * Click **Create**
+
 ![Add Device](../images/eventhub-10.PNG)
 
 ## Add Device and Test Notification
 
-Go To IoTHub -> IoT Devices -> Add
-
-Add a device in IoT Hub as in previous modules.
-You Should get an email notification
+19. Go To IoTHub -> IoT Devices -> Add
+* Add a device in IoT Hub as in previous modules.
+* You Should get an email notification
 
 ![Add Device](../images/eventhub-11.PNG)
 
