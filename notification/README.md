@@ -117,11 +117,11 @@ A result equivalent to the following image should be obtained.
 
 ![Provide Sample Payload](../images/email-7.PNG)
 
-Click **Save**
+15. Click **Save**
 
 ## Copy Request URL
 
-Once saved, click in the upper green box and copy the HTTP URL
+16. Once saved, click in the upper green box and copy the HTTP URL
 ![Copy Request URL](../images/notification_12_eventurl.png)
 
 ## Integrate With IoT Hub
