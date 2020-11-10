@@ -20,7 +20,7 @@ In this lab you will learn
 6. In the field **Property name** input **iothub-connection-device-id**
 7. Create a **Storage Account** using your group nickname and **tsi** at the end
 8. Disable **Data Lake Storage Gen2** and **Warm store**
-9. Configure **Event Source**
+9. Click on **Next: Event Source >** for configuring the IoT Hub that will be sending data to this TSI instance
 
 ![Create Time Series Insights](../images/visualize-20.PNG)
 
