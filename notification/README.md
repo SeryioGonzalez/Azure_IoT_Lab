@@ -16,7 +16,10 @@ In this lab you will learn how to
 
 Create a Logic App to be able to send email notifications
 
-Select **Logic Apps** from the Azure resource explorer and click **Add**
+1. Select **Logic Apps** from the Azure resource explorer and click **Add**
+2. Name the Logic App with your group identifier
+3. Select your **Subscription** and the **Resource group** you have used in the lab
+4. Click **Review + create** and after validation, **Create**
 
 ![Create Resource](../images/email-1.PNG)
 
