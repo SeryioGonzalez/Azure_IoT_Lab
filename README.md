@@ -27,11 +27,11 @@ Your group name shall be `icaiiotlabgroupXY`, where:
 ### Module 4: Routing device messages to the storage account
 [Message Routing](routing/README.md)
 
-### Module 5: Modify the device script for sending more data
-[Enhance the sensor script](iot-client/README.md)
-
 ### QUICK DEPLOY PREVIOUS MODULES
 [Deploy previous modules](day1/README.md)
+
+### Module 5: Modify the device script for sending more data
+[Enhance the sensor script](iot-client/README.md)
 
 ### Module 6: Manual device messaging
 [Send a message to the device](messages/README.md)
