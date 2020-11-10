@@ -23,11 +23,11 @@ Create a Logic App to be able to send email notifications
 
 ![Create Resource](../images/email-1.PNG)
 
-Using **Logic App Designer**, Create **Blanck Logic App**
+5. Using **Logic App Designer**, Create **Blanck Logic App**
 
 ![Create App](../images/notification_03_Logic_App_designer.png)
 
-**Select HTTP Request** under the Request category
+6. Select **HTTP Request** under the Request category
 
 ![Select HTTP Request](../images/notification_04_Http_Request.png)
 
