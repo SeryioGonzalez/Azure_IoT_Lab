@@ -21,7 +21,7 @@ def message_listener(client):
     while True:
         message = client.receive_message()
         print("Message received")
-        print( "    Data: {}".format(message.data) )
+        print( "    Data: {}".format(message.data.decode("utf-8") ) )
         print( "    Properties: {}".format(message.custom_properties))
 
 #METHOD FOR ONE METRIC
