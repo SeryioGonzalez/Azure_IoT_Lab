@@ -1,28 +1,4 @@
-# APP sending data to devices
+# Creating IoT applications
 
-Unfortunately, product documentation might not be so well described as in this educational lab. In this final module we will use official product documentation from Microsoft for sending a device messages from an APP.
-
-You should open an SSH session to the simulated client. I would advice using a text editor, such as notepad++ with the SFTP plugin for editing the code in an easier way.
-
-[Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-c2d)
-
-Some linux tricks:
-- Installing Node JS
-```
-sudo apt install npm
-```
-
-- Creating a folder
-```
-mkdir name_of_my_folder
-```
-
-- Moving to a folder
-```
-cd name_of_my_folder
-```
-
-- Creating a file
-```
-touch name_of_my_file
-```
+So far, we have seen different modules that highlight IoT application concepts for creating real IoT projects. This module will show a simple IoT application leveraging the concepts practices so far in all previous modules.
+We are going to build an application that gets data from many devices and controls the temperature. For this module, we will focus on a single device, but the APP will scale to a large number of connecting devices
