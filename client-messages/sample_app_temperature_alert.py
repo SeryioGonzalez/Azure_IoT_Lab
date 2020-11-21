@@ -1,66 +1,70 @@
-import asyncio
 import datetime
 import os
-import pytz
 import sys
-from azure.eventhub.aio import EventHubConsumerClient
+from azure.eventhub import EventHubConsumerClient
 from azure.iot.hub import IoTHubRegistryManager
-from azure.eventhub.extensions.checkpointstoreblobaio import BlobCheckpointStore
 
+IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING = sys.argv[1]
 
-MAXIMUM_TEMPERATURE=40
-IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING = os.environ["IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING"]
+AUX_EVENT_HUB_NAMESPACE_CONNECTION_STRING = ";".join(IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.split(";")[0:3])
+AUX_EVENTHUB_NAME = IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.split(";")[3].split("=")[1]
+AUX_EVENTHUB_SAS  = IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.split(";")[2][16:]
+AUX_IOT_HUB_CONNECTION_STRING="HostName={}.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey={}".format(AUX_EVENTHUB_NAME, AUX_EVENTHUB_SAS)
 
-#NO NEED TO UPDATE
-utc=pytz.UTC
-EVENT_HUB_NAMESPACE_CONNECTION_STRING=";".join(IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.split(";")[0:3])
-EVENT_HUB_NAME=IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.split(";")[3].split("=")[1]
-EVENT_HUB_SAS=IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.split(";")[2][16:]
+#AUX METHOD - NO NEED TO TOUCH
+def aux_validate_connection_string():
+    if not IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.startswith( 'Endpoint=sb://' ):
+        print ("ERROR  - YOUR IoT HUB CONNECTION STRING IS NOT VALID")
+        print ("FORMAT - Endpoint=sb://iothub-ns-blablabla.servicebus.windows.net/;SharedAccessKeyName=service;SharedAccessKey=your_shared_access_key;EntityPath=your_iot_hub_name")
+        sys.exit()
 
-IOT_HUB_CONNECTION_STRING="HostName={}.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey={}".format(EVENT_HUB_NAME, EVENT_HUB_SAS)
+#AUX METHOD - NO NEED TO TOUCH
+def aux_iot_hub_send_message_to_device(device_name, message_body, message_properties):
+    message_properties.update(contentType = "application/json")
+    aux_iot_hub_registry_manager.send_c2d_message(device_name, message_body, message_properties)
 
-START_TIME=utc.localize(datetime.datetime.utcnow() ) 
+#YOUR PROGRAM LOGIC GOES HERE
+#EVERY TIME THERE IS A MESSAGE FROM THE DEVICE THIS METHOD WILL BE CALLED
+def on_iot_hub_message_event(partition_context, event):
 
-async def on_event(partition_context, event):
-    # Print the event data.
-    if event.enqueued_time > START_TIME:
-        #print("Received the event: \"{}\" ".format(event.body_as_str(encoding='UTF-8')))
-        event_body=event.body_as_json()
-        event_temperature=event_body['temperature']
-        event_device_name=event_body['device_name']
+    #READ MESSAGE CONTENT
+    event_body=event.body_as_json()
 
-        print("Temperature {} from device {} is lower than {}".format(event_temperature, event_device_name, MAXIMUM_TEMPERATURE))
-  
-        if event_temperature > MAXIMUM_TEMPERATURE:
+    #READ MESSAGE PROPERTIES
+    #IF YOUR DEVICE DOES NOT SEND TEMPERATURE JUST CHANGE THE FOLLOWING LINES
+    event_temperature=event_body['temperature']
+    event_device_name=event_body['device_name']
+    print("Temperature {} from device {} is lower than {}".format(event_temperature, event_device_name, MAXIMUM_TEMPERATURE))
 
-            print("Temperature {} from device {} is higher than {}".format(event_temperature, event_device_name, MAXIMUM_TEMPERATURE))
-            print("Sending alert to device")
+    if event_temperature > MAXIMUM_TEMPERATURE:
 
-            registry_manager = IoTHubRegistryManager(IOT_HUB_CONNECTION_STRING)
+        print("Temperature {} from device {} is higher than {}".format(event_temperature, event_device_name, MAXIMUM_TEMPERATURE))
+        print("Sending alert to device")
 
-            data = "ONE ACTION CODE YOU SHOULD IMPLEMENT"
-            i=1
-            props={}
-            # optional: assign system properties
-            props.update(messageId = "message_%d" % i)
-            props.update(correlationId = "correlation_%d" % i)
-            props.update(contentType = "application/json")
-            props.update(onePropertyNameIShouldGiveAProperName = 'youShouldChangeThis')
+        #MESSAGES TO DEVICES HAVE A BODY
+        command_to_device_message_body = "ONE ACTION CODE YOU SHOULD IMPLEMENT"
+        #MESSAGES TO DEVICES HAVE A DICTIONARY OF PROPERTIES
+        command_to_device_message_properties={}
+        command_to_device_message_properties['onePropertyNameIShouldGiveAProperName'] = 'youShouldChangeThis'
 
-            registry_manager.send_c2d_message(event_device_name, data, properties=props)
+        aux_iot_hub_send_message_to_device(device_name=event_device_name, message_body=command_to_device_message_body, message_properties=command_to_device_message_properties)
 
-
-async def main():
-    
-    # Create a consumer client for the event hub.
-    client = EventHubConsumerClient.from_connection_string(EVENT_HUB_NAMESPACE_CONNECTION_STRING, consumer_group="app", eventhub_name=EVENT_HUB_NAME)
-    async with client:
-        # Call the receive method. Read from the beginning of the partition (starting_position: "-1")
-        await client.receive(on_event=on_event,  starting_position="-1")
 
 if __name__ == '__main__':
 
-    print("Starting the temperature control application")
-    loop = asyncio.get_event_loop()
-    # Run the main method.
-    loop.run_until_complete(main())
+    #FIRST CHECK IF THE CONNECTION STRING IS OK
+    aux_validate_connection_string()
+
+    #CONNECT TO THE IOT HUB BUILT IT ENDPOINT
+    aux_iot_hub_built_in_event_hub_consumer_client = EventHubConsumerClient.from_connection_string(conn_str=AUX_EVENT_HUB_NAMESPACE_CONNECTION_STRING, consumer_group='app', eventhub_name=AUX_EVENTHUB_NAME)
+    #CONNECT TO THE IOT HUB DEVICE REGISTRY MANAGER
+    aux_iot_hub_registry_manager = IoTHubRegistryManager(AUX_IOT_HUB_CONNECTION_STRING)
+
+    MAXIMUM_TEMPERATURE=40
+
+    try:
+        with aux_iot_hub_built_in_event_hub_consumer_client:
+            #EVERY TIME WE RECEIVE AN EVENT WE CALL THE METHOD ON EVENT
+            aux_iot_hub_built_in_event_hub_consumer_client.receive(on_event=on_iot_hub_message_event, starting_position="@latest")
+    except KeyboardInterrupt:
+        print('Stopped receiving.')
