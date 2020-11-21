@@ -5,3 +5,12 @@ We are going to build an application that gets health data from many devices and
 For this module, we will focus on a single device, but the APP will scale to a large number of connecting devices, as depicted in the following image
 
 ![Lab diagram](../images/app-2.png "Header Image")
+
+```
+sudo apt-get update -y
+sudo apt install python3-pip -y
+pip3 install azure-iot-device
+pip3 install azure-iot-hub
+pip3 install azure-eventhub
+git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git
+```
