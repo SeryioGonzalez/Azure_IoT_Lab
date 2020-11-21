@@ -43,5 +43,5 @@ Your group name shall be `icaiiotlabgroupXY`, where:
 [Visualize sensor data](visualize/README.md)
 
 ### Module 9: Integrate APPs with IoT Hub
-[Integrate APPs with IoT Hub](client-messages/README.md)
+[Integrate APPs with IoT Hub](client-messages/)
 
