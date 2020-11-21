@@ -20,6 +20,8 @@ def aux_validate_connection_string():
 
 #AUX METHOD - NO NEED TO TOUCH
 def aux_iot_hub_send_message_to_device(device_name, message_body, message_properties):
+    #CONNECT TO THE IOT HUB DEVICE REGISTRY MANAGER
+    aux_iot_hub_registry_manager = IoTHubRegistryManager(AUX_IOT_HUB_CONNECTION_STRING)
     message_properties.update(contentType = "application/json")
     aux_iot_hub_registry_manager.send_c2d_message(device_name, message_body, message_properties)
 
@@ -57,8 +59,6 @@ if __name__ == '__main__':
 
     #CONNECT TO THE IOT HUB BUILT IT ENDPOINT
     aux_iot_hub_built_in_event_hub_consumer_client = EventHubConsumerClient.from_connection_string(conn_str=AUX_EVENT_HUB_NAMESPACE_CONNECTION_STRING, consumer_group='app', eventhub_name=AUX_EVENTHUB_NAME)
-    #CONNECT TO THE IOT HUB DEVICE REGISTRY MANAGER
-    aux_iot_hub_registry_manager = IoTHubRegistryManager(AUX_IOT_HUB_CONNECTION_STRING)
 
     MAXIMUM_TEMPERATURE=40
 
