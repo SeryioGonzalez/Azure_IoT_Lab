@@ -20,6 +20,11 @@ git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git
 
 In order to run the APP you need the IoT Hub built-in endpoint connection string. You can obtain it in the following window:
 As highlighted in green, you need to create a consumer group for the APP, otherwise, it will conflict with other readers such as Azure Time Series Insights implemented in the previous module.
+As highlighted in purple, select the **Shared access policy** type **service**
+
+```
+python3 Azure_IoT_Lab/sample-app/sample_app_temperature_alert.py "Endpoint=sb://iothub-ns-icaiiotlab-12345-ac23816596.servicebus.windows.net/;SharedAccessKeyName=service;SharedAccessKey=11232323232323232323;EntityPath=icaiiotlabgroup23h"
+```
 
 ![Lab diagram](../images/app-1.png "Header Image")
 
@@ -27,4 +32,7 @@ See in the capture below, you have a simulated device at the bottom as you did i
 
 ![Lab diagram](../images/app-3.png "Header Image")
 
-The script for simulating a device that sends and receive messages is location [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-message.py)
+The script for simulating a device that sends and receive messages is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-message.py)
+The script for simulating an application that send a message above a given temperature is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/sample-app/sample_app_temperature_alert.py)
+
+Good luck, have fun and do epic stuff!!
