@@ -26,3 +26,5 @@ As highlighted in green, you need to create a consumer group for the APP, otherw
 See in the capture below, you have a simulated device at the bottom as you did in lab 2 being controlled by an application:
 
 ![Lab diagram](../images/app-3.png "Header Image")
+
+The script for simulating a device that sends and receive messages is location [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-message.py)
