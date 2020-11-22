@@ -41,7 +41,7 @@ def on_iot_hub_message_event(partition_context, event):
     if event_temperature > MAXIMUM_TEMPERATURE:
 
         print("Temperature {} from device {} is higher than {}".format(event_temperature, event_device_name, MAXIMUM_TEMPERATURE))
-        print("Sending alert to device")
+        print("Sending alert to device {}".format(event_device_name))
 
         #MESSAGES TO DEVICES HAVE A BODY
         command_to_device_message_body = "ONE ACTION CODE YOU SHOULD IMPLEMENT"
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     #CONNECT TO THE IOT HUB BUILT IT ENDPOINT
     aux_iot_hub_built_in_event_hub_consumer_client = EventHubConsumerClient.from_connection_string(conn_str=AUX_EVENT_HUB_NAMESPACE_CONNECTION_STRING, consumer_group='app', eventhub_name=AUX_EVENTHUB_NAME)
 
-    MAXIMUM_TEMPERATURE=40
+    MAXIMUM_TEMPERATURE=38
 
     try:
         with aux_iot_hub_built_in_event_hub_consumer_client:
