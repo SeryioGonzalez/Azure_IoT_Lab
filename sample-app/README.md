@@ -32,7 +32,7 @@ See in the capture below, you have a simulated device at the bottom as you did i
 
 ![Lab diagram](../images/app-3.png "Header Image")
 
-The script for simulating a device that sends and receive messages is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-message.py) <br/>
+The script for simulating a device that sends and receive messages is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-dual.py) <br/>
 The script for simulating an application that send a message above a given temperature is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/sample-app/sample_app_temperature_alert.py)
 
 Good luck, have fun and do epic stuff!!
