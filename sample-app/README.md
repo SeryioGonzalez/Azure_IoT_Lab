@@ -19,4 +19,6 @@ git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git
 ```
 
 In order to run the APP you need the IoT Hub built-in endpoint connection string. You can obtain it in the following window:
+As highlighted in green, you need to create a consumer group for the APP, otherwise, it will conflict with other readers such as Azure Time Series Insights implemented in the previous module.
+
 ![Lab diagram](../images/app-1.png "Header Image")
