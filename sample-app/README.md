@@ -22,3 +22,7 @@ In order to run the APP you need the IoT Hub built-in endpoint connection string
 As highlighted in green, you need to create a consumer group for the APP, otherwise, it will conflict with other readers such as Azure Time Series Insights implemented in the previous module.
 
 ![Lab diagram](../images/app-1.png "Header Image")
+
+See in the capture below, you have a simulated device at the bottom as you did in lab 2 being controlled by an application:
+
+![Lab diagram](../images/app-3.png "Header Image")
