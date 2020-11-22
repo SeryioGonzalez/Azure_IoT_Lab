@@ -6,6 +6,9 @@ For this module, we will focus on a single device, but the APP will scale to a l
 
 ![Lab diagram](../images/app-2.png "Header Image")
 
+### Creating IoT applications
+For this, create a sample VM as you did in module 2. Use the following command for installing the required packages:
+
 ```
 sudo apt-get update -y
 sudo apt install python3-pip -y
@@ -14,3 +17,6 @@ pip3 install azure-iot-hub
 pip3 install azure-eventhub
 git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git
 ```
+
+In order to run the APP you need the IoT Hub built-in endpoint connection string. You can obtain it in the following window:
+![Lab diagram](../images/app-1.png "Header Image")
