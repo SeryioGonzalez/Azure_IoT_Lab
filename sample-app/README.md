@@ -7,7 +7,7 @@ For this module, we will focus on a single device, but the APP will scale to a l
 ![Lab diagram](../images/app-2.png "Header Image")
 
 ### Creating IoT applications
-For this, create a sample VM as you did in module 2. Use the following command for installing the required packages:
+For this, create a new sample VM as you did in module 2, but for playing the role of a simulated sensor in that case. Use the following command for installing the required packages in this new APP VM:
 
 ```
 sudo apt-get update -y
