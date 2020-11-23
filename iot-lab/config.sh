@@ -25,6 +25,12 @@ echo "  Password must have 12 characters, a capital letter, small letters, numbe
 read -p " Please enter your VM user password: " vmUserPassword
 python3 password-checker.py $vmUserPassword
 
+if [ $? -ne 0 ]
+then
+	exit
+fi
+
+
 startTime=$(date +%s )
 
 clientEnvironment=$environmentName"-client"
