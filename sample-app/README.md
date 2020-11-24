@@ -6,7 +6,7 @@ For this module, we will focus on a single device, but the APP will scale to a l
 
 ![Lab diagram](../images/app-2.png "Header Image")
 
-### Creating IoT applications
+### Creating an IoT application that receive and sends messages to devices
 For this, create a new sample VM as you did in module 2, but for playing the role of a simulated sensor in that case. Use the following command for installing the required packages in this new APP VM:
 
 ```
@@ -34,5 +34,8 @@ See in the capture below, you have a simulated device at the bottom as you did i
 
 The script for simulating a device that sends and receive messages is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-dual.py) <br/>
 The script for simulating an application that send a message above a given temperature is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/sample-app/sample_app_temperature_alert.py)
+
+### Integrating the APP with Azure Logic Apps (ALA) for executing ALA workflows
+Azure Logic Apps, used in module 6, is a highly versatile service that can be used for implemented complex workflows. It has many connectors with 3rd party applications (Twitter, Office365, Gmail, custom webhooks, Microsoft Teams, Slack) allowing you create cool interactions
 
 Good luck, have fun and do epic stuff!!
