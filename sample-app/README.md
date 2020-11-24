@@ -49,11 +49,11 @@ In step 7, for this very example, input the following sample content:
 Copy and paste the following sample JSON.
 
 ```
+ {
         "to_address": "pepe.perez@gmail.com",
         "subject_text": "testing email",
         "body": "hello"
-
-
+ }
 ```
 
 
