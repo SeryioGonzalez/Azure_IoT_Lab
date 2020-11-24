@@ -56,5 +56,10 @@ Copy and paste the following sample JSON.
  }
 ```
 
+![IoT Message](../images/app-4.PNG)
+![IoT Message](../images/app-5.PNG)
+![IoT Message](../images/app-6.PNG)
+![IoT Message](../images/app-7.PNG)
+![IoT Message](../images/app-8.PNG)
 
 Good luck, have fun, your creativity is the limit and do epic stuff!!
