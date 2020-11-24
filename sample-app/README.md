@@ -61,9 +61,12 @@ Once input, we will select the subsequent operation. In this example, sending an
 ![IoT Message](../images/app-4.png)
 
 
-Once the connector is configured, we need to select email parameters. In this example, we will use the subject and the body content, as defined in the API definition with the sample content input.
+Once the connector is configured, we need to select email parameters. In this example, we will use the **Subject** and the **Body** content, as defined in the API definition with the sample content input.
 
 ![IoT Message](../images/app-5.png)
+
+
+Logic Apps creates some fields called **dynamic content** based on the input parameters in the API call definition you did in the previous block. Select the parameters **to_address**, **subject_text** and **body** and place them in the proper location.
 ![IoT Message](../images/app-6.png)
 ![IoT Message](../images/app-7.png)
 ![IoT Message](../images/app-8.png)
