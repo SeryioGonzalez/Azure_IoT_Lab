@@ -56,8 +56,11 @@ Copy and paste the following sample JSON.
  }
 ```
 
-Once input, we will select the subsequent operation. In this example, sending an email using the GMAIL connector with the **Send email (V2)** task.
+Once input, we will select the subsequent operation. In this example, sending an email using the GMAIL connector with the **Send email (V2)** task. <br/>
+
 ![IoT Message](../images/app-4.png)
+
+Once the connector
 ![IoT Message](../images/app-5.png)
 ![IoT Message](../images/app-6.png)
 ![IoT Message](../images/app-7.png)
