@@ -36,6 +36,6 @@ The script for simulating a device that sends and receive messages is located [h
 The script for simulating an application that send a message above a given temperature is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/sample-app/sample_app_temperature_alert.py)
 
 ### Integrating the APP with Azure Logic Apps (ALA) for executing ALA workflows
-Azure Logic Apps, used in module 6, is a highly versatile service that can be used for implemented complex workflows. It has many connectors with 3rd party applications (Twitter, Office365, Gmail, custom webhooks, Microsoft Teams, Slack) allowing you create cool interactions
+Azure Logic Apps, used in module 6, is a highly versatile service that can be used for implemented complex workflows. It has many connectors with 3rd party applications (Twitter, Office365, Gmail, custom webhooks, Microsoft Teams, Slack) allowing you create cool interactions. Please take a look at the Microsoft [Azure official documentation](https://docs.microsoft.com/en-us/azure/logic-apps/) and many available examples in the internet.
 
-Good luck, have fun and do epic stuff!!
+Good luck, have fun, your creativity is the limit and do epic stuff!!
