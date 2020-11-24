@@ -68,7 +68,10 @@ Once the connector is configured, we need to select email parameters. In this ex
 
 Logic Apps creates some fields called **dynamic content** based on the input parameters in the API call definition you did in the previous block. Select the parameters **to_address**, **subject_text** and **body** and place them in the proper location.
 ![IoT Message](../images/app-6.png)
-![IoT Message](../images/app-7.png)
+
+Once configured, select **Save** and copy the API URL as described below highlighted in red.
 ![IoT Message](../images/app-8.png)
+
+Update the parameter **api_endpoint** in the [script provided](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/sample-app/logic_app_launcher.py)
 
 Good luck, have fun, your creativity is the limit and do epic stuff!!
