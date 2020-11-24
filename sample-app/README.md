@@ -60,7 +60,9 @@ Once input, we will select the subsequent operation. In this example, sending an
 
 ![IoT Message](../images/app-4.png)
 
-Once the connector
+
+Once the connector is configured, we need to select email parameters. In this example, we will use the subject and the body content, as defined in the API definition with the sample content input.
+
 ![IoT Message](../images/app-5.png)
 ![IoT Message](../images/app-6.png)
 ![IoT Message](../images/app-7.png)
