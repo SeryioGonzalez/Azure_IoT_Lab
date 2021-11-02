@@ -52,4 +52,12 @@ function log {
 	echo "LOGGING - $elapsed s. - "$1
 }
 
+az --version > /dev/null
+
+if [ $? != 9 ]
+then
+	echo "ERROR: You need to install AZ CLI"
+	exit
+fi
+
 az extension add --name azure-iot > /dev/null
