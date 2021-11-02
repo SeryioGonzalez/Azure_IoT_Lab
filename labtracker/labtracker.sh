@@ -89,8 +89,6 @@ containsElement () {
   return 1
 }
 
-set -x
-
 for groupNumber in $(seq $firstGroup $numGroups)
 do
 
