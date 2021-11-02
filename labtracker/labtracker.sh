@@ -9,6 +9,8 @@ groupNamePrefix="icaiiotlabgroup"
 region="westeurope"
 resultFile="/home/sergio/index.html"
 
+time_now=$(date)
+
 cat <<EOF > $resultFile
 <!DOCTYPE html>
 <html>
@@ -25,7 +27,7 @@ cat <<EOF > $resultFile
 
 </head>
 <body>
-
+<h1>Lab Status at $time_now</h1>
 <table id="test"><tr><th>GroupID</th><th>Azure IoT Hub</th><th>Device VM</th><th>Storage Account IoT</th><th>Storage Account TSI</th></tr>
 EOF
 
