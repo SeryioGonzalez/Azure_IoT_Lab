@@ -24,9 +24,11 @@ az deployment group create --no-wait --resource-group $resourceGroup --name "cli
 	--parameters adminUserPassword=$vmUserPassword \
 	--parameters hostnameDNS=$groupId
 
+sleep 15
+
 CLIENT_HOSTNAME=$(az network public-ip list -g $resourceGroup --query "[0].dnsSettings.fqdn" -o tsv)
 log "Connect to client in: "
 echo "ssh -o 'StrictHostKeyChecking no' $vmUser@$CLIENT_HOSTNAME"
 
 log "Device Connection String"
-az iot hub device-identity show-connection-string --device-id $deviceId --hub-name $groupId -o tsv
+az iot hub device-identity connection-string show --device-id $deviceId --hub-name $groupId -o tsv

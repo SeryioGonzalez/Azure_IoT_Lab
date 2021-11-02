@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 region="westeurope"
-environmentName="icai-iot-lab"
+environmentName="icaiiotlab"
 
 #Resource Groups
 resourceGroup=$environmentName
@@ -36,7 +36,7 @@ startTime=$(date +%s )
 clientEnvironment=$environmentName"-client"
 
 #groupId
-groupId="icaiiotlabgroup"$groupNumber
+groupId=$environmentName"group"$groupNumber
 
 #IoT Hub
 messageStorageContainerName="messagedata"
