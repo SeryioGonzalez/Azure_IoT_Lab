@@ -1,15 +1,13 @@
 #!/bin/bash
 
-firstGroup=14
+firstGroup=1
 numGroups=16
+
+group_exclusions=('14' '15')
 
 groupNamePrefix="icaiiotlabgroup"
 region="westeurope"
 resultFile="/home/sergio/index.html"
-
-group_exclusions=('14h' '15h')
-
-group_letters=('c' 'h')
 
 cat <<EOF > $resultFile
 <!DOCTYPE html>
@@ -91,27 +89,25 @@ containsElement () {
   return 1
 }
 
+set -x
+
 for groupNumber in $(seq $firstGroup $numGroups)
 do
-	#Check letters
-	for group_letter in ${group_letters[@]}
-	do
-		
-		groupId=$groupNumber$group_letter 
-		containsElement  $groupId "${group_exclusions[@]}"
-	
-		if [ $? -eq 0 ]
-		then
-			continue
-		fi
 
-		iotHub=$(checkIoTHub               $groupId)
-		storAcIoT=$(checkStorageAccountIoT $groupId)
-		deviVM=$(checkDeviceVM             $groupId)
-		storAcTSI=$(checkStorageAccountTSI $groupId)
-		
-		echo "<tr><td>$groupId</td><td>$iotHub</td><td>$storAcIoT</td><td>$deviVM</td><td>$storAcTSI</td></tr>" >> $resultFile
-	done
+	groupId=$groupNumber$group_letter 
+	containsElement  $groupId "${group_exclusions[@]}"
+
+	if [ $? -eq 0 ]
+	then
+		continue
+	fi
+
+	iotHub=$(checkIoTHub               $groupId)
+	storAcIoT=$(checkStorageAccountIoT $groupId)
+	deviVM=$(checkDeviceVM             $groupId)
+	storAcTSI=$(checkStorageAccountTSI $groupId)
+	
+	echo "<tr><td>$groupId</td><td>$iotHub</td><td>$storAcIoT</td><td>$deviVM</td><td>$storAcTSI</td></tr>" >> $resultFile
 done
 
 echo "</table>" >> $resultFile
