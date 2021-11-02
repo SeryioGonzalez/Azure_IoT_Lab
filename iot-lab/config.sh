@@ -54,7 +54,7 @@ function log {
 
 az --version > /dev/null
 
-if [ $? != 9 ]
+if [ $? != 0 ]
 then
 	echo "ERROR: You need to install AZ CLI"
 	exit
