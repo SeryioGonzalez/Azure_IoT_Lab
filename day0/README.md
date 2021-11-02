@@ -1,5 +1,5 @@
 # Creation of original resources
-In order to start with the second part of the lab, we need to create the environment. We will use an automation script and the Azure Portal CLI. For this open the CLI as highlighted in the following image.
+In order to start with the second part of the lab, we need to create the environment. We will use an automation script and the Azure Portal CLI in case you do not have a local BASH environment as in a Mac PC. For this open the CLI as highlighted in the following image.
 
 ![Lab](../images/summary-1.PNG "Summary")
 
