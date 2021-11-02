@@ -3,13 +3,7 @@ import sys
 
 group = sys.argv[1]
 
-if len(group) < 2:
-	sys.exit(1)
-
-if group[-1] not in ['c', 'h']:
-	sys.exit(1)
-
-if len(group) == 2:
+if len(group) == 1:
 	group = "0"+group
 
-print(group)
+print(group[0:2])

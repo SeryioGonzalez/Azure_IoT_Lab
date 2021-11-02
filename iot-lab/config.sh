@@ -7,13 +7,13 @@ environmentName="icai-iot-lab"
 resourceGroup=$environmentName
 
 #Read Group Number
-read -p " Please enter your group number, (Example == 02h):  " groupNumber
+read -p " Please enter your group number, (Example == 02):  " groupNumber
 
 groupNumber=$(python3 group-checker.py $groupNumber)
 
 if [ $? -ne 0 ]
 then 
-	echo 'ERROR: Your group number must use double digits and c if you are at class and h if you are at home, example 01c'
+	echo 'ERROR: Your group number must use double digits, example 03'
 	exit
 fi
 
