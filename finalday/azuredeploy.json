@@ -1,0 +1,261 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "projectName": {
+      "type": "string",
+      "defaultValue": "icaiotlabgroup"
+    },
+    "groupNumber": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2
+    },
+    "adminUsername": {
+      "type": "string",
+      "defaultValue": "iot"
+    },
+    "adminUserPassword": {
+      "type": "securestring"
+	  }
+  },
+  "variables": {
+    "iotHubName":           "[concat(parameters('projectName'), parameters('groupNumber'), '-iothub')]",
+    "storAccName":  "[toLower(concat(parameters('projectName'), parameters('groupNumber'), 'storacc'))]",
+    "vmName":               "[concat(parameters('projectName'), parameters('groupNumber'), '-vm')]",
+    "publicIPAddressName":  "[concat(parameters('projectName'), parameters('groupNumber'), '-ip')]",
+    "networkInterfaceName": "[concat(parameters('projectName'), parameters('groupNumber'), '-nic')]",
+    "vNetName":             "[concat(parameters('projectName'), parameters('groupNumber'), '-vnet')]",
+    "hostnameDNS":          "[concat(parameters('projectName'), parameters('groupNumber'))]",
+    "storageEndpoint": "messageStorageEndpoint",
+    "storageContainerName": "messagedata",
+    "vNetAddressPrefixes": "10.0.0.0/16",
+    "vNetSubnetName": "default",
+    "vNetSubnetAddressPrefix": "10.0.0.0/24"
+    
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2021-02-01",
+      "name": "[variables('storAccName')]",
+      "location": "[resourceGroup().location]",
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "kind": "Storage",
+      "resources": [
+        {
+          "type": "blobServices/containers",
+          "apiVersion": "2021-02-01",
+          "name": "[concat('default/', variables('storageContainerName'))]",
+          "dependsOn": [
+            "[resourceId('Microsoft.Storage/storageAccounts', variables('storAccName'))]"
+          ],
+          "properties": {
+            "publicAccess": "None"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Microsoft.Devices/IotHubs",
+      "apiVersion": "2021-03-31",
+      "name": "[variables('IoTHubName')]",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('storAccName'))]"
+      ],
+      "sku": {
+        "name": "S1",
+        "capacity": "1"
+      },
+      "properties": {
+        "eventHubEndpoints": {
+          "events": {
+            "retentionTimeInDays": 1,
+            "partitionCount": "4"
+          }
+        },
+        "routing": {
+          "endpoints": {
+            "storageContainers": [
+              {
+                "connectionString": "[Concat('DefaultEndpointsProtocol=https;AccountName=',variables('storAccName'),';EndpointSuffix=',environment().suffixes.storage,';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storAccName')), '2021-02-01').keys[0].value)]",
+                "containerName": "[variables('storageContainerName')]",
+                "fileNameFormat": "{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}",
+                "batchFrequencyInSeconds": 100,
+                "maxChunkSizeInBytes": 104857600,
+                "encoding": "json",
+                "name": "[variables('storageEndpoint')]"
+              }
+            ]
+          },
+          "routes": [
+            {
+              "name": "messageStorageRoute",
+              "source": "DeviceMessages",
+              "condition": "true",
+              "endpointNames": [
+                "[variables('storageEndpoint')]"
+              ],
+              "isEnabled": true
+            },
+            {
+              "name": "messageBuiltInEndpointRoute",
+              "source": "DeviceMessages",
+              "condition": "true",
+              "endpointNames": [
+                "events"
+              ],
+              "isEnabled": true
+            }
+          ],
+          "fallbackRoute": {
+            "name": "$fallback",
+            "source": "DeviceMessages",
+            "condition": "true",
+            "endpointNames": [
+              "events"
+            ],
+            "isEnabled": true
+          }
+        },
+        "messagingEndpoints": {
+          "fileNotifications": {
+            "lockDurationAsIso8601": "PT1M",
+            "ttlAsIso8601": "PT1H",
+            "maxDeliveryCount": 10
+          }
+        },
+        "enableFileUploadNotifications": false,
+        "cloudToDevice": {
+          "maxDeliveryCount": 10,
+          "defaultTtlAsIso8601": "PT1H",
+          "feedback": {
+            "lockDurationAsIso8601": "PT1M",
+            "ttlAsIso8601": "PT1H",
+            "maxDeliveryCount": 10
+          }
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Network/publicIPAddresses",
+      "apiVersion": "2018-11-01",
+      "name": "[variables('publicIPAddressName')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "publicIPAllocationMethod": "Dynamic",
+        "dnsSettings": {
+              "domainNameLabel": "[variables('hostnameDNS')]"
+        }
+      },
+      "sku": {
+        "name": "Basic"
+      }
+    },
+    {
+      "type": "Microsoft.Network/virtualNetworks",
+      "apiVersion": "2018-11-01",
+      "name": "[variables('vNetName')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "[variables('vNetAddressPrefixes')]"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "[variables('vNetSubnetName')]",
+            "properties": {
+              "addressPrefix": "[variables('vNetSubnetAddressPrefix')]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "Microsoft.Network/networkInterfaces",
+      "apiVersion": "2018-11-01",
+      "name": "[variables('networkInterfaceName')]",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddressName'))]",
+        "[resourceId('Microsoft.Network/virtualNetworks', variables('vNetName'))]"
+      ],
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "publicIPAddress": {
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddressName'))]"
+              },
+              "subnet": {
+                "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('vNetName'), variables('vNetSubnetName'))]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "Microsoft.Compute/virtualMachines",
+      "apiVersion": "2018-10-01",
+      "name": "[variables('vmName')]",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaceName'))]"
+      ],
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_B1s"
+        },
+        "osProfile": {
+          "computerName": "[variables('vmName')]",
+          "adminUsername": "[parameters('adminUsername')]",
+          "adminPassword": "[parameters('adminUserPassword')]"
+        },
+        "storageProfile": {
+          "imageReference": {
+            "publisher": "Canonical",
+            "offer": "UbuntuServer",
+            "sku": "18.04-LTS",
+            "version": "latest"
+          },
+          "osDisk": {
+            "createOption": "fromImage"
+          }
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaceName'))]"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Compute/virtualMachines/extensions",
+      "name": "[concat(variables('vmName'),'/installcustomscript')]",
+      "apiVersion": "2018-10-01",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+      ],
+      "properties": {
+        "publisher": "Microsoft.Azure.Extensions",
+        "type": "CustomScript",
+        "typeHandlerVersion": "2.0",
+        "autoUpgradeMinorVersion": true,
+        "settings": {
+          "commandToExecute": "[concat('sudo apt-get update -y && sleep 100; sudo apt-get install -y python3-pip && pip3 install azure-iot-device ; git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git /home/', parameters('adminUsername'), '/Azure_IoT_Lab/', ' ; chown -R ', parameters('adminUsername'), ':', parameters('adminUsername'), ' /home/', parameters('adminUsername'), '/Azure_IoT_Lab/'  )]"
+        }
+      }
+    }
+  ]
+}
