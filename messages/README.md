@@ -26,3 +26,4 @@ Click in **Send Message** as shown in green. The message should be pointed out i
 
 Take a look at the python3 [script](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-message.py) and analyze how bidirectional message communication works.
 Note IoT hub will send whatever you indicate it to send. It is up to the device software knowing how to react to those messages. You need to define your own **Hub to Device messaging API** in this way.
+There is a script in this repo that combines receiving and sending messages for enhanced actions. A good example for a cool project.
