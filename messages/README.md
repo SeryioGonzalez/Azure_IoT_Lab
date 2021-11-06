@@ -13,7 +13,7 @@ A new script has been added to the repo to be loaded in the simulated device.
 As shown, below, we have to run the following script in the simulated device while we send the message:
 
 ### Run a python3 script for message reception
-
+Connecting to the simulated device via SSH, you can run the following script. Remember to replace your connection string here
 ```
 python3 Azure_IoT_Lab/iot-client/iot-hub-client-message.py "YOUR_DEVICE_CONNECTION_STRING_NOT_THIS_TEXT_PLACEHOLDER"
 ```
