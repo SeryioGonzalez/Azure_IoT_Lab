@@ -28,7 +28,7 @@
     "vNetName":             "[concat(parameters('projectName'), parameters('groupNumber'), '-vnet')]",
     "hostnameDNS":          "[concat(parameters('projectName'), parameters('groupNumber'))]",
     "storageEndpoint": "messageStorageEndpoint",
-    "storageContainerName": "messagedata",
+    "storageContainerName": "sensordata",
     "vNetAddressPrefixes": "10.0.0.0/16",
     "vNetSubnetName": "default",
     "vNetSubnetAddressPrefix": "10.0.0.0/24"
