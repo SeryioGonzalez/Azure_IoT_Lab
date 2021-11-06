@@ -3,14 +3,16 @@
 One of the key aspects of IoT architectures is the capability of managing and signaling devices from a central platform.
 In this lab we will send a manual message to a device and we will show an example piece of code that can react to downstream cloud to device messages. Extending this capability for more complex in-device behaviours would be the logical next step
 
-### Run a python3 script for message reception
+### Send a message to the device from the Azure Portal
 
 In order to get to the Azure Portal facility for sending a message to a device, navigate to the device menu, as shown in the following image and click in the **Message to Device** window in the device menu of Azure IoT Hub.
 
 ![IoT Message](../images/message-3.PNG)
 
 A new script has been added to the repo to be loaded in the simulated device.
-As shown, below, we have run the following script in the simulated device:
+As shown, below, we have to run the following script in the simulated device while we send the message:
+
+### Run a python3 script for message reception
 
 ```
 python3 Azure_IoT_Lab/iot-client/iot-hub-client-message.py "YOUR_DEVICE_CONNECTION_STRING_NOT_THIS_TEXT_PLACEHOLDER"
