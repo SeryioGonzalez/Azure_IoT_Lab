@@ -27,7 +27,7 @@ Your group name shall be `icaiiotlabgroupX`, where:
 [Message Routing](routing/README.md)
 --->
 ### QUICK DEPLOY PREVIOUS MODULES
-[Deploy previous modules](day1/README.md)
+[Deploy previous modules](finalday/README.md)
 
 ### Module 5: Modify the device script for sending more data
 [Enhance the sensor script](iot-client/README.md)
