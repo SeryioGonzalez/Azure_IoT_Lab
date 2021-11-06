@@ -10,7 +10,7 @@ Your group name shall be `icaiiotlabgroupX`, where:
 ![Lab diagram](images/Lab.png "Header Image")
 
 ## Modules
-
+<!--
 ### Module 1: Creating an Azure IoT Hub
 [Azure IoT Hub](iothub/README.md)
 
@@ -25,7 +25,7 @@ Your group name shall be `icaiiotlabgroupX`, where:
 
 ### Module 4: Routing device messages to the storage account
 [Message Routing](routing/README.md)
-
+--->
 ### QUICK DEPLOY PREVIOUS MODULES
 [Deploy previous modules](day1/README.md)
 
