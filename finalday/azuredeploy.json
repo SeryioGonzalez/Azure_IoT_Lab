@@ -207,6 +207,9 @@
       "apiVersion": "2018-10-01",
       "name": "[variables('vmName')]",
       "location": "[resourceGroup().location]",
+      "identity": {
+         "type": "SystemAssigned"
+       },
       "dependsOn": [
         "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaceName'))]"
       ],
