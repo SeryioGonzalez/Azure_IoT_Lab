@@ -6,15 +6,14 @@ Azure Time Series Insights is a fully managed analytics, storage, and visualizat
 
 In this lab you will learn
 
-* how to set up a Time Series Insights environment
-* explore
-* analyze time series data of your IoT solutions or connected things
+* How to set up a Time Series Insights environment
+* Explore and analyze time series data of your IoT solutions or connected things
 
 ## Create Time Series Insights
 
 1. Select **Time Series Insights** in the resource explorer search box of the Azure portal.
 2. Selecty the **Subscription** and **Resource Group** used in the lab
-3. For **Environment name** select your group nickname **icaiiotlabgroupYX** as resource name. 
+3. For **Environment name** select your group nickname **icaiiotlabgroupY** as resource name. 
 4. Select the **Location** to **West Europe**.
 5. For **Tier** select **Gen2 (L1)**
 6. In the field **Property name** input **iothub-connection-device-id**
@@ -22,7 +21,7 @@ In this lab you will learn
 8. Disable **Data Lake Storage Gen2** and **Warm store**
 9. Click on **Next: Event Source >** for configuring the IoT Hub that will be sending data to this TSI instance
 
-![Create Time Series Insights](../images/visualize-20.PNG)
+![Create Time Series Insights](../images/tsi-01.PNG)
 
 In the next blade, we are going to integrate the existing Azure IoT Hub: 
 
@@ -31,10 +30,10 @@ In the next blade, we are going to integrate the existing Azure IoT Hub:
 12. Give a sample name **iot-hub** 
 13. Select your **Subscription** and your existing **IoT Hub name** 
 14. Select **IoT Hub access policy name** to **iothubowner** 
-15. Create a **New** instance of **IoT Hub consumer group** called **tsi**.
-16. Click **Create**
+15. Select **IoT Hub consumer group** to **$Default**
+17. Click **Create**
 
-![Create Time Series Insights](../images/visualize-21.png)
+![Create Time Series Insights](../images/tsi-02.png)
 
 ## Time Series Insights Explorer
 
