@@ -8,4 +8,4 @@ This is a template that deploys:
 - A storage account 
 - An IoT Hub with routing information to the storage account
 
-![Lab deployment](images/deployment-2.png "Deploy lab")
+![Lab deployment](../images/deployment-2.png "Deploy lab")
