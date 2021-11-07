@@ -35,7 +35,7 @@ Your group name shall be `icaiiotlabgroupX`, where:
 ### Module 6: Manual device messaging
 [Send a message to the device](messages/README.md)
 
-### Module 7: Send email notifications
+### Module 7: Post in Twitter
 [Send a notification after device messages](notification/README.md)
 
 ### Module 8: Visualize sensor data

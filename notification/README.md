@@ -6,7 +6,7 @@ Azure IoT Hub integrates with Azure Event Grid so that you can send event notifi
 
 In this lab you will learn how to
 
-* Create logic app to be able to send email notifications
+* Create logic app to be able to send twitter tweets
 
 * Create Event Grid
 
@@ -37,7 +37,7 @@ Azure Logic Apps is able to build the notification schema if provided with an ex
 
 7. For this, select **Use sample payload to generate schema** and paste the content in the JSON snippet below.
 
-![Provide Sample Payload](../images/notification_05_Sample_Payload.png)
+![Provide Sample Payload](../images/notification_05_Sample_Payload.png.jpg)
 
 Copy and paste the following sample JSON.
 
@@ -88,7 +88,7 @@ Copy and paste the following sample JSON.
 }]
 ```
 
-## Setup Notification by Sending Email 
+## Setup Notification by posting a Twitter Tweet
 
 8. **Click on New Step**
 
