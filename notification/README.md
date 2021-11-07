@@ -37,7 +37,7 @@ Azure Logic Apps is able to build the notification schema if provided with an ex
 
 7. For this, select **Use sample payload to generate schema** and paste the content in the JSON snippet below.
 
-![Provide Sample Payload](../images/notification_05_Sample_Payload.png)
+![Provide Sample Payload](../images/notification_05_Sample_Payload.png.jpg)
 
 Copy and paste the following sample JSON.
 
