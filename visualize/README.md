@@ -35,15 +35,21 @@ In the next blade, we are going to integrate the existing Azure IoT Hub:
 
 ![Create Time Series Insights](../images/tsi-02.png)
 
+Once the deployment is complete, you will see the following image.
+
+![Create Time Series Insights](../images/tsi-03.png)
+
+Select **Go to resource**
+
 ## Time Series Insights Explorer
 
-Once this route has been created, you can go to the Azure Time Series Insights Explorer (AzTSIE). In the AzTSIE click in **Go to TSI Explorer** in the following image in order to see the explorer portal.
+In Azure Time Series Insights Explorer (AzTSIE) click in **Go to TSI Explorer** in the following image in order to see the explorer portal.
 
 ![Create Time Series Insights](../images/visualize-24.PNG)
 
 The AzTSIE allows correlating and visualazing data. For this, supposing you have sent traffic from the simulated device to Azure IoT Hub, implement a diagram like the one shown below.
 
-![Create Time Series Insights](../images/visualize-27.PNG)
+![Create Time Series Insights](../images/tsi-04.png)
 
 In purple in the left hand side, we can select which metrics we want to monitor. In the simulated device, we configure 2 metrics, **heart_rate** and **temperature**. We can add N additiona metrics by clicking the **Add**, right above the purple highlight square.
 We can explore in detail the value of a given metric, by clicking **Explore Events**, as highlighted in brown above.
