@@ -21,7 +21,7 @@ In this lab you will learn
 8. Disable **Data Lake Storage Gen2** and **Warm store**
 9. Click on **Next: Event Source >** for configuring the IoT Hub that will be sending data to this TSI instance
 
-![Create Time Series Insights](../images/tsi-01.PNG)
+![Create Time Series Insights](../images/tsi-01.png)
 
 In the next blade, we are going to integrate the existing Azure IoT Hub: 
 
