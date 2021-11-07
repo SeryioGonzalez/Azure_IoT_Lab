@@ -25,7 +25,7 @@ Upon success after a few minutes, the following image will show-up:
 ## Create an IoT hub device identity
 
 In the previous image, click in **Go to resource group** and select the **IoT Hub** instance created.
-In the left pane, select the option **Devices**, as highlighted in red in the following image:
+In the left pane, select the option **Devices**, as highlighted in red in the following image and click in **Add Device**, as shown in blue:
 
 
 ![Lab deployment](../images/deployment-4.png "Deploy lab")
