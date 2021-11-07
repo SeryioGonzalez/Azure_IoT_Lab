@@ -26,6 +26,9 @@ Create a Logic App to be able to send email notifications
 
 ![Create Resource](../images/email-1.PNG)
 
+## Create a workflow within the Logic App
+Once the Logic App instance has been created, select the option
+
 5. Using **Logic App Designer**, Create **Blanck Logic App**
 
 ![Create App](../images/notification_03_Logic_App_designer.png)
