@@ -13,6 +13,6 @@ In the image, you can see important information:
 - The **Resource Group** (In black), the resource group to be used. For consistency, use **icaiiotlab**. If not created, please create it
 - The **Region** (In red), select **West Europe**
 - **Group Number** is your group to be used
-- **Admin User Password** is the password of the simulated device. <span style="color:blue">DO NOT FORGET IT</span>
+- **Admin User Password** is the password of the simulated device. <font color="red">DO NOT FORGET IT</font>
 
 ![Lab deployment](../images/deployment-2.png "Deploy lab")
