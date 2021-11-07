@@ -4,27 +4,13 @@
 
 Azure IoT Hub integrates with Azure Event Grid so that you can send event notifications to other services and trigger downstream processes. Configure your business applications to listen for IoT Hub events so that you can react to critical events in a reliable, scalable, and secure manner. For example, build an application to perform multiple actions like updating a database, creating a ticket, and delivering an email notification every time a new IoT device is registered to your IoT hub.
 
-In this lab you will learn how to
+In this lab you will learn how to create logic app to be able to send twitter tweets
 
-* Create logic app to be able to send twitter tweets
+## Create Logic App from Azure IoT Hub
 
-* Create Event Grid
+Navigate to your Azure IoT hub and select the option **Events** and click in **Logic Apps** as shown in the image below.
 
-* Connect IoT Hub to Event Grid
-
-## Create Logic App
-
-Create a Logic App to be able to send email notifications
-
-1. Select **Logic Apps** from the Azure resource explorer and click **Add**
-2. Select your **Subscription** and the **Resource group** you have used in the lab
-3. Keep **Type** to **Standard**
-4. Name the Logic App with your group identifier
-5. Keep **Publish** to **Workflow**
-6. For **Region** select **West Europe**
-7. Click **Review + create** and after validation, **Create**
-
-![Create Resource](../images/email-1.PNG)
+![Create Resource](../images/logic-apps-01.png)
 
 ## Create a workflow within the Logic App
 Once the Logic App instance has been created, select the option **+ Add** in the **Workflows** section on the blade
