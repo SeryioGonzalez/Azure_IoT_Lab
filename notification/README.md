@@ -6,7 +6,7 @@ Azure IoT Hub integrates with Azure Event Grid so that you can send event notifi
 
 In this lab you will learn how to
 
-* Create logic app to be able to send email notifications
+* Create logic app to be able to send twitter tweets
 
 * Create Event Grid
 
@@ -88,7 +88,7 @@ Copy and paste the following sample JSON.
 }]
 ```
 
-## Setup Notification by Sending Email 
+## Setup Notification by posting a Twitter Tweet
 
 8. **Click on New Step**
 
