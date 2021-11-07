@@ -36,22 +36,9 @@ In the next blade, we are going to integrate the existing Azure IoT Hub:
 
 ![Create Time Series Insights](../images/visualize-21.png)
 
-**You cannot see data yet** in Time Series Insights Explorer, since it connects by default to the built-in endpoint in Azure IoT Hub, which is sending nothing there. When we added a route in a previous lab for sending the sensor data to an storage account, the built-in endpoint gets disabled, as you can read in the following link.
-
-[Routing behaviour with built-in endpoint in Azure IoT Hub](https://docs.microsoft.com/es-es/azure/iot-hub/iot-hub-devguide-messages-d2c#built-in-endpoint)
-
-## Enable a Route in Azure IoT Hub to Events Built-in Endpoint
-
-Navigate to the Azure IoT Hub instance created in previous modules. As you did in [module 4](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/routing/README.md) of this lab with Azure Storage, we need to enable an extra Route to the built-in **events** endpoint, as shown in the following image.
-
-![Create Time Series Insights](../images/visualize-22.PNG)
-
-Once the Route has been created, it will be shown as in the following image.
-![Create Time Series Insights](../images/visualize-23.PNG)
-
 ## Time Series Insights Explorer
 
-Once this route has been created, you can go to the Azure Time Series Insights Explorer (AzTSIE). In the AzTSIE click in **Go to Environment** in the following image in order to see the explorer portal.
+Once this route has been created, you can go to the Azure Time Series Insights Explorer (AzTSIE). In the AzTSIE click in **Go to TSI Explorer** in the following image in order to see the explorer portal.
 
 ![Create Time Series Insights](../images/visualize-24.PNG)
 
