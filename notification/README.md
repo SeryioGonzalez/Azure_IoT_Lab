@@ -27,13 +27,9 @@ Create a Logic App to be able to send email notifications
 ![Create Resource](../images/email-1.PNG)
 
 ## Create a workflow within the Logic App
-Once the Logic App instance has been created, select the option
+Once the Logic App instance has been created, select the option **+ Add** in the **Workflows** section on the blade
 
-5. Using **Logic App Designer**, Create **Blanck Logic App**
-
-![Create App](../images/notification_03_Logic_App_designer.png)
-
-6. Select **HTTP Request** under the Request category
+5. Click on the previously created workflow and add and HTTP **Request** trigger as shown below:
 
 ![Select HTTP Request](../images/notification_04_Http_Request.png)
 
