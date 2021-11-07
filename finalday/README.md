@@ -18,7 +18,14 @@ In the image, you can see important information:
 
 ![Lab deployment](../images/deployment-2.png "Deploy lab")
 
-Upon success after a few minutes, the following image will show-up:
+Upon success after a few minutes, the following image will show-up: 
+
 ![Lab deployment](../images/deployment-3.png "Deploy lab")
 
 ## Create an IoT hub device identity
+
+In the previous image, click in **Go to resource group** and select the **IoT Hub** instance created.
+In the left pane, select the option **Devices**, as highlighted in red in the following image:
+
+
+![Lab deployment](../images/deployment-4.png "Deploy lab")
