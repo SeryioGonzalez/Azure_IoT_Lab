@@ -29,3 +29,8 @@ In the left pane, select the option **Devices**, as highlighted in red in the fo
 
 
 ![Lab deployment](../images/deployment-4.png "Deploy lab")
+
+In the following image, select a name for your simulated device. In this example, the name **simulated_device** has been used. Click **Save**. <br/>
+Once created, a new device with the selected name will show up and the **Primary Connection String** , as shown in red in the following image, can be copied. You need this for future modules.
+
+![Lab deployment](../images/deployment-6.png "Deploy lab")
