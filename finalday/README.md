@@ -1,5 +1,6 @@
 # Create resources for last cloud lab day
 
+## Deploy the template
 Use the following link for launching all resources. <br/>
 
 This is a template that deploys:
@@ -16,3 +17,8 @@ In the image, you can see important information:
 - **Admin User Password** is the password of the simulated device. **DO NOT FORGET IT!!!**
 
 ![Lab deployment](../images/deployment-2.png "Deploy lab")
+
+Upon success after a few minutes, the following image will show-up:
+![Lab deployment](../images/deployment-3.png "Deploy lab")
+
+## Create an IoT hub device identity
