@@ -47,9 +47,9 @@ In Azure Time Series Insights Explorer (AzTSIE) click in **Go to TSI Explorer** 
 
 ![Create Time Series Insights](../images/visualize-24.PNG)
 
-The AzTSIE allows correlating and visualazing data. For this, supposing you have sent traffic from the simulated device to Azure IoT Hub, implement a diagram like the one shown below.
+The AzTSIE allows correlating and visualazing data. <br/>
+For this, supposing you have sent traffic from the simulated device to Azure IoT Hub, implement a diagram like the one shown below.
 
 ![Create Time Series Insights](../images/tsi-04.png)
 
-In purple in the left hand side, we can select which metrics we want to monitor. In the simulated device, we configure 2 metrics, **heart_rate** and **temperature**. We can add N additiona metrics by clicking the **Add**, right above the purple highlight square.
-We can explore in detail the value of a given metric, by clicking **Explore Events**, as highlighted in brown above.
+Below, you can play with the style of the chart, change colors, layout, etc..
