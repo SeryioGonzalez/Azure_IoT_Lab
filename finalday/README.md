@@ -1,5 +1,6 @@
 # Create resources for last cloud lab day
 
+Use the following link for launching all resources. 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FSeryioGonzalez%2FAzure_IoT_Lab%2Fmaster%2Ffinalday%2Fazuredeploy.json)  
 
 This is a template that deploys:
@@ -7,3 +8,4 @@ This is a template that deploys:
 - A storage account 
 - An IoT Hub with routing information to the storage account
 
+![Lab deployment](images/deployment-2.png "Deploy lab")
