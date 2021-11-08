@@ -13,7 +13,7 @@ Navigate to your Azure IoT hub and select the option **Events** and click in **L
 ![Create Resource](../images/logic-apps-01.png)
 
 ## Create a workflow within the Logic App
-Once the Logic App instance has been created, you need to sign in to Azure Event Grid and complete the form as shown in the following image, adding **Twitter** as the next steps
+Once the Logic App instance has been created, you need to sign in to Azure Event Grid and complete the form as shown in the following image, adding **Twitter** as the next step, by pressing the **Continue** button
 
 ![Create Resource](../images/logic-apps-02.png)
 
