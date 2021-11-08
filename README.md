@@ -26,7 +26,7 @@ Your group name shall be `icaiiotlabgroupX`, where:
 ### Module 4: Routing device messages to the storage account
 [Message Routing](routing/README.md)
 
-### QUICK DEPLOY PREVIOUS MODULES
+### QUICK DEPLOY PREVIOUS MODULES - START OF NOVEMBER 8th
 [Deploy previous modules](finalday/README.md)
 
 ### Module 5: Modify the device script for sending more data
