@@ -11,26 +11,28 @@ In this lab you will learn
 
 ## Create Time Series Insights
 
-1. Select **Time Series Insights** in the resource explorer search box of the Azure portal.
-2. Selecty the **Subscription** and **Resource Group** used in the lab
-3. For **Environment name** select your group nickname **icaiiotlabgroupY** as resource name. 
-4. Select the **Location** to **West Europe**.
-5. For **Tier** select **Gen2 (L1)**
-6. In the field **Property name** input **temperature** and **heart_rate**
-7. Create a **Storage Account** using your group nickname and **tsi** at the end
-8. Disable **Data Lake Storage Gen2** and **Warm store**
-9. Click on **Next: Event Source >** for configuring the IoT Hub that will be sending data to this TSI instance
+1. Select **Time Series Insights environments** in the resource explorer search box of the Azure portal.
+2. In the creation blade, select **Create**
+3. Selecty the **Subscription** and **Resource Group** used in the lab
+4. For **Environment name** select your group nickname **icaiiotlabgroupY** as resource name. 
+5. Select the **Location** to **West Europe**.
+6. For **Tier** select **Gen2 (L1)**
+7. In the field **Property name** input **temperature** and **heart_rate**
+8. Create a **Storage Account** using your group nickname and **tsi** at the end
+9. Keep the rest options as they come
+10. Click on **Next: Event Source >** for configuring the IoT Hub that will be sending data to this TSI instance
 
 ![Create Time Series Insights](../images/tsi-01.png)
 
 In the next blade, we are going to integrate the existing Azure IoT Hub: 
 
-10. In **Create and event Source?** select **Yes**
-11. Select **Source Type** to **IoT Hub** 
+10. In **Create and event Source?** keep **Yes**
+11. keep **Source Type** to **IoT Hub** 
 12. Give a sample name **iot-hub** 
 13. Select your **Subscription** and your existing **IoT Hub name** 
 14. Select **IoT Hub access policy name** to **iothubowner** 
 15. Select **IoT Hub consumer group** create a new entry to **tsi**
+16. Keep the rest of the optionsd
 17. Click **Create**
 
 ![Create Time Series Insights](../images/tsi-02.png)
