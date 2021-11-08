@@ -23,7 +23,9 @@ Please not the exemplary nature of this lab. As you can see, there some other op
 
 ![Create Resource](../images/logic-apps-02.png)
 
-You need to Sign-in your Twitter account
+Select the option **Post a tweet**.
+
+Give a name of your choice to the value **Connection name**. You need to **Sign in** your Twitter account. If you do not have one or prefer not to use it, create a free account.
 
 ![Create Resource](../images/logic-apps-03.png)
 
