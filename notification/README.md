@@ -31,8 +31,10 @@ Give a name of your choice to the value **Connection name**. You need to **Sign 
 
 Once there, introduce what text you want to tweet, as shown below:
 
-![Create Resource](../images/logic-apps-04.png)
+![Create Resource](../images/logic-apps-04.png).
 
-Go create a device in IoT Hub, in this example, I created a device called **TWEET** and the result is as follows:
+Click **Save as** in the upper left corner of the Logic App editor and input a **Logic app name** if your choice.
+
+Once the Logic App has been succesfully saved, go create a device in IoT Hub, in this example, I created a device called **TWEET** and the result is as follows:
 
 ![Create Resource](../images/logic-apps-05.png)
