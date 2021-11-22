@@ -41,7 +41,6 @@ Your group name shall be `icaiiotlabgroupX`, where:
 ### Module 8: Post in Twitter
 [Send a notification after device messages](notification/README.md)
 
-<!--
 ### Module 9: Integrate APPs with IoT Hub
 [Integrate APPs with IoT Hub](sample-app/)
--->
+
