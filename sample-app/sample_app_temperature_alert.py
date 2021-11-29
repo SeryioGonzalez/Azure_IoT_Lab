@@ -11,6 +11,9 @@ AUX_EVENTHUB_NAME = IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.split(";")[3].sp
 AUX_EVENTHUB_SAS  = IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.split(";")[2][16:]
 AUX_IOT_HUB_CONNECTION_STRING="HostName={}.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey={}".format(AUX_EVENTHUB_NAME, AUX_EVENTHUB_SAS)
 
+#YOU NEED TO UPDATE THE CONSUMER GROUP
+AUX_EVENT_HUB_CONSUMER_GROUP=
+
 #AUX METHOD - NO NEED TO TOUCH
 def aux_validate_connection_string():
     if not IOT_HUB_BUILT_IN_ENDPOINT_CONNECTION_STRING.startswith( 'Endpoint=sb://' ):
@@ -58,7 +61,7 @@ if __name__ == '__main__':
     aux_validate_connection_string()
 
     #CONNECT TO THE IOT HUB BUILT IT ENDPOINT
-    aux_iot_hub_built_in_event_hub_consumer_client = EventHubConsumerClient.from_connection_string(conn_str=AUX_EVENT_HUB_NAMESPACE_CONNECTION_STRING, consumer_group='app', eventhub_name=AUX_EVENTHUB_NAME)
+    aux_iot_hub_built_in_event_hub_consumer_client = EventHubConsumerClient.from_connection_string(conn_str=AUX_EVENT_HUB_NAMESPACE_CONNECTION_STRING, consumer_group=AUX_EVENT_HUB_CONSUMER_GROUP, eventhub_name=AUX_EVENTHUB_NAME)
 
     MAXIMUM_TEMPERATURE=38
 
