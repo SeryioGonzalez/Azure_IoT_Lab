@@ -95,7 +95,7 @@ After downloading the repo, the python3 script for sending data to IoT Hub is lo
 **Do not copy past the following command, it is an example. Change your connection string of your device you got in the previous module**. <br/>
 Remember to put the connection string between quotes, otherwise the linux bash will interprete it
 
-`sergio@simulated-device:~$ python3 Azure_IoT_Lab/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup01h.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7YouShouldNotCopyThisButPutYourValue"`**
+`python3 Azure_IoT_Lab/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup01h.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7YouShouldNotCopyThisButPutYourValue"`**
 
 ![Snapshot](../images/simulated-10.png "Azure VM")
 
