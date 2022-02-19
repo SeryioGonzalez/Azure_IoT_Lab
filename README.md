@@ -16,19 +16,19 @@ Your group name shall be `icaiiotlabgroupX`, where:
 
 ### Module 2: Creating a simulated device VM
 [Device VM](device/README.md)
-
+<!--  
 ### QUICK DEPLOY PREVIOUS MODULES
 [Deploy previous modules](day0/README.md)
-
+-->
 ### Module 3: Creating a storage account
 [Storage Account](storage/README.md)
 
 ### Module 4: Routing device messages to the storage account
 [Message Routing](routing/README.md)
-
+<!--  
 ### QUICK DEPLOY PREVIOUS MODULES - START OF NOVEMBER 8th
 [Deploy previous modules](finalday/README.md)
-
+-->
 ### Module 5: Modify the device script for sending more data
 [Enhance the sensor script](iot-client/README.md)
 
