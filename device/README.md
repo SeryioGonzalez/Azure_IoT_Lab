@@ -1,3 +1,4 @@
+<!-- 
 # Creating a device VM
 In this module we will create a virtual machine, simulating a device that connects to Azure IoT Hub.
 
@@ -80,8 +81,8 @@ When connecting to the VM, accept the VM public key by inputing **yes**, as show
 
 Once connected, a command promt like the following will show up:
 ![Snapshot](../images/simulated-8.PNG "Azure VM")
-
-## Install required packages and repos
+-->
+## Install required packages and repos from your Raspberry Pi Terminal
 Execute the following commands. Try to make sense at what those commands do
 ```
 sudo apt-get update -y
