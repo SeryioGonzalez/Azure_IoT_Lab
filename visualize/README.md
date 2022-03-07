@@ -2,12 +2,18 @@
 
 ![Time Series Insights](../images/visualize_timeseriesinsights.jpg)
 
-Azure Time Series Insights is a fully managed analytics, storage, and visualization service for managing IoT-scale time-series data in the cloud. It provides massively scalable time-series data storage and enables you to explore and analyze billions of events streaming in from all over the world in seconds. Use Time Series Insights to store and manage terabytes of time-series data, explore and visualize billions of events simultaneously, conduct root-cause analysis, and to compare multiple sites and assets.
+Azure Time Series Insights is a fully managed analytics and visualization service for IoT-scale time-series data in the cloud. It enables you to explore and analyze billions of events streaming in from all over the world in seconds. Use Time Series Insights to store and manage terabytes of time-series data, explore and visualize billions of events simultaneously, conduct root-cause analysis, and to compare multiple sites and assets.
 
 In this lab you will learn
 
 * How to set up a Time Series Insights environment
 * Explore and analyze time series data of your IoT solutions or connected things
+
+## Configura a default route to the built-in endpoint
+
+When you configured data routing to storage, IoT Hub disabled the default built-in endpoint. If we want data to appear in the built-in endpoint, we need to configure and explicit route, once custom routes have been added.
+
+![image](https://user-images.githubusercontent.com/23528856/157051864-3dc85d39-5de7-42fb-95fc-af4df67ffb2b.png)
 
 ## Create Time Series Insights
 
