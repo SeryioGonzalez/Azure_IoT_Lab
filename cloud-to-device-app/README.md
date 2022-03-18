@@ -12,4 +12,6 @@ You need to collect the Azure IoT Hub service keys, so you can provide it to the
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FSeryioGonzalez%2FAzure_IoT_Lab%2Fmaster%2Fcloud-to-device-app%2Faci_template.json) 
 
+During deployment, the next image will show up
+
 ![Lab diagram](../images/cloud_to_device_2.jpg "Header Image")
