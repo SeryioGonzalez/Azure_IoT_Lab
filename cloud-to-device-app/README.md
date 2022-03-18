@@ -12,7 +12,7 @@ You need to collect the Azure IoT Hub service keys, so you can provide it to the
 
 # Deploy the Azure Container instance template 
 
-
+Click in the blue icon below
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FSeryioGonzalez%2FAzure_IoT_Lab%2Fmaster%2Fcloud-to-device-app%2Faci_template.json) 
 
