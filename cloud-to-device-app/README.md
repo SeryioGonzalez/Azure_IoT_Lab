@@ -17,6 +17,6 @@ You need to provide a unique name to your container instance and paste the key y
 
 ![Lab diagram](../images/cloud_to_device_2.jpg "Header Image")
 
-Once deployed, you need to collect the hostname of your resulting application, as shown in black in the following image:
+Once deployed, you need to collect the hostname of YOUR resulting application, as shown as an example in the FQND field in the following image:
 
 ![Lab diagram](../images/cloud_to_device_3.jpg "Header Image")
