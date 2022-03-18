@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "container_instance_name": {
+            "type": "String"
+        },
+        "IOT_HUB_CONNECTION_STRING": {
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.ContainerInstance/containerGroups",
+            "apiVersion": "2021-10-01",
+            "name": "[parameters('container_instance_name')]",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "sku": "Standard",
+                "osType": "Linux",
+                "restartPolicy": "Always",
+                "containers": [
+                    {
+                        "name": "[parameters('container_instance_name')]",
+                        "properties": {
+                            "image": "seryiogonzalez/az_iot_cloud_to_device:0.1",
+                            "ports": [
+                                {
+                                    "protocol": "TCP",
+                                    "port": 80
+                                }
+                            ],
+                            "environmentVariables": [
+                                {
+                                    "name": "IOT_HUB_CONNECTION_STRING",
+                                    "value": "[parameters('IOT_HUB_CONNECTION_STRING')]"
+                                }
+                            ],
+                            "resources": {
+                                "requests": {
+                                    "memoryInGB": 1,
+                                    "cpu": 1
+                                }
+                            }
+                        }
+                    }
+                ],
+                "ipAddress": {
+                    "ports": [
+                        {
+                            "protocol": "TCP",
+                            "port": 80
+                        }
+                    ],
+                    "type": "Public",
+                    "dnsNameLabel": "[parameters('container_instance_name')]"
+                }
+
+            }
+        }
+    ]
+}
