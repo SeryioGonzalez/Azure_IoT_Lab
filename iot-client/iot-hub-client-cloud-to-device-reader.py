@@ -32,6 +32,8 @@ def message_listener(message):
         if property_key == 'device_command':
             device_command = message.custom_properties[property_key]
 
+            print("Command received: {}".format(device_command))
+    
             if device_command == 'stop_engine':
                 print("    Command: I am stopping an engine")
                 device_command_actuation_stop_engine()
@@ -51,10 +53,6 @@ def iothub_client_read_c2d_run():
 			
     except KeyboardInterrupt:
         print ( "IoTHubClient sample stopped" )
-    finally:
-        # Graceful exit
-        print("Shutting down IoT Hub Client")
-        device_client.shutdown()
 
 if __name__ == '__main__':
     iothub_client_read_c2d_run()
