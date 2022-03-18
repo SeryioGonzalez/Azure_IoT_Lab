@@ -2,10 +2,10 @@ import requests
 import json
 
 #YOU NEED TO UPDATE THIS LINE
-container_hostname = "sergioinstance.westeurope.azurecontainer.io"
+CONTAINER_HOSTNAME = "sergioinstance.westeurope.azurecontainer.io"
 
 #THIS WOULD WORK FOR YOU
-url = "http://" + container_hostname + "/api/az_iot_cloud_to_device"
+url = "http://" + CONTAINER_HOSTNAME + "/api/az_iot_cloud_to_device"
 
 def send_cloud_to_device_command (device_name, device_command):
     payload = json.dumps({
