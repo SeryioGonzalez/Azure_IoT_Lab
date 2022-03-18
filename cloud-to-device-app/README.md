@@ -6,7 +6,7 @@ In this lab you will deploy a container to an Azure Container instance that allo
 ## Get the Azure IoT Hub service key
 You need to provide the Azure IoT Hub service keys to the APP, so it can connect to your Azure IoT hub instance API securely. 
 
-
+![Lab diagram](images/cloud_to_device_1.jpg "Header Image")
 
 ## Deploy the Azure Container instance template 
 
