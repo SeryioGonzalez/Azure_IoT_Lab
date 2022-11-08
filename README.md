@@ -14,8 +14,8 @@ Your group name shall be `icaiiotlabgroupX`, where:
 ### Module 1: Creating an Azure IoT Hub
 [Azure IoT Hub](iothub/README.md)
 
-### Module 2: Creating a simulated device VM
-[Device VM](device/README.md)
+### Module 2: Creating a simulated on your Raspberry Pi
+[Raspberry Pi as device](device/README.md)
 <!--  
 ### QUICK DEPLOY PREVIOUS MODULES
 [Deploy previous modules](day0/README.md)
