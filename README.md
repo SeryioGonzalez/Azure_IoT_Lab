@@ -11,7 +11,7 @@ Your group name shall be `icaiiotlabgroupX`, where:
 
 ## Modules
 
-### Module 1: Creating an Azure IoT Hub
+### Module 1: Creating an Azure IoT Hub and a device identity in IoT Hub
 [Azure IoT Hub](iothub/README.md)
 
 ### Module 2: Creating a simulated on your Raspberry Pi
