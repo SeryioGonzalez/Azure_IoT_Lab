@@ -20,7 +20,7 @@ The outcome of this module is creating the central Azure IoT Hub element in the 
 ![Snapshot](../images/iot-hub-0.PNG "Azure IoT Hub Service")
 
 5. Click in **Next: Networking >** and leave default options <br/> 
-6. Click in **Next: Size and scale >** in order to set the proper service tier.<br/>
+6. Click in **Next: Management >** in order to set the proper service tier.<br/>
 
 7. In the following diagram, remember to select **Free tier**
 ![Snapshot](../images/iot-hub-2.PNG "Azure IoT Hub Service")
