@@ -26,7 +26,7 @@ Once deployed, you need to collect the hostname of YOUR resulting application, a
 ![Lab diagram](../images/cloud_to_device_3.jpg "Header Image")
 
 
-# Deploy the Azure Container instance template 
+# Configure the Azure Container instance template 
 
 In the provided python script, you will need to update the parameter in the code where you define the hostname of your container application in the variable CONTAINER_HOSTNAME, as shown in the following snippet, with the previously obtained FQDN
 
