@@ -44,5 +44,5 @@ Your group name shall be `icaiiotlabgroupX`, where:
 ### Module 9: Integrate APPs with IoT Hub
 [Integrate APPs with IoT Hub](sample-app/)
 
-### Module 10: Send a cloud to device camera via an external app
+### Module 10: Send a cloud to device command via an external app
 [Integrate APPs with IoT Hub](cloud-to-device-app/)
