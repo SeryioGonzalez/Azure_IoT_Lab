@@ -7,38 +7,51 @@ For this module, we will focus on a single device, but the APP will scale to a l
 ![Lab diagram](../images/app-2.png "Header Image")
 
 ### Creating an IoT application that receive and sends messages to devices
-For this, create a new sample VM as you did in module 2, but for playing the role of a simulated sensor in that case. Use the following command for installing the required packages in this new APP VM:
+In this module we are going to run a python script playing the role of a simulated sensor. Use the following command for installing the required packages in this new APP:
 
+**For LINUX:**
 ```
 sudo apt-get update -y
 sudo apt install python3-pip -y
 pip3 install azure-iot-device
 pip3 install azure-iot-hub
 pip3 install azure-eventhub
-git clone https://github.com/SeryioGonzalez/Azure_IoT_Lab.git
 ```
+
+**For WINDOWS:**
+```
+python -m pip install azure-iot-device
+python -m pip azure-iot-hub
+python -m pip azure-eventhub
+```
+
+If you have not done it yet, clone this repository either by executing
+```
+git clone https://github.com/iiot-cloud-icai/Azure_IoT_Lab.git
+```
+Or by manually downloading the code from GitHub in the browser. 
 
 In order to run the APP you need the IoT Hub built-in endpoint connection string. You can obtain it in the following window:
 As highlighted in green, you need to create a consumer group for the APP, otherwise, it will conflict with other readers such as Azure Time Series Insights implemented in the previous module.
 As highlighted in purple, select the **Shared access policy** type **service**
 
-```
-python3 Azure_IoT_Lab/sample-app/sample_app_temperature_alert.py "Endpoint=sb://iothub-ns-icaiiotlab-12345-ac23816596.servicebus.windows.net/;SharedAccessKeyName=service;SharedAccessKey=11232323232323232323;EntityPath=icaiiotlabgroup23h"
-```
-
 ![Lab diagram](../images/app-1.png "Header Image")
 
-See in the capture below, you have a simulated device at the bottom as you did in lab 2 being controlled by an application:
+Copy the Event Hub-compatible endpoint and paste it when executing the `sample_app_temperature_alert.py` that simulates an application that send a message when the temperature received is above a given value. This script is located [here](https://github.com/iiot-cloud-icai/Azure_IoT_Lab/blob/master/sample-app/sample_app_temperature_alert.py)
+```
+python Azure_IoT_Lab/sample-app/sample_app_temperature_alert.py "[you_event_Hub_compatible_endpoint]"
+```
+At the same time, **you need to run** the script `iot-hub-client-dual.py` that represents a simulated device that sends measurements and receives messages from the previous script. For this, you need the connection string you used in previous modules. This script is located [here](https://github.com/iiot-cloud-icai/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-dual.py) <br/>
+
+See in the capture below, top terminal window shows the execution of the `sample_app_temperature_alert.py`, whereas bottom window shows the execution of `iot-hub-client-dual.py`
 
 ![Lab diagram](../images/app-3.png "Header Image")
 
-The script for simulating a device that sends and receive messages is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-dual.py) <br/>
-The script for simulating an application that send a message above a given temperature is located [here](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/sample-app/sample_app_temperature_alert.py)
 
-### Integrating the APP with Azure Logic Apps (ALA) for executing ALA workflows
-Azure Logic Apps, used in module 6, is a highly versatile service that can be used for implemented complex workflows. It has many connectors with 3rd party applications (Twitter, Office365, Gmail, custom webhooks, Microsoft Teams, Slack) allowing you create cool interactions. Please take a look at the Microsoft [Azure official documentation](https://docs.microsoft.com/en-us/azure/logic-apps/) and many available examples in the internet.
+### Integrating a Python APP with Azure Logic Apps (ALA) for executing workflows
+Azure Logic Apps, used in module 8, is a highly versatile service that can be used to implement complex workflows. It has many connectors with 3rd party applications (Twitter, Office365, Gmail, custom webhooks, Microsoft Teams, Slack) allowing you create cool interactions. Please take a look at the Microsoft [Azure official documentation](https://docs.microsoft.com/en-us/azure/logic-apps/) and many available examples in the internet.
 
-In the following example, we will implement an application that sends emails to users.
+In the following example, we will implement an application that post emails to users.
 We will trigger the application sending the following self explainatory parameters:
 * to_address
 * subject

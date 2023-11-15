@@ -46,7 +46,7 @@ Once you have the first step of your app, add the following step: HTTP and confi
 
 What are we doing here? We are using the API of mastodon. We will use the HTTP method POST to send the information we want to publish. For this reason, we have to specify the URI, indicate the Content-Type as a header, and, in the body, specify what we want to publish in Mastodon by putting "status" before the content, as the previous image shows. 
 
-"Subject" makes reference to the content of the previous step, that is, the name of the new device that has been created, which is the action that was configure to trigger this app. 
+"Subject" makes reference to the content of the previous step, that is, the name of the new device that has been created, which is the action that was configured to trigger this app. 
 
 However, you cannot post in Mastodon without using your account, so you need to authenticate yourself in the HTTP POST. This is done by adding Authentication paramenter at the end of the HTTP box in Logic Apps, selecting "Raw" as authentication type, and,as value, "Bearer (yousecretaccesstoken)"
 
