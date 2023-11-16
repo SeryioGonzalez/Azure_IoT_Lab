@@ -35,7 +35,7 @@ Once the task is completed, the **Custom endpoint** will be shown as highlighted
 ## Creating a Custom Endpoint of type Storage under Azure IoT Hub routes
 
 In the previous step, we declared an Azure Storage container as a potential destination for sending device messages, but did nothing with it yet. <br/> 
-In this step, we are going to configure all messages to be sent to that endpoint.<br/> 
+In this step, we are going to configure all messages to be sent to that endpoint. For this, we need to create a route for the data<br/> 
 
 8. In the previous blade, select the **Routes** submenu, highlighted in red and click **+Add** for creating a route, as shown below:
 
@@ -56,7 +56,7 @@ Once the route is active, the following information will be shown in the screen.
 
 Review module 2 in which we sent traffic to Azure IoT Hub from the simulated device.
 
-`vmuser@simulated-device:~$ python3 Azure_IoT_Lab/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup1.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic="`**
+`python3 Azure_IoT_Lab/iot-client/iot-hub-client.py `**`"HostName=icaiiotlabgroup1.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=7VA3mGEaP8U8JiH899kFGJitTrGA3YuXsj8QcxGDnic="`**
 
 Messages will not show up in the Storage instantaneously, as a default **Batch frequency** of 100 seconds, was configured while creating the Storage endpoint
 ![Snapshot](../images/simulated-10.png "Azure VM")
