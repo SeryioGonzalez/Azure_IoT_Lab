@@ -32,14 +32,14 @@ git clone https://github.com/iiot-cloud-icai/Azure_IoT_Lab.git
 Or by manually downloading the code from GitHub in the browser. 
 
 In order to run the APP you need the IoT Hub built-in endpoint connection string. You can obtain it in the following window:
-As highlighted in green, you need to create a consumer group for the APP, otherwise, it will conflict with other readers such as Azure Time Series Insights implemented in the previous module.
+As highlighted in green, you need to create a consumer group for the APP, otherwise, it will conflict with other readers such as Azure Time Series Insights implemented before.
 As highlighted in purple, select the **Shared access policy** type **service**
 
 ![Lab diagram](../images/app-1.png "Header Image")
 
 Copy the Event Hub-compatible endpoint and paste it when executing the `sample_app_temperature_alert.py` that simulates an application that send a message when the temperature received is above a given value. This script is located [here](https://github.com/iiot-cloud-icai/Azure_IoT_Lab/blob/master/sample-app/sample_app_temperature_alert.py)
 ```
-python Azure_IoT_Lab/sample-app/sample_app_temperature_alert.py "[you_event_Hub_compatible_endpoint]"
+python Azure_IoT_Lab/sample-app/sample_app_temperature_alert.py "you_event_Hub_compatible_endpoint"
 ```
 At the same time, **you need to run** the script `iot-hub-client-dual.py` that represents a simulated device that sends measurements and receives messages from the previous script. For this, you need the connection string you used in previous modules. This script is located [here](https://github.com/iiot-cloud-icai/Azure_IoT_Lab/blob/master/iot-client/iot-hub-client-dual.py) <br/>
 
@@ -51,40 +51,45 @@ See in the capture below, top terminal window shows the execution of the `sample
 ### Integrating a Python APP with Azure Logic Apps (ALA) for executing workflows
 Azure Logic Apps, used in module 8, is a highly versatile service that can be used to implement complex workflows. It has many connectors with 3rd party applications (Twitter, Office365, Gmail, custom webhooks, Microsoft Teams, Slack) allowing you create cool interactions. Please take a look at the Microsoft [Azure official documentation](https://docs.microsoft.com/en-us/azure/logic-apps/) and many available examples in the internet.
 
-In the following example, we will implement an application that post emails to users.
+In the following example, we will implement an application that post information in Mastodon via a python script. This script could be running in sensor. 
 We will trigger the application sending the following self explainatory parameters:
-* to_address
-* subject
-* body
+* date
+* distance_object
+* size_object
 
-For initial steps, please create an Azure Logic App, reviewing steps 1 to 6 in module 7.
-In step 7, for this very example, input the following sample content:
+For initial steps, please create an Azure Logic App within your IoT Hub, just as you did in module 8. You should go to Templates when accessing the logic app designer, and select "When HTTP request is received". 
+
+![Lab diagram](../images/logicappstemplates.png "Header Image")
+
+Open the "When HTTP request is received" box and click on "Use sample payload to generate schema". 
 Copy and paste the following sample JSON.
 
 ```
  {
-        "to_address": "pepe.perez@gmail.com",
-        "subject_text": "testing email",
-        "body": "hello"
+        "date": "17th November 2023",
+        "distance_object": "2.3m",
+        "size_object": "4m"
  }
 ```
+![Lab diagram](../images/whenHTTPisreceived.png "Header Image")
 
-Once input, we will select the subsequent operation. In this example, sending an email using the GMAIL connector with the **Send email (V2)** task. <br/>
+The HTTP POST URL will be generated at the end, when saving the logic app
 
-![IoT Message](../images/app-4.png)
+Once completed, we will select the subsequent operation. In this example, it is the same as in module 8: HTTP,as we will be posting to Mastodon again. Bear in mind that Azure has a lot of possible actions, such as sending an email using Gmail.<br/>
+
+We will configure the HTTP box as we did in Module 8, although in this case the body of the message must contain the information we will send in the JSON with the Python script. 
+
+Logic Apps creates some fields called **dynamic content** based on the input parameters in the API call definition you did in the previous block. Select the parameters **date**, **size_object** and **distance_object** and place them in the proper location.
+
+![IoT Message](../images/httpmastodonsensor.png)
 
 
-Once the connector is configured, we need to select email parameters. In this example, we will use the **Subject** and the **Body** content, as defined in the API definition with the sample content input.
+Once configured, select **Save** and copy the HTTP POST URL, this will be the URL of the API to interact with the Azure logic app. When using the HTTP POST on this URL, it will trigger the Logic App workflow. 
 
-![IoT Message](../images/app-5.png)
+The Python script we will use is `logic_app_launcher.py` located in the "sample-app" folder. Open it and change the parameter **api_endpoint** with the API URL of your workflow. 
 
+Run the script and check that the information is being correctly posted in your Mastodon account, as shown below.
 
-Logic Apps creates some fields called **dynamic content** based on the input parameters in the API call definition you did in the previous block. Select the parameters **to_address**, **subject_text** and **body** and place them in the proper location.
-![IoT Message](../images/app-6.png)
-
-Once configured, select **Save** and copy the API URL as described below highlighted in red.
-![IoT Message](../images/app-8.png)
-
-Update the parameter **api_endpoint** in the [script provided](https://github.com/SeryioGonzalez/Azure_IoT_Lab/blob/master/sample-app/logic_app_launcher.py)
+![IoT Message](../images/postsensordata.png)
 
 Good luck, have fun, your creativity is the limit and do epic stuff!!
