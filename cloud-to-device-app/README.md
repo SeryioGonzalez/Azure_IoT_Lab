@@ -5,8 +5,7 @@ In this lab you will deploy a container to an Azure Container instance that allo
 
 # Get the Azure IoT Hub service key
 
-
-You need to collect the Azure IoT Hub service keys, so you can provide it to the APP in the next step, so it can connect to your Azure IoT hub instance API securely. 
+You need to collect the Azure IoT Hub service keys, so you can provide it to the APP in the next step. This way, it can connect to your Azure IoT hub instance API securely. 
 
 ![Lab diagram](../images/cloud_to_device_1.jpg "Header Image")
 
@@ -19,16 +18,16 @@ Click in the blue icon below
 During deployment, the next image will show up.
 You need to provide a unique name to your container instance and paste the key you collected in the previous point in the parameter IOT_HUB_CONNECTION_STRING
 
-![Lab diagram](../images/cloud_to_device_2.jpg "Header Image")
+![Lab diagram](../images/customDeployment.png "Header Image")
 
-Once deployed, you need to collect the hostname of YOUR resulting application, as shown as an example in the FQDN field in the following image:
+It may take a few minutes to deploy. Once deployed, go to resource and collect the hostname of YOUR resulting application, as shown as an example in the FQDN field in the following image:
 
-![Lab diagram](../images/cloud_to_device_3.jpg "Header Image")
+![Lab diagram](../images/fqdn.png "Header Image")
 
 
 # Configure the Azure Container instance template 
 
-In the provided python script on cloud-to-device-app/3_send_request.py, you will need to update the parameter in the code where you define the hostname of your container application in the variable CONTAINER_HOSTNAME, as shown in the following snippet, with the previously obtained FQDN
+In the provided python script on `cloud-to-device-app/3_send_request.py`, you will need to update the parameter in the code where you define the hostname of your container application in the variable CONTAINER_HOSTNAME, as shown in the following snippet, with the previously obtained FQDN
 
 ![Lab diagram](../images/cloud_to_device_4.jpg "Header Image")
 

@@ -2,7 +2,7 @@ import requests
 import json
 
 #YOU NEED TO UPDATE THIS LINE
-CONTAINER_HOSTNAME = "sergioinstance.westeurope.azurecontainer.io"
+CONTAINER_HOSTNAME = "iotteacherdeployment.westeurope.azurecontainer.io"
 
 #THIS WOULD WORK FOR YOU
 url = "http://" + CONTAINER_HOSTNAME + "/api/az_iot_cloud_to_device"
